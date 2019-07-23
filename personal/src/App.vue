@@ -11,8 +11,8 @@
           </th>
           <th style="text-align: right;">
             <div id="nav">
-              <router-link to="/">Home</router-link> |
-              <router-link to="/About">About</router-link>
+              <router-link to="/">Home</router-link>
+              <router-link to="/about">About</router-link>
             </div>
           </th>
         </tr>
@@ -21,7 +21,9 @@
     <!-- route outlet -->
     <!-- component matched by the route will render here -->
     <div style="height:10px"></div>
+    <transition name="view">
     <router-view />
+    </transition>
   </div>
 </template>
 
@@ -57,6 +59,8 @@ body {
 #nav a {
   font-weight: bold;
   color: #ffffff;
+  margin-left: 20px;
+  text-decoration: none;
 }
 
 #nav a.router-link-exact-active {
@@ -79,13 +83,21 @@ table#head tr {
   text-align: left;
 }
 
-.fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.5s;
+.view-enter-active,
+.view-leave-active {
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease;
 }
 
-.fade-enter,
-.fade-leave-to {
+.view-enter-active {
+  transition-delay: 0.5s;
+}
+
+.view-enter,
+.view-leave-to {
   opacity: 0;
+}
+
+.view-enter-to, .view-leave {
+  opacity: 1;
 }
 </style>
