@@ -1,15 +1,23 @@
 <template>
   <div id="art">
     <div>
-      <h2>Art</h2>
-      <h2>Under construction... ᕕ( ᐛ )ᕗ</h2>
+    <Portal asset="art.png" desc="Commission" to="/art/commission"/>
+    <Portal asset="aboutme.png" desc="YCH" to="/art/ych"/>
     </div>
+    <transition name="view">
+    <router-view></router-view>
+    </transition>
   </div>
 </template>
 
 <script>
+import Portal from '@/components/Portal.vue'
+
 export default {
-  name: "art"
+  name: "art",
+  components: {
+    Portal
+  },
 };
 </script>
 

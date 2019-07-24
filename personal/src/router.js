@@ -1,10 +1,12 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from './views/Home.vue'
-import NotFound from './views/NotFound.vue'
-import About from './views/About.vue'
-import Art from './views/Art.vue'
-import Games from './views/Games.vue'
+import Home from '@/views/Home.vue'
+import NotFound from '@/views/NotFound.vue'
+import About from '@/views/About.vue'
+import Art from '@/views/Art.vue'
+import Games from '@/views/Games.vue'
+import Commission from '@/views/Commission.vue'
+import YCH from '@/views/YCH.vue'
 
 Vue.use(Router)
 
@@ -25,7 +27,19 @@ export default new Router({
     {
       path: '/art',
       name: 'art',
-      component: Art
+      component: Art,
+      children: [
+        {
+          path: 'commission',
+          name: 'commission',
+          component: Commission
+        },
+        {
+          path: 'ych',
+          name: 'ych',
+          component: YCH
+        },
+      ]
     },
     {
       path: '/games',

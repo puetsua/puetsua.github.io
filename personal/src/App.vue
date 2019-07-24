@@ -24,12 +24,13 @@
     <!-- component matched by the route will render here -->
     <div style="height:10px"></div>
     <transition name="page">
-      <div v-if="pageDisplay">
+      <div v-if="pageDisplay" id="mainDisplay">
         <transition name="view">
           <router-view />
         </transition>
       </div>
     </transition>
+    <div style="height:50px"></div>
   </div>
 </template>
 
@@ -83,7 +84,7 @@ footer {
   text-align: center;
   vertical-align: middle;
   color: #3d1b5a;
-  height: 100%;
+  min-height: 100%;
 }
 
 #nav a {
