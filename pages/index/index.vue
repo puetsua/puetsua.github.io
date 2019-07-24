@@ -16,6 +16,11 @@ export default {
   name: 'Home',
   components: {
     Portal
+  },
+  head () {
+    return {
+      title: 'Pue-Tsuâ'
+    }
   }
 }
 </script>

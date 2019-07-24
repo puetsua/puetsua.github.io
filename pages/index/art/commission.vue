@@ -95,6 +95,11 @@ export default {
   components: {
     CommissionItem
   },
+  head () {
+    return {
+      title: 'Pue-Tsuâ | Commissions'
+    }
+  },
   data () {
     return {
       feralItems: [

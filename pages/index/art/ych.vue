@@ -1,5 +1,5 @@
 <template>
-  <div id="games">
+  <div id="ych">
     <div>
       <h2>YCH</h2>
       <h2>Under construction... ᕕ( ᐛ )ᕗ</h2>
@@ -9,7 +9,12 @@
 
 <script>
 export default {
-  name: 'games'
+  name: 'ych',
+  head () {
+    return {
+      title: 'Pue-Tsuâ | YCH'
+    }
+  }
 }
 </script>
 

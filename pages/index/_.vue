@@ -8,7 +8,12 @@
 
 <script>
 export default {
-  name: 'Notfound'
+  name: 'Notfound',
+  head () {
+    return {
+      title: 'Pue-Tsuâ | 404 Not Found'
+    }
+  }
 }
 </script>
 

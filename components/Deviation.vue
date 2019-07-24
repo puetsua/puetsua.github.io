@@ -7,18 +7,16 @@
     @mouseleave="hover = false"
   >
     <a :href="uri">
-      <img :src="daData.thumbnail_url_200h">
+      <img :src="daData.thumbnail_url_200h" />
     </a>
     <transition name="itemfade">
-      <div v-if="hover" :style="hoveredStyle">
-        {{ daData.title }}
-      </div>
+      <div v-if="hover" :style="hoveredStyle">{{ daData.title }}</div>
     </transition>
   </div>
 </template>
 
 <script>
-import axios from 'axios'
+import jsonp from 'jsonp'
 
 export default {
   name: 'Deviation',
@@ -70,19 +68,15 @@ export default {
   },
   created () {
     this.uri = 'https://www.deviantart.com/puetsua/art/da-' + this.id
-    const url = '/oembed?format=json&url=' + encodeURI(this.uri)
-    axios
-      .get(url, {
-        headers: {
-          crossdomain: true
-        }
-      })
-      .then((response) => {
-        this.daData = response.data
-      })
-      .catch(function (e) {
-        console.log(e)
-      })
+    const url = 'https://backend.deviantart.com/oembed?format=jsonp&url=' + encodeURI(this.uri)
+
+    jsonp(url, null, (err, data) => {
+      if (err) {
+        console.error(err.message)
+      } else {
+        this.daData = data
+      }
+    })
   },
   methods: {}
 }

@@ -9,7 +9,12 @@
 
 <script>
 export default {
-  name: 'games'
+  name: 'games',
+  head () {
+    return {
+      title: 'Pue-Tsuâ | Games'
+    }
+  }
 }
 </script>
 
