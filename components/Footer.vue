@@ -1,22 +1,11 @@
 <template>
-  <div>
-    <nuxt />
+  <div id="footer">
+    © Puetsua, since 2019.
   </div>
 </template>
 
 <style>
-html,
-body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-}
-
-body {
-  background-color: #f0e8ed;
-}
-
-footer {
+#footer {
   font-family: "Microsoft JhengHei", "LiHei Pro", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

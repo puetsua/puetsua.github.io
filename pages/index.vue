@@ -1,10 +1,31 @@
 <template>
-  <div id="App" />
+  <div id="App">
+    <transition name="fade" @after-enter="showPage">
+      <Header v-if="fadeDisplay" />
+    </transition>
+    <div style="height:10px" />
+    <transition name="page">
+      <div v-if="pageDisplay" id="mainDisplay">
+        <transition name="view">
+          <nuxt-child />
+        </transition>
+      </div>
+    </transition>
+    <div style="height:50px" />
+    <Footer />
+  </div>
 </template>
 
 <script>
+import Header from '~/components/Header.vue'
+import Footer from '~/components/Footer.vue'
+
 export default {
   name: 'App',
+  components: {
+    Header,
+    Footer
+  },
   data() {
     return {
       fadeDisplay: false,
@@ -23,40 +44,25 @@ export default {
 </script>
 
 <style>
-#App {
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
   font-family: "Microsoft JhengHei", "LiHei Pro", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: #3d1b5a;
+}
+
+body {
+  background-color: #f0e8ed;
+}
+
+#App {
   text-align: center;
   vertical-align: middle;
-  color: #3d1b5a;
   min-height: 100%;
-}
-
-#nav a {
-  font-weight: bold;
-  color: #ffffff;
-  margin-left: 20px;
-  text-decoration: none;
-}
-
-#nav a.router-link-exact-active {
-  color: #d8a9ff;
-}
-
-table#head {
-  padding: 0px 10px;
-  background-color: #4e2470;
-  color: #ffffff;
-  width: 100%;
-}
-
-table#head img {
-  display: block;
-}
-
-table#head tr {
-  text-align: left;
 }
 
 .fade-enter-active,
