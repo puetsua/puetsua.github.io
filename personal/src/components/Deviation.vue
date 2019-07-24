@@ -1,13 +1,13 @@
 <template>
   <div
-    v-if="isOk"
+    v-if="daData"
     class="deviation"
     :style="devStyle"
     @mouseover="hover = true"
     @mouseleave="hover = false"
   >
     <a :href="uri">
-      <img v-if="daData" :src="daData.thumbnail_url_200h" />
+      <img :src="daData.thumbnail_url_200h" />
     </a>
     <transition name="itemfade">
       <div v-if="hover" :style="hoveredStyle">{{daData.title}}</div>
@@ -61,7 +61,6 @@ export default {
       if (this.daData == null) {
         return {};
       }
-      console.log(this.daData.thumbnail_width_200h);
       return {
         position: "absolute",
         bottom: 0,
@@ -71,21 +70,17 @@ export default {
         overflow: "hidden",
         padding: "0px 10px",
         color: "white",
-        display:"inline-block",
+        display: "inline-block",
         "box-sizing": "border-box",
         "text-align": "left",
         "font-size": "12px",
         "background-color": "rgba(140, 91, 255, 0.8)",
         "text-overflow": "ellipsis",
-        "white-space": "nowrap",
+        "white-space": "nowrap"
       };
     }
   },
-  methods: {
-    isOk: function() {
-      return daData != null;
-    }
-  }
+  methods: {}
 };
 </script>
 

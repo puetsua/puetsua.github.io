@@ -6,6 +6,7 @@ npm run build
 
 echo "==== Creating git repository..."
 cd dist
+cp ../CNAME CNAME
 git init
 git add -A
 git commit -m "Deploy new version."
