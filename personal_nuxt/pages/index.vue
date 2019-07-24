@@ -1,72 +1,94 @@
 <template>
-  <div class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        personal_nuxt
-      </h1>
-      <h2 class="subtitle">
-        My grand Nuxt.js project
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >
-          GitHub
-        </a>
-      </div>
-    </div>
-  </div>
+  <div id="App" />
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
-
 export default {
-  components: {
-    Logo
+  name: 'App',
+  data() {
+    return {
+      fadeDisplay: false,
+      pageDisplay: false
+    }
+  },
+  mounted: function () {
+    this.fadeDisplay = true
+  },
+  methods: {
+    showPage: function () {
+      this.pageDisplay = true
+    }
   }
 }
 </script>
 
 <style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+#App {
+  font-family: "Microsoft JhengHei", "LiHei Pro", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   text-align: center;
+  vertical-align: middle;
+  color: #3d1b5a;
+  min-height: 100%;
 }
 
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+#nav a {
+  font-weight: bold;
+  color: #ffffff;
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+#nav a.router-link-exact-active {
+  color: #d8a9ff;
+}
+
+table#head {
+  padding: 0px 10px;
+  background-color: #4e2470;
+  color: #ffffff;
+  width: 100%;
+}
+
+table#head img {
   display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
 }
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
+table#head tr {
+  text-align: left;
 }
 
-.links {
-  padding-top: 15px;
+.fade-enter-active,
+.fade-leave-active,
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease;
+}
+
+.fade-enter,
+.fade-leave-to,
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+}
+
+.view-enter-active,
+.view-leave-active {
+  transition: opacity 0.2s ease-in-out, transform 0.2s ease;
+}
+
+.view-enter-active {
+  transition-delay: 0.2s;
+}
+
+.view-enter,
+.view-leave-to {
+  opacity: 0;
+}
+
+.view-enter-to,
+.view-leave {
+  opacity: 1;
 }
 </style>
