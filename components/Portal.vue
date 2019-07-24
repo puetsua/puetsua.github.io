@@ -1,6 +1,6 @@
 <template>
   <div class="portal" @mouseover="hover = true" @mouseleave="hover = false">
-    <router-link :to="to">
+    <nuxt-link :to="to">
       <div class="itemimg">
         <img :alt="desc" :src="imageSrc" />
       </div>
@@ -8,34 +8,34 @@
       <transition name="itemfade">
         <div v-if="hover" class="itemhovered" />
       </transition>
-    </router-link>
+    </nuxt-link>
   </div>
 </template>
 
 <script>
 export default {
-  name: "Portal",
+  name: 'Portal',
   props: {
-    asset: { type: String, default: "" },
-    desc: { type: String, default: "" },
-    to: { type: String, default: "" }
+    asset: { type: String, default: '' },
+    desc: { type: String, default: '' },
+    to: { type: String, default: '' }
   },
-  data() {
+  data () {
     return {
       hover: false
-    };
+    }
   },
   computed: {
-    imageSrc: function() {
+    imageSrc: function () {
       try {
-        return require("@/assets/" + this.asset);
+        return require('@/assets/' + this.asset)
       } catch (e) {
-        console.log(e);
-        return null;
+        console.log(e)
+        return null
       }
     }
   }
-};
+}
 </script>
 
 <style scoped>

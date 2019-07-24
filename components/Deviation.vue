@@ -18,12 +18,14 @@
 </template>
 
 <script>
+import axios from 'axios'
+
 export default {
   name: 'Deviation',
   props: {
     id: String
   },
-  data() {
+  data () {
     return {
       hover: false,
       daData: null,
@@ -66,10 +68,10 @@ export default {
       }
     }
   },
-  created() {
+  created () {
     this.uri = 'https://www.deviantart.com/puetsua/art/da-' + this.id
     const url = '/oembed?format=json&url=' + encodeURI(this.uri)
-    this.axios
+    axios
       .get(url, {
         headers: {
           crossdomain: true

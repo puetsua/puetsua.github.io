@@ -1,11 +1,11 @@
 <template>
-  <div id="footer">
+  <footer>
     © Puetsua, since 2019.
-  </div>
+  </footer>
 </template>
 
 <style>
-#footer {
+footer {
   font-family: "Microsoft JhengHei", "LiHei Pro", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

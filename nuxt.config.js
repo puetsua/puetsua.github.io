@@ -23,6 +23,7 @@ export default {
   ** Global CSS
   */
   css: [
+    '@/assets/main.css'
   ],
   /*
   ** Plugins to load before mounting the App
@@ -42,6 +43,10 @@ export default {
   ** See https://axios.nuxtjs.org/options
   */
   axios: {
+    proxy: true
+  },
+  proxy: {
+    '/oembed': 'https://backend.deviantart.com'
   },
   /*
   ** Build configuration
@@ -50,7 +55,7 @@ export default {
     /*
     ** You can extend webpack config here
     */
-    extend(config, ctx) {
+    extend (config, ctx) {
     }
   }
 }

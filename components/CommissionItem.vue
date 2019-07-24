@@ -34,7 +34,7 @@ export default {
     examples: Array,
     isAvailable: Boolean
   },
-  data() {
+  data () {
     return {
       hover: false
     }

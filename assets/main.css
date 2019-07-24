@@ -1,0 +1,22 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Microsoft JhengHei", "LiHei Pro", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #3d1b5a;
+}
+
+body {
+  background-color: #f0e8ed;
+}
+
+#__nuxt {
+  height: 100%;
+}
+
+#__layout {
+  height: 100%;
+}
