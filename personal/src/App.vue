@@ -3,20 +3,20 @@
     <transition name="fade" @after-enter="showPage">
       <table v-if="fadeDisplay" id="head">
         <tr>
-          <th style="width:50px;">
+          <td style="width:50px;">
             <img alt="Puetsua logo" src="./assets/logo_light.png" height="50px" />
-          </th>
-          <th style="width:50%;">
+          </td>
+          <td style="width:50%;">
             <span style="font-size:30px;">飛蛇 Pue-Tsuâ</span>
-          </th>
-          <th style="text-align: right;">
+          </td>
+          <td style="text-align: right;">
             <div id="nav">
               <router-link to="/">Home</router-link>
               <router-link to="/art">Art</router-link>
               <router-link to="/games">Games</router-link>
               <router-link to="/about">About</router-link>
             </div>
-          </th>
+          </td>
         </tr>
       </table>
     </transition>

@@ -1,8 +1,8 @@
 <template>
   <div id="art">
     <div>
-    <Portal asset="art.png" desc="Commission" to="/art/commission"/>
-    <Portal asset="aboutme.png" desc="YCH" to="/art/ych"/>
+    <Portal asset="commish.png" desc="Commission" to="/art/commission"/>
+    <Portal asset="ych.png" desc="YCH" to="/art/ych"/>
     </div>
     <transition name="view">
     <router-view></router-view>

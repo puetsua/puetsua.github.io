@@ -47,10 +47,6 @@ export default {
   display: inline-block;
 }
 
-.portal:hover {
-  color: blue;
-}
-
 .itemimg {
   width: 300px;
   height: 200px;

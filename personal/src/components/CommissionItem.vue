@@ -1,16 +1,16 @@
 <template>
   <div class="comItem" @mouseover="hover = true" @mouseleave="hover = false">
-    <table>
+    <table cellpadding="0" cellspacing="0">
       <tr>
         <th class="name">{{name}}</th>
       </tr>
       <tr>
-        <th class="desc">{{description}}</th>
+        <td class="desc">{{description}}</td>
       </tr>
       <tr>
-        <th>
+        <td>
           <Deviation v-for="artId in examples" :key="artId" :id="artId" />
-        </th>
+        </td>
       </tr>
     </table>
   </div>
@@ -39,13 +39,15 @@ export default {
 </script>
 
 <style scoped>
-.comItem
-{
+.comItem {
   border: 1px dashed #4e2470;
-  margin: 10px 10px auto;
+  margin: 10px 0px auto;
   text-align: left;
   color: rgb(139, 0, 58);
   background-color: #ffffff;
+}
+.comItem td, .comItem th{
+  padding: 5px 5px;
 }
 .name {
   font-size: 20px;

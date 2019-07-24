@@ -1,6 +1,12 @@
 <template>
   <div id="commish">
-    <!-- <img alt="Banner" src="@/assets/commission_banner.png" width="550px" /> -->
+    <h2>
+      <a
+        href="https://www.deviantart.com/puetsua#artstatus"
+      >>> Check my art status on my page first!</a>
+    </h2>
+
+    <h3 id="update">Last Updated: July 24th, 2019</h3>
 
     <p>
       Thank you for your interest. To commission me, you should follow everything that mentioned below.
@@ -58,7 +64,26 @@
       />100 = $1
     </p>
 
-    <CommissionItem v-for="item in items" :key="item.name" v-bind="item" />
+    <div class="comType">
+      <h2>Feral</h2>
+      <p>Applies to</p>
+      <ul>
+        <li>Pony</li>
+        <li>Cat</li>
+        <li>Eeveelutions (Pokemon)</li>
+      </ul>
+      <CommissionItem v-for="item in feralItems" :key="item.name" v-bind="item" />
+    </div>
+    <div class="comType">
+      <h2>Anthro</h2>
+      <p>Applies to</p>
+      <ul>
+        <li>Pony Anthro</li>
+        <li>Furry</li>
+        <li>Equestria Girl</li>
+      </ul>
+      <CommissionItem v-for="item in anthroItems" :key="item.name" v-bind="item" />
+    </div>
   </div>
 </template>
 
@@ -72,7 +97,7 @@ export default {
   },
   data() {
     return {
-      items: [
+      feralItems: [
         {
           name: "Colored Sketch $15-30",
           description: "Max characters 4, Size: higher than 1000x1000",
@@ -91,6 +116,26 @@ export default {
           examples: ["789974602", "792378218"],
           isAvailable: true
         }
+      ],
+      anthroItems: [
+        {
+          name: "Colored Sketch $25-50",
+          description: "Max characters 2, Size: higher than 1000x1000",
+          examples: ["689411941"],
+          isAvailable: true
+        },
+        {
+          name: "Cel Shading $35-60",
+          description: "Max characters 2, Size: higher than 1000x1000",
+          examples: ["790760123"],
+          isAvailable: true
+        },
+        {
+          name: "Detailed Shading $60-90",
+          description: "Max characters 1, Size: higher than 1000x1000",
+          examples: ["789837305", "792102357"],
+          isAvailable: true
+        }
       ]
     };
   }
@@ -104,6 +149,14 @@ export default {
   margin: 0px 10px auto;
   display: inline-block;
   text-align: left;
+}
+
+#update {
+  color: green;
+}
+
+.comType {
+  margin: 0px 20px auto;
 }
 
 .itemFade-enter-active,

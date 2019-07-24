@@ -1,5 +1,18 @@
 <template>
-  <div class="deviation" @mouseover="hover = true" @mouseleave="hover = false"></div>
+  <div
+    v-if="isOk"
+    class="deviation"
+    :style="devStyle"
+    @mouseover="hover = true"
+    @mouseleave="hover = false"
+  >
+    <a :href="uri">
+      <img v-if="daData" :src="daData.thumbnail_url_200h" />
+    </a>
+    <transition name="itemfade">
+      <div v-if="hover" :style="hoveredStyle">{{daData.title}}</div>
+    </transition>
+  </div>
 </template>
 
 <script>
@@ -11,30 +24,87 @@ export default {
   data() {
     return {
       hover: false,
-      daData: {}
+      daData: null,
+      uri: ""
     };
   },
-  mounted: function() {
-    var url =
-      "https://backend.deviantart.com/oembed?format=json&url=http%3A%2F%2Fwww.deviantart.com%2Fpuetsua%2Fart%2Fda-" +
-      this.id;
-    // axios.get(url).then(response => {
-    //   console.log(response.data);
-    // });
+  created() {
+    this.uri = "https://www.deviantart.com/puetsua/art/da-" + this.id;
+    var url = "/oembed?format=json&url=" + encodeURI(this.uri);
+    this.axios
+      .get(url, {
+        headers: {
+          crossdomain: true
+        }
+      })
+      .then(response => {
+        this.daData = response.data;
+      })
+      .catch(function(e) {
+        console.log(e);
+      });
+  },
+  computed: {
+    devStyle: function() {
+      if (this.daData == null) {
+        return {};
+      }
+      return {
+        width: this.daData.thumbnail_width_200h + "px",
+        height: this.daData.thumbnail_height_200h + "px",
+        position: "relative",
+        margin: "0px 0px auto",
+        display: "inline-block"
+      };
+    },
+    hoveredStyle: function() {
+      if (this.daData == null) {
+        return {};
+      }
+      console.log(this.daData.thumbnail_width_200h);
+      return {
+        position: "absolute",
+        bottom: 0,
+        left: 0,
+        width: this.daData.thumbnail_width_200h + "px",
+        height: "18px",
+        overflow: "hidden",
+        padding: "0px 10px",
+        color: "white",
+        display:"inline-block",
+        "box-sizing": "border-box",
+        "text-align": "left",
+        "font-size": "12px",
+        "background-color": "rgba(140, 91, 255, 0.8)",
+        "text-overflow": "ellipsis",
+        "white-space": "nowrap",
+      };
+    }
+  },
+  methods: {
+    isOk: function() {
+      return daData != null;
+    }
   }
 };
 </script>
 
 <style scoped>
-/* .portal {
-  width: 300px;
-  height: 200px;
-  position: relative;
-  margin: 0px 10px auto;
-  display: inline-block;
+.deviation img {
+  vertical-align: bottom;
 }
 
-.portal:hover {
-  color: blue;
-} */
+.itemfade-enter-active {
+  transition: all 0.3s ease;
+  max-height: 18px;
+}
+.itemfade-leave-active {
+  transition: all 0.8s ease-out;
+  max-height: 18px;
+}
+.itemfade-enter,
+.itemfade-leave-to {
+  max-height: 0px;
+  opacity: 0;
+}
 </style>
