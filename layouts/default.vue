@@ -10,6 +10,11 @@ import Footer from '~/components/footer.vue'
 export default {
   components: {
     Footer
+  },
+  head () {
+    return {
+      title: 'Pue-Tsuâ'
+    }
   }
 }
 </script>
