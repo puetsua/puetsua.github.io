@@ -1,4 +1,4 @@
-echo "Clearing /dist...""
+echo "Clearing /dist..."
 rmdir /s /q dist
 
 echo "Building..."
