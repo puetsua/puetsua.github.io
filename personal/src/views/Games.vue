@@ -1,17 +1,17 @@
 <template>
-  <div id="notfound">
+  <div id="games">
     <div>
-      <h2>Page is not found.</h2>
+      <h2>Games</h2>
+      <h2>Under construction... ᕕ( ᐛ )ᕗ</h2>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: "notfound"
+  name: "games"
 };
 </script>
 
 <style>
-
 </style>

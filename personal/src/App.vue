@@ -12,6 +12,8 @@
           <th style="text-align: right;">
             <div id="nav">
               <router-link to="/">Home</router-link>
+              <router-link to="/art">Art</router-link>
+              <router-link to="/games">Games</router-link>
               <router-link to="/about">About</router-link>
             </div>
           </th>
@@ -52,8 +54,26 @@ export default {
 </script>
 
 <style>
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
 body {
   background-color: #f0e8ed;
+}
+
+footer {
+  font-family: "Microsoft JhengHei", "LiHei Pro", Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  font-size: 12px;
+  padding: 10px 10px;
+  color: #ffffff;
+  background-color: #4e2470;
 }
 
 #app {
@@ -63,6 +83,7 @@ body {
   text-align: center;
   vertical-align: middle;
   color: #3d1b5a;
+  height: 100%;
 }
 
 #nav a {
@@ -78,7 +99,6 @@ body {
 
 table#head {
   padding: 0px 10px;
-  border-radius: 20px;
   background-color: #4e2470;
   color: #ffffff;
   width: 100%;
@@ -108,11 +128,11 @@ table#head tr {
 
 .view-enter-active,
 .view-leave-active {
-  transition: opacity 0.5s ease-in-out, transform 0.5s ease;
+  transition: opacity 0.2s ease-in-out, transform 0.2s ease;
 }
 
 .view-enter-active {
-  transition-delay: 0.5s;
+  transition-delay: 0.2s;
 }
 
 .view-enter,

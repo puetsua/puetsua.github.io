@@ -1,18 +1,28 @@
 <template>
-  <div class="home">
-    <img alt="Puetsua logo" src="../assets/logo.png" />
+  <div id="home">
+    <img alt="Puetsua logo" src="@/assets/logo.png" />
     <div>
-      <h2>Under construction... ᕕ( ᐛ )ᕗ</h2>
+    <Portal asset="art.png" desc="Art & Commission" to="/art"/>
+    <Portal asset="games.png" desc="Games" to="/games"/>
+    <Portal asset="aboutme.png" desc="About Pue-Tsuâ" to="/about"/>
     </div>
   </div>
 </template>
 
 <script>
+import Portal from '@/components/Portal.vue'
+
 export default {
-  name: "home"
+  name: "home",
+  components: {
+    Portal
+  },
 };
 </script>
 
 <style>
-
+#home {
+  text-align: center;
+  vertical-align: middle;
+}
 </style>
