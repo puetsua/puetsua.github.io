@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <transition name="fade">
+    <transition name="fade" @after-enter="showPage">
       <table v-if="fadeDisplay" id="head">
         <tr>
           <th style="width:50px;">
@@ -21,8 +21,12 @@
     <!-- route outlet -->
     <!-- component matched by the route will render here -->
     <div style="height:10px"></div>
-    <transition name="view">
-    <router-view />
+    <transition name="page">
+      <div v-if="pageDisplay">
+        <transition name="view">
+          <router-view />
+        </transition>
+      </div>
     </transition>
   </div>
 </template>
@@ -32,13 +36,18 @@ export default {
   name: "app",
   data() {
     return {
-      fadeDisplay: false
+      fadeDisplay: false,
+      pageDisplay: false
     };
   },
   mounted: function() {
     this.fadeDisplay = true;
   },
-  methods: {}
+  methods: {
+    showPage: function() {
+      this.pageDisplay = true;
+    }
+  }
 };
 </script>
 
@@ -83,6 +92,20 @@ table#head tr {
   text-align: left;
 }
 
+.fade-enter-active,
+.fade-leave-active,
+.page-enter-active,
+.page-leave-active {
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease;
+}
+
+.fade-enter,
+.fade-leave-to,
+.page-enter,
+.page-leave-to {
+  opacity: 0;
+}
+
 .view-enter-active,
 .view-leave-active {
   transition: opacity 0.5s ease-in-out, transform 0.5s ease;
@@ -97,7 +120,8 @@ table#head tr {
   opacity: 0;
 }
 
-.view-enter-to, .view-leave {
+.view-enter-to,
+.view-leave {
   opacity: 1;
 }
 </style>
