@@ -14,5 +14,10 @@ export default {
 </script>
 
 <style>
-
+#art {
+  width: 1000px;
+  position: relative;
+  margin: 0px 10px auto;
+  display: inline-block;
+}
 </style>

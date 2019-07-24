@@ -24,5 +24,9 @@ export default {
 #home {
   text-align: center;
   vertical-align: middle;
+  width: 1000px;
+  position: relative;
+  margin: 0px 10px auto;
+  display: inline-block;
 }
 </style>

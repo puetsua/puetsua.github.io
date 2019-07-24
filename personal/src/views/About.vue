@@ -23,7 +23,7 @@ export default {
 
 <style>
 #about {
-  width: 500px;
+  width: 1000px;
   text-align: left;
   position: relative;
   margin: 0px 10px auto;
