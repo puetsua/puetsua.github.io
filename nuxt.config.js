@@ -13,6 +13,10 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+    ],
+    script:
+    [
+      { src: 'https://p.trellocdn.com/embed.min.js' }
     ]
   },
   /*

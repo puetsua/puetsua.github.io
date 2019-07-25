@@ -28,10 +28,10 @@ export default {
 
 <style>
 #about {
-  width: 1000px;
+  max-width: 1000px;
   text-align: left;
   position: relative;
-  margin: 0px 10px auto;
   display: inline-block;
+  padding: 0px 10px;
 }
 </style>

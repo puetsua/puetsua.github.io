@@ -50,4 +50,14 @@ export default {
 .page-leave-to {
   opacity: 0;
 }
+
+.itemFade-enter-active,
+.itemFade-leave-active {
+  transition: opacity 0.5s ease-in-out, transform 0.5s ease;
+}
+
+.itemFade-enter,
+.itemFade-leave-to {
+  opacity: 0;
+}
 </style>

@@ -3,10 +3,7 @@
     <table id="head">
       <tr>
         <td style="width:50px;">
-          <img alt="Puetsua logo" src="~/assets/logo_light.png" height="50px">
-        </td>
-        <td style="width:50%;">
-          <span style="font-size:30px;">飛蛇 Pue-Tsuâ</span>
+          <nuxt-link to="/"><img alt="Puetsua logo" src="~/assets/logo_light.png" height="50px"></nuxt-link>
         </td>
         <td style="text-align: right;">
           <div id="nav">
@@ -37,7 +34,11 @@
   text-decoration: none;
 }
 
-#nav a.router-link-exact-active {
+#nav a:hover {
+  color: #cc44d8;
+}
+
+#nav a.nuxt-link-exact-active {
   color: #d8a9ff;
 }
 

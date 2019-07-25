@@ -20,9 +20,8 @@ export default {
 
 <style>
 #games {
-  width: 1000px;
+  max-width: 1000px;
   position: relative;
-  margin: 0px 10px auto;
   display: inline-block;
 }
 </style>
