@@ -1,6 +1,6 @@
 
 export default {
-  mode: 'universal',
+  mode: 'spa',
   /*
   ** Headers of the page
   */
@@ -43,10 +43,6 @@ export default {
   ** See https://axios.nuxtjs.org/options
   */
   axios: {
-    proxy: true
-  },
-  proxy: {
-    '/oembed': 'https://backend.deviantart.com'
   },
   /*
   ** Build configuration

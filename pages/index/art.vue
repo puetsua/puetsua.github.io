@@ -4,9 +4,7 @@
     <Portal asset="commish.png" desc="Commission" to="/art/commission"/>
     <Portal asset="ych.png" desc="YCH" to="/art/ych"/>
     </div>
-    <transition name="view">
     <nuxt-child />
-    </transition>
   </div>
 </template>
 
