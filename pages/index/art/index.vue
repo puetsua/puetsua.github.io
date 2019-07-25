@@ -9,9 +9,22 @@
 <script>
 export default {
   name: 'art',
+  data () {
+    return {
+      title: 'Art | Pue-Tsuâ'
+    }
+  },
   head () {
     return {
-      title: 'Pue-Tsuâ | Art'
+      titleTemplate: this.title,
+      meta: [
+        { hid: 'twitter:card', name: 'twitter:card', content: 'summary' },
+        { hid: 'twitter:site', name: 'twitter:site', content: '@puetsua' },
+        { hid: 'twitter:title', name: 'twitter:title', content: this.title },
+        { hid: 'twitter:description', name: 'twitter:description', content: 'Pue-Tsuâ\'s art gallery.' },
+        { hid: 'twitter:image', name: 'twitter:image', content: 'https://www.puetsua.me/logo.png' },
+        { hid: 'twitter:image:src', name: 'twitter:image:src', content: 'https://www.puetsua.me/logo.png' }
+      ]
     }
   },
   mounted () {

@@ -1,6 +1,6 @@
 
 export default {
-  mode: 'spa',
+  mode: 'universal',
   /*
   ** Headers of the page
   */
@@ -16,7 +16,8 @@ export default {
     ],
     script:
     [
-      { src: 'https://p.trellocdn.com/embed.min.js' }
+      { src: 'https://p.trellocdn.com/embed.min.js' },
+      { src: 'https://unpkg.com/vue-meta@1.6.0/lib/vue-meta.min.js' }
     ]
   },
   /*
@@ -33,6 +34,7 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    '~/plugins/vue-meta.js'
   ],
   /*
   ** Nuxt.js modules
@@ -57,5 +59,9 @@ export default {
     */
     extend (config, ctx) {
     }
+  },
+  server: {
+    port: 80, // default: 3000
+    host: '0.0.0.0' // default: localhost
   }
 }

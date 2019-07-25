@@ -1,7 +1,7 @@
 {
-  "name": "personal_nuxt",
+  "name": "puetsua-site",
   "version": "1.0.0",
-  "description": "My grand Nuxt.js project",
+  "description": "Puetsua's website.",
   "author": "Pue-Tsuâ",
   "private": true,
   "scripts": {
@@ -16,7 +16,8 @@
   "dependencies": {
     "@nuxtjs/axios": "^5.3.6",
     "jsonp": "^0.2.1",
-    "nuxt": "^2.0.0"
+    "nuxt": "^2.0.0",
+    "vue-meta": "^1.6.0"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^0.0.1",

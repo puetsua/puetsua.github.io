@@ -1,7 +1,7 @@
 <template>
   <div id="App">
     <div id="mainpage">
-      <Header/>
+      <Header />
       <div style="height:10px" />
       <div id="mainDisplay">
         <nuxt-child />
@@ -22,10 +22,16 @@ export default {
     Header,
     Footer
   },
-  head () {
-    return {
-      title: 'Pue-Tsuâ'
-    }
+  head: {
+    title: 'Pue-Tsuâ',
+    meta: [
+      { hid: 'twitter:card', name: 'twitter:card', content: 'summary' },
+      { hid: 'twitter:site', name: 'twitter:site', content: '@puetsua' },
+      { hid: 'twitter:title', name: 'twitter:title', content: 'Pue-Tsuâ' },
+      { hid: 'twitter:description', name: 'twitter:description', content: 'Pue-Tsuâ is a game developer, artist, programmer from Taiwan, R.O.C!' },
+      { hid: 'twitter:image', name: 'twitter:image', content: 'https://www.puetsua.me/logo.png' },
+      { hid: 'twitter:image:src', name: 'twitter:image:src', content: 'https://www.puetsua.me/logo.png' }
+    ]
   }
 }
 </script>
