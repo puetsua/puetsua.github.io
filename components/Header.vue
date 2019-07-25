@@ -1,6 +1,7 @@
 <template>
+  <no-ssr>
   <div id="header">
-    <table id="head">
+    <table id="tophead">
       <tr>
         <td style="width:50px;">
           <nuxt-link to="/"><img alt="Puetsua logo" src="~/assets/logo_light.png" height="50px"></nuxt-link>
@@ -24,6 +25,7 @@
       </tr>
     </table>
   </div>
+  </no-ssr>
 </template>
 
 <style scoped>
@@ -42,18 +44,18 @@
   color: #d8a9ff;
 }
 
-table#head {
+table#tophead {
   padding: 0px 10px;
   background-color: #4e2470;
   color: #ffffff;
   width: 100%;
 }
 
-table#head img {
+table#tophead img {
   display: block;
 }
 
-table#head tr {
+table#tophead tr {
   text-align: left;
 }
 </style>

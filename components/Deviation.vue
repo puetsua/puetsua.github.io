@@ -16,8 +16,6 @@
 </template>
 
 <script>
-import jsonp from 'jsonp'
-
 export default {
   name: 'Deviation',
   props: {
@@ -70,12 +68,10 @@ export default {
     this.uri = 'https://www.deviantart.com/puetsua/art/da-' + this.id
     const url = 'https://backend.deviantart.com/oembed?format=jsonp&url=' + encodeURI(this.uri)
 
-    jsonp(url, null, (err, data) => {
-      if (err) {
-        console.error(err.message)
-      } else {
-        this.daData = data
-      }
+    this.$jsonp(url, {}).then(json => {
+      this.daData = json
+    }).catch(err => {
+      console.error(err.message)
     })
   },
   methods: {}

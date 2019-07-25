@@ -34,6 +34,7 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    '~/plugins/jsonp.js',
     '~/plugins/vue-meta.js'
   ],
   /*

@@ -1,23 +1,25 @@
 <template>
-  <div class="comItem" @mouseover="hover = true" @mouseleave="hover = false">
-    <table cellpadding="0" cellspacing="0">
-      <tr>
-        <th class="name">
-          {{ name }}
-        </th>
-      </tr>
-      <tr>
-        <td class="desc">
-          {{ description }}
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <Deviation v-for="artId in examples" :id="artId" :key="artId" />
-        </td>
-      </tr>
-    </table>
-  </div>
+  <no-ssr>
+    <div class="comItem" @mouseover="hover = true" @mouseleave="hover = false">
+      <table cellpadding="0" cellspacing="0">
+        <tr>
+          <th class="name">
+            {{ name }}
+          </th>
+        </tr>
+        <tr>
+          <td class="desc">
+            {{ description }}
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <Deviation v-for="artId in examples" :id="artId" :key="artId" />
+          </td>
+        </tr>
+      </table>
+    </div>
+  </no-ssr>
 </template>
 
 <script>

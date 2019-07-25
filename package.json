@@ -17,6 +17,7 @@
     "@nuxtjs/axios": "^5.3.6",
     "jsonp": "^0.2.1",
     "nuxt": "^2.0.0",
+    "vue-jsonp": "^0.1.8",
     "vue-meta": "^1.6.0"
   },
   "devDependencies": {
