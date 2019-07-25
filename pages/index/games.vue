@@ -12,21 +12,23 @@ export default {
   name: 'games',
   data () {
     return {
-      title: 'Games | Pue-Tsuâ'
+      title: 'Games | Pue-Tsuâ',
+      description: 'Games made by Pue-Tsuâ.'
     }
   },
   head () {
-    return {
-      titleTemplate: this.title,
+    var currentUrl = process.env.baseUrl + this.$route.fullPath
+    var head = {
+      title: this.title,
       meta: [
-        { hid: 'twitter:card', name: 'twitter:card', content: 'summary' },
-        { hid: 'twitter:site', name: 'twitter:site', content: '@puetsua' },
-        { hid: 'twitter:title', name: 'twitter:title', content: this.title },
-        { hid: 'twitter:description', name: 'twitter:description', content: 'Games made by Pue-Tsuâ.' },
-        { hid: 'twitter:image', name: 'twitter:image', content: 'https://www.puetsua.me/logo.png' },
-        { hid: 'twitter:image:src', name: 'twitter:image:src', content: 'https://www.puetsua.me/logo.png' }
+        { hid: 'og:title', name: 'og:title', content: this.title },
+        { hid: 'og:description', name: 'og:description', content: this.description },
+        { hid: 'description', name: 'description', content: this.description },
+        { hid: 'og:url', name: 'og:url', content: currentUrl }
       ]
     }
+    head.meta = head.meta.concat(process.env.socialMeta)
+    return head
   }
 }
 </script>

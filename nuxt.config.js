@@ -61,8 +61,16 @@ export default {
     extend (config, ctx) {
     }
   },
-  server: {
-    port: 80, // default: 3000
-    host: '0.0.0.0' // default: localhost
+  env: {
+    baseUrl: 'https://www.puetsua.me',
+    socialMeta: [
+      { hid: 'og:image', name: 'og:image', content: 'https://www.puetsua.me/logo.png' },
+      { hid: 'og:type', name: 'og:type', content: 'website' },
+      { hid: 'og:site_name', name: 'og:site_name', content: 'Pue-Tsuâ' },
+      { hid: 'twitter:card', name: 'twitter:card', content: 'summary' },
+      { hid: 'twitter:site', name: 'twitter:site', content: '@puetsua' },
+      { hid: 'twitter:image', name: 'twitter:image', content: 'https://www.puetsua.me/logo.png' },
+      { hid: 'twitter:image:src', name: 'twitter:image:src', content: 'https://www.puetsua.me/logo.png' }
+    ]
   }
 }
