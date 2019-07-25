@@ -17,6 +17,26 @@ export default {
   name: 'Home',
   components: {
     Portal
+  },
+  data () {
+    return {
+      title: 'Pue-Tsuâ',
+      description: 'Pue-Tsuâ is a game developer, artist, programmer from Taiwan, R.O.C!'
+    }
+  },
+  head () {
+    var currentUrl = process.env.baseUrl + this.$route.fullPath
+    var head = {
+      title: this.title,
+      meta: [
+        { hid: 'og:title', name: 'og:title', content: this.title },
+        { hid: 'og:description', name: 'og:description', content: this.description },
+        { hid: 'description', name: 'description', content: this.description },
+        { hid: 'og:url', name: 'og:url', content: currentUrl }
+      ]
+    }
+    head.meta = head.meta.concat(process.env.socialMeta)
+    return head
   }
 }
 </script>
