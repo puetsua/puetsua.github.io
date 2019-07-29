@@ -10,7 +10,7 @@
         <li>Cat</li>
         <li>Eeveelutions (Pokemon)</li>
       </ul>
-      <p>All price are in full-body drawings. Half-body drawing and potraits can be lower.</p>
+      <p>All price are in full-body drawings. Half-body drawings and portraits can be lower.</p>
       <CommissionItem v-for="item in feralItems" :key="item.name" v-bind="item" />
     </div>
     <div class="comType">
@@ -21,7 +21,7 @@
         <li>Furry</li>
         <li>Equestria Girl</li>
       </ul>
-      <p>All price are in full-body drawings. Half-body drawing and potraits can be lower.</p>
+      <p>All price are in full-body drawings. Half-body drawings and portraits can be lower.</p>
       <CommissionItem v-for="item in anthroItems" :key="item.name" v-bind="item" />
     </div>
   </div>
