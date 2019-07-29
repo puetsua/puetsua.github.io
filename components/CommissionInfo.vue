@@ -42,14 +42,6 @@
 
     <p>If you don't want your commissioned artwork to be public please let me know in the note. Your name will be hidden and replaced with (Anon XXXXXX) in my to-do list. XXXXXX is 6-alphanumeric code I will give you once I received the payment.</p>
 
-    <p>List of creatures I recommend:</p>
-    <ul>
-      <li>Pony</li>
-      <li>Pony in anthro form</li>
-      <li>Eeveelutions (Pokemon)</li>
-    </ul>
-    <p>I cannot guarantee the quality of drawing other creatures, and price may be very different from the list. If you needed other creatures to be drawn, details can be discussed.</p>
-
     <p>
       <b>For Point Commissions, <a href="https://www.deviantart.com/puetsua/shop/commissions">my DeviantArt commission widget</a></b> Without any specific points on the list, the convert rate at
       <img

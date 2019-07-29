@@ -4,22 +4,24 @@
     <hr>
     <div class="comType">
       <h2>Feral</h2>
-      <p>Applies to</p>
+      <p>Recommended, but not limited to:</p>
       <ul>
-        <li>Pony</li>
+        <li>Pony, changelings</li>
         <li>Cat</li>
         <li>Eeveelutions (Pokemon)</li>
       </ul>
+      <p>All price are in full-body drawings. Half-body drawing and potraits can be lower.</p>
       <CommissionItem v-for="item in feralItems" :key="item.name" v-bind="item" />
     </div>
     <div class="comType">
       <h2>Anthro</h2>
-      <p>Applies to</p>
+      <p>Recommended, but not limited to:</p>
       <ul>
-        <li>Pony Anthro</li>
+        <li>Pony Anthro, dragons</li>
         <li>Furry</li>
         <li>Equestria Girl</li>
       </ul>
+      <p>All price are in full-body drawings. Half-body drawing and potraits can be lower.</p>
       <CommissionItem v-for="item in anthroItems" :key="item.name" v-bind="item" />
     </div>
   </div>
