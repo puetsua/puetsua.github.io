@@ -3,7 +3,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
-  font-family: "Microsoft JhengHei", "LiHei Pro", Arial, sans-serif;
+  font-family: Helvetica, "Microsoft JhengHei", "LiHei Pro", Verdana, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #3d1b5a;

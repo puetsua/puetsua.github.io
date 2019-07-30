@@ -1,6 +1,6 @@
 <template>
   <div class="YCHInfo">
-    <h3 id="update">Last Updated: July 25th, 2019</h3>
+    <h3 id="update">Last Updated: July 30th, 2019</h3>
 
     <p>
       Thank you for your interest. To commission me, you should follow everything that mentioned below.
@@ -12,6 +12,7 @@
     </p>
     <ul>
       <li>Character name: (Name of your OC or furry.)</li>
+      <li>Item: (Colored sketch, cel-shading or detailed shading etc...)</li>
       <li>Reference/Images: (A reference sheet or several images of your character.)</li>
       <li>Description: (Description of your character such as pose, expression.)</li>
     </ul>
@@ -23,7 +24,7 @@
 
     <p>
       You need to pay via
-      <b>Paypal or DeviantArt points</b>. The price listed below is based on a solo, full-body picture of a character. It's for reference only.
+      <b>Paypal or DeviantArt points</b>. I only start drawing your commission when I received the payment.
     </p>
 
     <p>
