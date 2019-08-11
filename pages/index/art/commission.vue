@@ -1,7 +1,7 @@
 <template>
   <div id="commish">
-    <CommissionInfo/>
-    <hr>
+    <CommissionInfo />
+    <hr />
     <div class="comType">
       <h2>Feral</h2>
       <p>Recommended, but not limited to:</p>
@@ -10,7 +10,7 @@
         <li>Cat</li>
         <li>Eeveelutions (Pokemon)</li>
       </ul>
-      <p>All price are in full-body drawings. Half-body drawings and portraits can be lower.</p>
+      <p>All prices are in full-body drawings. Half-body drawings and portraits can be lower.</p>
       <CommissionItem v-for="item in feralItems" :key="item.name" v-bind="item" />
     </div>
     <div class="comType">
@@ -21,7 +21,7 @@
         <li>Furry</li>
         <li>Equestria Girl</li>
       </ul>
-      <p>All price are in full-body drawings. Half-body drawings and portraits can be lower.</p>
+      <p>All prices are in full-body drawings. Half-body drawings and portraits can be lower.</p>
       <CommissionItem v-for="item in anthroItems" :key="item.name" v-bind="item" />
     </div>
   </div>
@@ -40,12 +40,12 @@ export default {
   data () {
     return {
       title: 'Commissions | Pue-Tsuâ',
-      description: 'Pue-Tsuâ\'s commission box and information.',
+      description: "Pue-Tsuâ's commission box and information.",
       feralItems: [
         {
           name: 'Colored Sketch $15-30',
           description: 'Max characters 4, Size: higher than 1000x1000',
-          examples: ['793342828', '796764913'],
+          examples: ['807305572', '793342828', '796764913'],
           isAvailable: true
         },
         {
@@ -65,19 +65,19 @@ export default {
         {
           name: 'Colored Sketch $25-50',
           description: 'Max characters 2, Size: higher than 1000x1000',
-          examples: ['689411941'],
+          examples: ['807548619'],
           isAvailable: true
         },
         {
           name: 'Cel Shading $35-60',
           description: 'Max characters 2, Size: higher than 1000x1000',
-          examples: ['790760123'],
+          examples: ['799141636', '799141625'],
           isAvailable: true
         },
         {
           name: 'Detailed Shading $60-90',
           description: 'Max characters 1, Size: higher than 1000x1000',
-          examples: ['789837305', '792102357'],
+          examples: ['798004297', '804577339'],
           isAvailable: true
         }
       ]
@@ -89,7 +89,11 @@ export default {
       title: this.title,
       meta: [
         { hid: 'og:title', name: 'og:title', content: this.title },
-        { hid: 'og:description', name: 'og:description', content: this.description },
+        {
+          hid: 'og:description',
+          name: 'og:description',
+          content: this.description
+        },
         { hid: 'description', name: 'description', content: this.description },
         { hid: 'og:url', name: 'og:url', content: currentUrl }
       ]
