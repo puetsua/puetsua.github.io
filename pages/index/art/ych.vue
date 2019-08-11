@@ -13,7 +13,7 @@
       <div v-if="auctions.length > 0">
         <CommissionItem v-for="item in auctions" :key="item.name" v-bind="item" />
       </div>
-      <div v-else>-- No available items --</div>
+      <p>You can find all YCH auctions on <a href="https://ych.commishes.com/user/Puetsua">my YCH.commishes.</a></p>
     </div>
   </div>
 </template>
