@@ -8,9 +8,9 @@
     <p>I speak Mandarin and English, I'm learning Japanese as my fourth language. I also speak Taiwanese Hokkien, which is my first language in my hometown Taiwan.</p>
     <p>For pronouns, you can call me Hank with he/his pronouns or Kate with she/her pronouns. Or just use they/their.</p>
     <h2>Contact me</h2>
-    <a href="https://twitter.com/puetsua"><img src="@/assets/socialmedia_twitter.png"></a>
-    <a href="https://www.deviantart.com/puetsua"><img src="@/assets/socialmedia_da.png"></a>
-    <a href="https://www.facebook.com/puetsua"><img src="@/assets/socialmedia_fb.png"></a>
+    <a href="https://twitter.com/puetsua" target="_blank"><img src="@/assets/socialmedia_twitter.png"></a>
+    <a href="https://www.deviantart.com/puetsua" target="_blank"><img src="@/assets/socialmedia_da.png"></a>
+    <a href="https://www.facebook.com/puetsua" target="_blank"><img src="@/assets/socialmedia_fb.png"></a>
     <a href="mailto:puetsua@gmail.com"><img src="@/assets/socialmedia_email.png"></a>
   </div>
 </template>

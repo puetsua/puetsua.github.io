@@ -6,7 +6,7 @@
     @mouseover="hover = true"
     @mouseleave="hover = false"
   >
-    <a :href="uri">
+    <a :href="uri" target="_blank">
       <img :src="daData.thumbnail_url_200h" />
     </a>
     <transition name="itemfade">

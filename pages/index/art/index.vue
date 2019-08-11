@@ -1,7 +1,7 @@
 <template>
   <div id="art">
     <blockquote class="trello-card-compact">
-      <a href="https://trello.com/c/7qdlWk9U">Trello Card</a>
+      <a href="https://trello.com/c/7qdlWk9U" target="_blank">Trello Card</a>
     </blockquote>
   </div>
 </template>

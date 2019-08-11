@@ -39,7 +39,7 @@
     <p>If you don't want your commissioned artwork to be public please let me know in the note. Your name will be hidden and replaced with (Anon XXXXXX) in my to-do list. XXXXXX is 6-alphanumeric code I will give you once I received the payment.</p>
 
     <p>
-      <b>For Point Commissions, please check <a href="https://www.deviantart.com/puetsua/shop/commissions">my DeviantArt commission widget</a> on my page.</b> Without any specific points on the list, the convert rate at
+      <b>For Point Commissions, please check <a href="https://www.deviantart.com/puetsua/shop/commissions" target="_blank">my DeviantArt commission widget</a> on my page.</b> Without any specific points on the list, the convert rate at
       <img
         alt="DA points"
         src="https://e.deviantart.net/emoticons/p/points.gif"
