@@ -43,8 +43,7 @@ export default {
       this.isExpanded = !this.isExpanded
     },
     selectOption (option) {
-      this.$i18n.locale = option
-      console.log(option)
+      this.$i18n.setLocale(option)
     },
     currentLang () {
       return this.$i18n.locale
