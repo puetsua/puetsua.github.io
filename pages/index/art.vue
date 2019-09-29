@@ -3,6 +3,7 @@
     <div id="artnav">
     <Portal asset="commish.png" desc="Commission" to="/art/commission"/>
     <Portal asset="ych.png" desc="YCH" to="/art/ych"/>
+    <Portal asset="tos.png" desc="Terms of Service" to="/art/tos"/>
     </div>
     <nuxt-child />
   </div>

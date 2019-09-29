@@ -1,15 +1,6 @@
 <template>
   <div class="YCHInfo">
-    <h3 id="update">Last Updated: July 30th, 2019</h3>
-
-    <p>
-      Thank you for your interest. To commission me, you should follow everything that mentioned below.
-      <b>If you don't want to read all stuffs, I have mark text bold for you.</b>
-    </p>
-
-    <p>
-      <b>Fill this form and send to me when you commission:</b>
-    </p>
+    <b><h3>Fill this form and send to me when you commission:</h3></b>
     <ul>
       <li>Character name: (Name of your OC or furry.)</li>
       <li>Item: (Colored sketch, cel-shading or detailed shading etc...)</li>
@@ -18,32 +9,13 @@
     </ul>
 
     <p>
-      To commission,
-      <b>the reference to your characters must be included in your message. Any images of your character are fine.</b> You cannot just say "I want my OC drawn" because I cannot read your mind. Other details like poses and expression are also recommended to be included.
+      Thank you for your interest. To commission me, <nuxt-link to="/art/tos">you should follow everything in my Terms of Service.</nuxt-link>
+      If you don't want to read all stuffs, just ask away. Once you paid the commission, you also agree to <nuxt-link to="/art/tos">my ToS</nuxt-link>.
     </p>
 
     <p>
-      You need to pay via
-      <b>Paypal or DeviantArt points</b>. I only start drawing your commission when I received the payment.
-    </p>
-
-    <p>
-      <b>Contact me via DeviantArt Note, Twitter DM or Facebook Message</b> about your commission. Once I accepted your commission we can talk about details from other social media if you think it's more convenient.
-    </p>
-
-    <p>
-      The art can
-      <b>take two weeks to one month</b> to finish since I have a project to do. If you want it to be done in a certain time, we can discuss.
-    </p>
-
-    <p>If you don't want your commissioned artwork to be public please let me know in the note. Your name will be hidden and replaced with (Anon XXXXXX) in my to-do list. XXXXXX is 6-alphanumeric code I will give you once I received the payment.</p>
-
-    <p>
-      <b>For Point Commissions, please check <a href="https://www.deviantart.com/puetsua/shop/commissions" target="_blank">my DeviantArt commission widget</a> on my page.</b> Without any specific points on the list, the convert rate at
-      <img
-        alt="DA points"
-        src="https://e.deviantart.net/emoticons/p/points.gif"
-      />100 = $1
+      I accept all safe and suggestive art commissions,
+      <b>No NSFW and fetish arts.</b>
     </p>
   </div>
 </template>
@@ -57,9 +29,5 @@ export default {
 <style scoped>
 .YCHInfo {
   text-align: left;
-}
-
-#update {
-  color: green;
 }
 </style>

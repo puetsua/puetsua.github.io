@@ -15,7 +15,7 @@
    width="200"
    height="200"
    inkscape:version="0.92.3 (2405546, 2018-03-11)"
-   inkscape:export-filename="D:\Projects\personal-vue-website\personal\src\assets\socialmedia_email.png"
+   inkscape:export-filename="./socialmedia_youtube.png"
    inkscape:export-xdpi="24"
    inkscape:export-ydpi="24">
   <metadata
@@ -43,13 +43,13 @@
      inkscape:window-height="1017"
      id="namedview13"
      showgrid="false"
-     inkscape:zoom="2.36"
-     inkscape:cx="70.254895"
-     inkscape:cy="112.01664"
-     inkscape:window-x="-8"
+     inkscape:zoom="1.18"
+     inkscape:cx="84.414698"
+     inkscape:cy="140.53767"
+     inkscape:window-x="1912"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer4"
+     inkscape:current-layer="layer5"
      inkscape:snap-global="true" />
   <defs
      id="defs4">
@@ -108,10 +108,32 @@
   <g
      inkscape:groupmode="layer"
      id="layer4"
-     inkscape:label="email">
+     inkscape:label="email"
+     style="display:none">
     <path
        style="opacity:1;vector-effect:none;fill:#5b2d84;fill-opacity:1;stroke:none;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;paint-order:normal"
-       d="M 17.525391 30 L 100 103.31055 L 182.47461 30 L 17.525391 30 z M 10 36.689453 L 10 163.1582 L 79.404297 98.382812 L 10 36.689453 z M 190 36.689453 L 120.5957 98.382812 L 190 163.1582 L 190 36.689453 z M 86.912109 105.05664 L 17.330078 170 L 182.66992 170 L 113.08789 105.05664 L 100 116.68945 L 86.912109 105.05664 z "
-       id="rect822" />
+       d="M 17.525391,30 100,103.31055 182.47461,30 Z M 10,36.689453 V 163.1582 L 79.404297,98.382812 Z m 180,0 L 120.5957,98.382812 190,163.1582 Z M 86.912109,105.05664 17.330078,170 H 182.66992 L 113.08789,105.05664 100,116.68945 Z"
+       id="rect822"
+       inkscape:connector-curvature="0" />
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer5"
+     inkscape:label="youtube">
+    <g
+       transform="matrix(9.4721382,0,0,9.4721382,-13.665658,-13.665658)"
+       style="clip-rule:evenodd;fill-rule:evenodd;stroke-width:0.10557278;stroke-linejoin:round;stroke-miterlimit:1.41420996"
+       id="g7">
+      <path
+         inkscape:connector-curvature="0"
+         d="M 2.093,9.075 C 2.218,7.134 3.722,5.566 5.655,5.359 7.66,5.157 9.791,5.048 12,5.048 c 2.209,0 4.34,0.109 6.345,0.312 1.933,0.206 3.437,1.774 3.562,3.715 C 21.968,10.031 22,11.008 22,12 c 0,0.992 -0.032,1.969 -0.093,2.925 -0.125,1.941 -1.629,3.509 -3.562,3.716 C 16.34,18.843 14.209,18.952 12,18.952 9.791,18.952 7.66,18.843 5.655,18.64 3.722,18.434 2.218,16.866 2.093,14.925 2.032,13.969 2,12.992 2,12 2,11.008 2.032,10.031 2.093,9.075 Z"
+         style="fill:#ff0000;stroke-width:0.10557278"
+         id="path3" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 15.055,12 -4.909,2.995 v -5.99 z"
+         style="fill:#ffffff;stroke-width:0.10557278"
+         id="path5" />
+    </g>
   </g>
 </svg>
