@@ -1,32 +1,79 @@
+<i18n>
+en:
+  home: Home
+  art: Art
+  games: Games
+  about: About
+zh:
+  home: 首頁
+  art: 繪畫
+  games: 遊戲
+  about: 關於
+</i18n>
+
 <template>
   <no-ssr>
-  <div id="header">
-    <table id="tophead">
-      <tr>
-        <td style="width:50px;">
-          <nuxt-link to="/"><img alt="Puetsua logo" src="~/assets/logo_light.png" height="50px"></nuxt-link>
-        </td>
-        <td style="text-align: right;">
-          <div id="nav">
+    <div id="header">
+      <table id="tophead">
+        <tr>
+          <td style="width:50px;">
             <nuxt-link to="/">
-              Home
+              <img alt="Puetsua logo" src="~/assets/logo_light.png" height="50px" />
             </nuxt-link>
-            <nuxt-link to="/art">
-              Art
-            </nuxt-link>
-            <nuxt-link to="/games">
-              Games
-            </nuxt-link>
-            <nuxt-link to="/about">
-              About
-            </nuxt-link>
-          </div>
-        </td>
-      </tr>
-    </table>
-  </div>
+          </td>
+          <td style="text-align: right;">
+            <div id="nav">
+              <nuxt-link to="/">{{ $t('home') }}</nuxt-link>
+              <nuxt-link to="/art">{{ $t('art') }}</nuxt-link>
+              <nuxt-link to="/games">{{ $t('games') }}</nuxt-link>
+              <nuxt-link to="/about">{{ $t('about') }}</nuxt-link>
+              <Dropdown/>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
   </no-ssr>
 </template>
+
+<script>
+import Dropdown from '@/components/LangDropdown.vue'
+
+export default {
+  name: 'Header',
+  components: {
+    Dropdown
+  },
+  data () {
+    return {
+      config: {
+        options: [
+          {
+            value: 'option 1'
+          },
+          {
+            value: 'option 2'
+          },
+          {
+            value: 'option 3'
+          }
+        ],
+        placeholder: 'Placeholder',
+        backgroundColor: '#cde4f5',
+        textColor: 'black',
+        borderRadius: '1.5em',
+        border: '1px solid gray',
+        width: 180
+      }
+    }
+  },
+  methods: {
+    setNewSelectedOption (selectedOption) {
+      this.config.placeholder = selectedOption.value
+    }
+  }
+}
+</script>
 
 <style scoped>
 #nav a {
@@ -42,6 +89,10 @@
 
 #nav a.nuxt-link-exact-active {
   color: #d8a9ff;
+}
+
+#nav .dropdown {
+  margin-left: 20px;
 }
 
 table#tophead {

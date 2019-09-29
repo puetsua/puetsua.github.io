@@ -43,14 +43,9 @@ export default {
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
-    '@nuxtjs/eslint-module'
+    '@nuxtjs/eslint-module',
+    'nuxt-i18n'
   ],
-  /*
-  ** Axios module configuration
-  ** See https://axios.nuxtjs.org/options
-  */
-  axios: {
-  },
   /*
   ** Build configuration
   */
@@ -59,6 +54,11 @@ export default {
     ** You can extend webpack config here
     */
     extend (config, ctx) {
+      config.module.rules.push({
+        resourceQuery: /blockType=i18n/,
+        type: 'javascript/auto',
+        loader: ['@kazupon/vue-i18n-loader', 'yaml-loader']
+      })
     }
   },
   env: {
@@ -74,5 +74,16 @@ export default {
       { hid: 'theme-color', name: 'theme-color', content: '#a855ec' },
       { hid: 'author', name: 'author', content: 'Pue-Tsuâ' }
     ]
+  },
+  i18n: {
+    locales: ['en', 'zh'],
+    defaultLocale: 'en',
+    strategy: 'no_prefix',
+    detectBrowserLanguage: {
+      useCookie: true
+    },
+    vueI18n: {
+      fallbackLocale: 'en'
+    }
   }
 }
