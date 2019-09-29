@@ -1,3 +1,12 @@
+<i18n>
+en:
+  title: Art | Pue-Tsuâ
+  description: Pue-Tsuâ's art gallery and status.
+zh:
+  title: 繪圖 | 飛蛇
+  description: 飛蛇的畫廊跟委託情形
+</i18n>
+
 <template>
   <div id="art">
     <blockquote class="trello-card-compact">
@@ -11,8 +20,8 @@ export default {
   name: 'art',
   data () {
     return {
-      title: 'Art | Pue-Tsuâ',
-      description: 'Pue-Tsuâ\'s art gallery and status.'
+      title: this.$t('title'),
+      description: this.$t('description')
     }
   },
   head () {

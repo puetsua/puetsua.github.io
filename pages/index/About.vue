@@ -1,13 +1,45 @@
+<i18n>
+en:
+  title: About | Pue-Tsuâ
+  description: Everything about Pue-Tsuâ and how to contact.
+  aboutme: About me
+  contactme: Contact me
+  descMyRealName: Pik-Han Liau
+  descMyName: |
+    Puetsua, pronounced as "pu-eh zu-ah". Also known as Hankofficer, Hank.
+  descDegree: |
+    I have a Master of computer science of information engineering at National Taiwan Ocean University.
+    I'm also a self-taught artist and taking commissions as a part time job.
+    Currently I'm a game developer and dedicated in making video games.
+  descKnowLang: |
+    I speak Mandarin and English. I'm learning Japanese as my fourth language.
+    I also speak Taiwanese Hokkien, which is my first language in my hometown Taiwan.
+zh:
+  title: 關於 | 飛蛇
+  description: 所有關於飛蛇的事，包含聯絡方式。
+  aboutme: 關於我
+  contactme: 聯絡方式
+  descMyRealName: 廖柏翰, Pik-Han Liau
+  descMyName: |
+    飛蛇，英文名 Puetsua 是由閩南語 Pue-Tsuâ 發想出來的。也可以叫我 Hankofficer 或 Hank。
+  descDegree: |
+    臺灣國立海洋大學資訊工程學系碩士畢業。同時也是業餘繪師，有時候會接一些委託賺小錢。
+    目前是遊戲設計師，專注於遊戲開發。
+  descKnowLang: |
+    我會國語跟英文，目前正在學日文做為第四語言。
+    我也會講自己家鄉的母語，台語。
+</i18n>
+
 <template>
   <div id="about">
     <div style="height:50px" />
     <center><img src="@/assets/aboutme.png"></center>
-    <h2>About me</h2>
-    <p>廖柏翰, Pik-Han Liau</p>
-    <p>Puetsua, pronounced as "pu-eh zu-ah". Also known as Hankofficer, Hank.</p>
-    <p>I have a Master of computer science of information engineering at National Taiwan Ocean University. I'm also a self-taught artist and taking commissions as a part time job. Currently I'm a game developer and dedicated in making video games.</p>
-    <p>I speak Mandarin and English. I'm learning Japanese as my fourth language. I also speak Taiwanese Hokkien, which is my first language in my hometown Taiwan.</p>
-    <h2>Contact me</h2>
+    <h2>{{ $t('aboutme') }}</h2>
+    <p>{{ $t('descMyRealName') }}</p>
+    <p>{{ $t('descMyName') }}</p>
+    <p>{{ $t('descDegree') }}</p>
+    <p>{{ $t('descKnowLang') }}</p>
+    <h2>{{ $t('contactme') }}</h2>
     <a href="https://twitter.com/puetsua" target="_blank"><img src="@/assets/socialmedia_twitter.png"></a>
     <a href="https://www.deviantart.com/puetsua" target="_blank"><img src="@/assets/socialmedia_da.png"></a>
     <a href="https://www.facebook.com/puetsua" target="_blank"><img src="@/assets/socialmedia_fb.png"></a>
@@ -21,8 +53,8 @@ export default {
   name: 'About',
   data () {
     return {
-      title: 'About | Pue-Tsuâ',
-      description: 'Everything about Pue-Tsuâ and how to contact.'
+      title: this.$t('title'),
+      description: this.$t('description')
     }
   },
   head () {

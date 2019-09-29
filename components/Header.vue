@@ -6,7 +6,7 @@ en:
   about: About
 zh:
   home: 首頁
-  art: 繪畫
+  art: 繪圖
   games: 遊戲
   about: 關於
 </i18n>

@@ -1,19 +1,50 @@
+<i18n>
+en:
+  title: YCH | Pue-Tsuâ
+  description: YCH commission information.
+  fixed: Fixed
+  fixedDesc: Fixed pose, expression or species etc. Similar to YCH. Any major change may raise the price.
+  auctions: Auctions
+  auctionsDesc: Classic YCH auctions. People who has highest bid wins the picture.
+  ychWebDesc1: "You can find all YCH auctions on "
+  ychWebDesc2: my YCH.commishes
+  ychWebDesc3: .
+  itemDesc:
+    idcardavatar:
+      name: "ID card avatar $6"
+      desc: "Template for ponies, Size: 1000x1000. +$1 for a different expression. You can request transparent background for free."
+zh:
+  title: YCH | 飛蛇
+  description: YCH的委託資訊。
+  fixed: 固定樣板
+  fixedDesc: 固定的姿勢、表情跟物種。類似 YCH。任何大改有可能提高價格。
+  auctions: 拍賣
+  auctionsDesc: 經典的 YCH 拍賣。競標價最高的可以標到該 YCH 圖。
+  ychWebDesc1: 你可以在
+  ychWebDesc2: "我的 YCH.commishes "
+  ychWebDesc3: 找到我所有的拍賣圖。
+  itemDesc:
+    idcardavatar:
+      name: "身分證頭像 NTD$180"
+      desc: "小馬專用的模板，大小：1000x1000 像素。改表情+NTD$30。你可以免費要求透明背景的版本。"
+</i18n>
+
 <template>
   <div id="ych">
     <YCHInfo/>
     <hr>
     <div class="ychType">
-      <h2>Fixed</h2>
-      <p>Fixed pose, expression or species etc. Similar to YCH. Any major change may raise the price.</p>
+      <h2>{{ $t('fixed') }}</h2>
+      <p>{{ $t('fixedDesc') }}</p>
       <CommissionItem v-for="item in items" :key="item.name" v-bind="item" />
     </div>
     <div class="ychType">
-      <h2>Auctions</h2>
-      <p>Classic YCH auctions. People who has highest bid wins the picture.</p>
+      <h2>{{ $t('auctions') }}</h2>
+      <p>{{ $t('auctionsDesc') }}</p>
       <div v-if="auctions.length > 0">
         <CommissionItem v-for="item in auctions" :key="item.name" v-bind="item" />
       </div>
-      <p>You can find all YCH auctions on <a href="https://ych.commishes.com/user/Puetsua" target="_blank">my YCH.commishes.</a></p>
+      <p>{{ $t('ychWebDesc1') }}<a href="https://ych.commishes.com/user/Puetsua" target="_blank">{{ $t('ychWebDesc2') }}</a>{{ $t('ychWebDesc3') }}</p>
     </div>
   </div>
 </template>
@@ -30,17 +61,23 @@ export default {
   },
   data () {
     return {
-      title: 'YCH | Pue-Tsuâ',
-      description: 'YCH commission information.',
-      items: [
+      title: this.$t('title'),
+      description: this.$t('description')
+    }
+  },
+  computed: {
+    items () {
+      return [
         {
-          name: 'ID card avatar $6',
-          description: 'Template for ponies, Size: 1000x1000. +$1 for a different expression. You can request transparent background for free.',
+          name: this.$t('itemDesc')['idcardavatar']['name'],
+          description: this.$t('itemDesc')['idcardavatar']['desc'],
           examples: ['781953981', '782100162', '782102439', '782104207'],
           isAvailable: true
         }
-      ],
-      auctions: []
+      ]
+    },
+    auctions () {
+      return []
     }
   },
   head () {

@@ -1,9 +1,20 @@
+<i18n>
+en:
+  commish: Commission
+  ych: YCH
+  tos: Terms of Service
+zh:
+  commish: 委託
+  ych: YCH
+  tos: 服務條款
+</i18n>
+
 <template>
   <div id="art">
     <div id="artnav">
-    <Portal asset="commish.png" desc="Commission" to="/art/commission"/>
-    <Portal asset="ych.png" desc="YCH" to="/art/ych"/>
-    <Portal asset="tos.png" desc="Terms of Service" to="/art/tos"/>
+    <Portal asset="commish.png" :desc="$t('commish')" to="/art/commission"/>
+    <Portal asset="ych.png" :desc="$t('ych')" to="/art/ych"/>
+    <Portal asset="tos.png" :desc="$t('tos')" to="/art/tos"/>
     </div>
     <nuxt-child />
   </div>

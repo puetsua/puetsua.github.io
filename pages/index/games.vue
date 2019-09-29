@@ -1,8 +1,21 @@
+<i18n>
+en:
+  title: Games | Pue-Tsuâ
+  description: Games made by Pue-Tsuâ.
+  games: Games
+  underConstruction: Under construction... ᕕ( ᐛ )ᕗ
+zh:
+  title: 自製遊戲 | 飛蛇
+  description: 所有飛蛇做的遊戲。
+  games: 自製遊戲
+  underConstruction: 施工中... ᕕ( ᐛ )ᕗ
+</i18n>
+
 <template>
   <div id="games">
     <div>
-      <h2>Games</h2>
-      <h2>Under construction... ᕕ( ᐛ )ᕗ</h2>
+      <h2>{{ $t('games') }}</h2>
+      <h2>{{ $t('underConstruction') }}</h2>
     </div>
   </div>
 </template>
@@ -12,8 +25,8 @@ export default {
   name: 'games',
   data () {
     return {
-      title: 'Games | Pue-Tsuâ',
-      description: 'Games made by Pue-Tsuâ.'
+      title: this.$t('title'),
+      description: this.$t('description')
     }
   },
   head () {

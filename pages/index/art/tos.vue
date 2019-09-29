@@ -1,7 +1,20 @@
+<i18n>
+en:
+  title: Terms of Service | Pue-Tsuâ
+  description: Puetsua Art Terms of Service.
+  tosTitle: Terms of Service (Puetsua Art)
+  tosUpdate: "Last Updated: September 29th, 2019"
+zh:
+  title: 服務條款 | 飛蛇
+  description: 繪圖委託的服務條款
+  tosTitle: 服務條款 (飛蛇的繪圖委託) (待翻譯...)
+  tosUpdate: "上次更新：民國108年(2019) 9月29日"
+</i18n>
+
 <template>
   <div id="tos">
-    <h2>Terms of Service (Puetsua Art)</h2>
-    <h3 id="update">Last Updated: September 29th, 2019</h3>
+    <h2>{{ $t('tosTitle') }}</h2>
+    <h3 id="update">{{ $t('tosUpdate') }}</h3>
     <p>
       To commission me, you should follow everything that mentioned below.
       <b>If you don't want to read all stuffs, I have mark text bold for you.</b>
@@ -54,8 +67,8 @@ export default {
   name: 'ych',
   data () {
     return {
-      title: 'Terms of Service | Pue-Tsuâ',
-      description: 'Puetsua Art Terms of Service.'
+      title: this.$t('title'),
+      description: this.$t('description')
     }
   },
   head () {

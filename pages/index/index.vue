@@ -1,11 +1,26 @@
+<i18n>
+en:
+  title: Pue-Tsuâ
+  description: "Pue-Tsuâ is a game developer, artist, programmer from Taiwan, R.O.C!"
+  art: Art & Commission
+  games: Games
+  about: About Pue-Tsuâ
+zh:
+  title: 飛蛇
+  description: "飛蛇，一位喜歡遊戲開發、繪圖、寫程式的普通人。來至自由地區的台灣。"
+  art: 繪圖與委託
+  games: 自製遊戲
+  about: 關於飛蛇
+</i18n>
+
 <template>
   <div id="home">
     <img alt="Puetsua logo" src="@/assets/logo.png">
     <div id="ptname">飛蛇 Pue-Tsuâ</div>
     <div>
-      <Portal asset="art.png" desc="Art & Commission" to="/art" />
-      <Portal asset="games.png" desc="Games" to="/games" />
-      <Portal asset="aboutme.png" desc="About Pue-Tsuâ" to="/about" />
+      <Portal asset="art.png" :desc="$t('art')" to="/art" />
+      <Portal asset="games.png" :desc="$t('games')" to="/games" />
+      <Portal asset="aboutme.png" :desc="$t('about')" to="/about" />
     </div>
   </div>
 </template>
@@ -20,8 +35,8 @@ export default {
   },
   data () {
     return {
-      title: 'Pue-Tsuâ',
-      description: 'Pue-Tsuâ is a game developer, artist, programmer from Taiwan, R.O.C!'
+      title: this.$t('title'),
+      description: this.$t('description')
     }
   },
   head () {
