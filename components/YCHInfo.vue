@@ -8,7 +8,7 @@ en:
     - "Description: (Description of your character such as pose, expression.)"
   readTos1: "Thank you for your interest. To commission me, "
   readTos2: "you should follow everything in my Terms of Service."
-  readTos3: "If you don't want to read all stuffs, just ask away. Once you paid the commission, you also agree to"
+  readTos3: "If you don't want to read all stuffs, just ask away. Once you paid the commission, you also agree to "
   readTos4: my ToS
   readTos5: .
   accept1: "I accept all safe and suggestive art commissions, "
