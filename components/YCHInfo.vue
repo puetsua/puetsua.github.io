@@ -6,6 +6,7 @@ en:
     - "Item: (Colored sketch, cel-shading or detailed shading etc...)"
     - "Reference/Images: (A reference sheet or several images of your character.)"
     - "Description: (Description of your character such as pose, expression.)"
+    - "Email: (To send you an Paypal invoice.)"
   readTos1: "Thank you for your interest. To commission me, "
   readTos2: "you should follow everything in my Terms of Service."
   readTos3: "If you don't want to read all stuffs, just ask away. Once you paid the commission, you also agree to "
