@@ -2,7 +2,7 @@
 en:
   title: Commissions | Pue-Tsuâ
   description: "Pue-Tsuâ's commission box and information."
-  fullbodyPrice: All prices are in full-body drawings. Half-body drawings and portraits can be lower.
+  fullbodyPrice: "All prices are assumed to be a single character full-body drawing. A half-body drawing and a portrait can be lower. Having more characters in the picture can double or triple the price."
   feral: Feral
   feralItem:
     - Pony, changelings
@@ -38,7 +38,7 @@ en:
 zh:
   title: 委託 | 飛蛇
   description: "飛蛇的委託資訊"
-  fullbodyPrice: 所有的價格都是以全身做計算。半身或頭像可以有更低的價格。
+  fullbodyPrice: "所有的價格都是以一個角色的全身做計算。半身或頭像可以有更低的價格。如果有更多角色的話可能會讓價格加倍。"
   feral: 野獸型
   feralItem:
     - 小馬、幻影蟲
