@@ -1,6 +1,6 @@
 <template>
   <footer>
-    © Puetsua, since 2019.
+    © Puetsua, 2019-2020.
   </footer>
 </template>
 
