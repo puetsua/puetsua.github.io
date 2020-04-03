@@ -44,6 +44,7 @@ export default {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     '@nuxtjs/eslint-module',
+    'markdown-it',
     'nuxt-i18n'
   ],
   buildModules: [
@@ -51,6 +52,17 @@ export default {
       id: 'UA-155906401-1'
     }]
   ],
+  // [optional] markdownit options
+  // See https://github.com/markdown-it/markdown-it
+  markdownit: {
+    preset: 'default',
+    linkify: true,
+    breaks: true,
+    use: [
+      'markdown-it-div',
+      'markdown-it-attrs'
+    ]
+  },
   /*
   ** Build configuration
   */

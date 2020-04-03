@@ -15,13 +15,19 @@ zh:
   <div class="GameItem">
     <table class="table1">
       <tr>
-        <th class="image">
+        <th class="image" v-if="pageLink">
+          <a :href="pageLink"><img :alt="name" :src="imageSrc" width="300px"/></a>
+        </th>
+        <th class="image" v-else>
           <img :alt="name" :src="imageSrc" width="300px"/>
         </th>
         <th height="100%">
           <table class="table2">
             <tr>
-              <th class="name">
+              <th class="name" v-if="pageLink">
+                <a :href="pageLink">{{ name }}</a>
+              </th>
+              <th class="name" v-else>
                 {{ name }}
               </th>
             </tr>
@@ -35,7 +41,7 @@ zh:
             </tr>
             <tr>
               <td>
-                <a :href="itchioLink" v-if="itchioLink"><img src="@/assets/itchio.svg" height="50px"></a>
+                <a :href="itchioLink" v-show="itchioLink"><img src="@/assets/itchio.svg" height="50px"></a>
               </td>
             </tr>
           </table>
@@ -53,7 +59,8 @@ export default {
     name: String,
     desc: String,
     statusCode: String,
-    itchioLink: String
+    itchioLink: String,
+    pageLink: String
   },
   computed: {
     imageSrc: function () {

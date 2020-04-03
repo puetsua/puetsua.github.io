@@ -11,7 +11,7 @@ export default {
   name: 'Notfound',
   data () {
     return {
-      title: 'Page not Found | Pue-Tsuâ',
+      title: 'Page not Found | Norah Galaksio',
       description: 'Page not Found, why are you sharing this? O_o'
     }
   },

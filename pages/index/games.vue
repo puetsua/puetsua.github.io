@@ -83,7 +83,8 @@ export default {
           asset: this.$t('gameNorahGalaksio')['imageSrc'],
           name: this.$t('gameNorahGalaksio')['name'],
           desc: this.$t('gameNorahGalaksio')['description'],
-          statusCode: 'InDevelopment'
+          statusCode: 'InDevelopment',
+          pageLink: '/games/norahgalaksio'
         },
         {
           asset: this.$t('gameTsuilam')['imageSrc'],

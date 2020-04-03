@@ -55,4 +55,28 @@ export default {
 .itemFade-leave-to {
   opacity: 0;
 }
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Helvetica, "Microsoft JhengHei", "LiHei Pro", Verdana, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #3d1b5a;
+}
+
+body {
+  background-color: #f0e8ed;
+}
+
+body a {
+  color: #a855ec;
+  text-decoration: none;
+}
+
+body a:hover {
+  color: #cb8bff;
+}
 </style>
