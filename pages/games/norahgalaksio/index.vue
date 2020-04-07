@@ -4,12 +4,22 @@ en:
   description: "A brick breaking adventure mobile game"
   introduction: >
     Your spaceship is equipped with balls and a multi-purpose rebounder to clear all obstacles.
-    Explore the planet and help local citizens defeat invading enemy.
+    Join Norah's team on their exploration the planet and help local citizens defeat invading enemy.
+  status: (In development)
+  socialmedia: Social Media
+  other: Other stuffs
+  privacyPolicy: Privacy Policy
   privacyPolicyLink: "/games/norahgalaksio/privacypolicy.html"
 zh:
   title: 探險專家：諾拉
   description: "一款打磚塊冒險的手機遊戲"
-  introduction: introduction
+  introduction: >
+    為了清除障礙，你的太空船已經裝備好了數顆打磚球與多功能回彈板。
+    加入諾拉的團隊，一起在星球上探索並幫助當地的居民抵禦外敵吧！
+  status: (開發中)
+  socialmedia: 社群媒體
+  other: 其他東西
+  privacyPolicy: 隱私權政策
   privacyPolicyLink: "/games/norahgalaksio/privacypolicy_tw.html"
 </i18n>
 
@@ -22,9 +32,9 @@ zh:
             <div id="introduction">
               <h1>{{ $t('title') }}</h1>
               <h3>{{ $t('description') }}</h3>
-              <br />
               <p>{{ $t('introduction') }}</p>
               <img src="@/assets/norahgalaksio/appicon.png" height="100px" id="appicon" />
+              <h3>{{ $t('status') }}</h3>
             </div>
           </td>
           <td>
@@ -39,8 +49,19 @@ zh:
       </table>
     </div>
     <div id="second">
-      <div id="info">
-        <a :href="ppLink">Privacy Policy</a>
+      <div class="infobox">
+        <img src="@/assets/norahgalaksio/pioniro_sticker.png" height="80px" class="sticker" />
+        <h2>{{ $t('socialmedia') }}</h2>
+        <center>
+          <a href="https://twitter.com/norahgalaksio" target="_blank">
+            <img src="@/assets/social_twitter_white.png" height="50px" />
+          </a>
+        </center>
+      </div>
+      <div class="infobox">
+        <img src="@/assets/norahgalaksio/pioniro_sticker.png" height="80px" class="sticker" />
+        <h2>{{ $t('other') }}</h2>
+        <a :href="ppLink">{{ $t('privacyPolicy') }}</a>
       </div>
     </div>
   </div>
@@ -84,6 +105,16 @@ export default {
   margin-left: auto;
   margin-right: auto;
   width: 100%;
+
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#home a {
+  color: #aaddff;
+}
+
+#home a:hover {
+  color: white;
 }
 
 #first {
@@ -106,6 +137,19 @@ export default {
   max-width: 1000px;
 }
 
+#first h1 {
+  font-size: 56px;
+  font-family: Oswald, Arial, Helvetica, sans-serif;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: white;
+}
+
+#first h3 {
+  font-family: Oswald, Arial, Helvetica, sans-serif;
+}
+
 #appicon {
   border-radius: 10px;
   box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, 0.5);
@@ -115,7 +159,8 @@ export default {
   text-align: left;
   padding: 20px 20px 20px 20px;
   border-radius: 30px;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #12254c;
+  border: 5px solid #24599e;
   max-width: 500px;
 }
 
@@ -138,7 +183,7 @@ export default {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  background-color: red;
+  background-color: cyan;
   background-image: url("~@/assets/norahgalaksio/screenshot.jpg");
   background-repeat: no-repeat;
   background-position: center top;
@@ -155,15 +200,34 @@ export default {
   height: 90vh;
 
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
-#info {
+#second h2 {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-family: Oswald, Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: white;
+}
+
+.sticker {
+  position: absolute;
+  transform: translate(-75%, -50%);
+}
+
+.infobox {
   text-align: left;
-  padding: 20px 20px 20px 20px;
-  border-radius: 30px;
-  background-color: rgba(0, 0, 0, 0.5);
-  max-width: 500px;
+  padding: 10px 20px 10px 20px;
+  border-radius: 20px;
+  background-color: #12254c;
+  border: 5px solid #24599e;
+  width: 100%;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
 }
 </style>

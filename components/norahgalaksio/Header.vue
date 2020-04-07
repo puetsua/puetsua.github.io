@@ -10,19 +10,24 @@ zh:
     <div id="header">
       <table id="tophead">
         <tr>
-          <td style="height:100px;">
-            <nuxt-link to="/games/norahgalaksio">
-              <img alt="Puetsua logo" src="~/assets/norahgalaksio/logo.png" height="80px" />
+          <td>
+            <nuxt-link to="/">
+              <img alt="Game logo" src="~/assets/logo_light.png" height="50px" />
             </nuxt-link>
           </td>
-          <td style="text-align: right;">
+          <td id="bannerRight">
             <div id="nav">
               <nuxt-link to="/games/norahgalaksio">{{ $t('home') }}</nuxt-link>
-              <Dropdown/>
+              <Dropdown />
             </div>
           </td>
         </tr>
       </table>
+      <div id="bannerCenter">
+        <nuxt-link to="/games/norahgalaksio">
+          <img alt="Puetsua logo" src="~/assets/norahgalaksio/logo.png" height="80px" />
+        </nuxt-link>
+      </div>
     </div>
   </no-ssr>
 </template>
@@ -89,6 +94,7 @@ export default {
 
 #header {
   text-align: center;
+  position: relative;
 }
 
 #tophead {
@@ -98,8 +104,8 @@ export default {
 table#tophead {
   margin-left: auto;
   margin-right: auto;
-  padding: 0px 10px;
   color: #ffffff;
+  height: 100px;
   width: 100%;
   max-width: 1000px;
 }
@@ -110,5 +116,23 @@ table#tophead img {
 
 table#tophead tr {
   text-align: left;
+}
+
+#bannerCenter {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#bannerCenter img {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#bannerRight {
+  text-align: right;
 }
 </style>
