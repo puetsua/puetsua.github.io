@@ -2,7 +2,7 @@
   <footer>© Puetsua, 2019-2020.</footer>
 </template>
 
-<style>
+<style scoped>
 footer {
   font-family: "Microsoft JhengHei", "LiHei Pro", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

@@ -122,7 +122,7 @@ export default {
   background-size: cover;
   background-position: fixed;
   background-repeat: no-repeat;
-  height: 90vh;
+  height: 800px;
 
   display: flex;
   align-items: center;
@@ -197,12 +197,12 @@ export default {
   background-size: cover;
   background-position: fixed;
   background-repeat: no-repeat;
-  height: 90vh;
+  height: 800px;
 
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 #second h2 {

@@ -1,10 +1,8 @@
 <template>
-  <div id="NorahGalaksio">
-    <div id="mainpage">
+  <div id="norahgalaksio">
+    <div id="mainpage_ng">
       <Header />
-      <div id="mainDisplay">
-        <nuxt-child />
-      </div>
+      <nuxt-child />
     </div>
     <Footer />
   </div>
@@ -25,7 +23,7 @@ export default {
 
 <style>
   /* Palette #12254c #18226d #24599e #6c94c1 #c6e9ff */
-#NorahGalaksio {
+#norahgalaksio {
   font-family: Helvetica, "Microsoft JhengHei", "LiHei Pro", Verdana, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -36,16 +34,16 @@ export default {
   height: 100%;
 }
 
-#NorahGalaksio a {
+#norahgalaksio a {
   color: #6c94c1;
   text-decoration: none;
 }
 
-#NorahGalaksio a:hover {
+#norahgalaksio a:hover {
   color: #c6e9ff;
 }
 
-#mainpage {
+#mainpage_ng {
   min-height: 100%;
   background-color: #12254c;
 }

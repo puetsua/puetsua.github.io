@@ -18,7 +18,7 @@ zh:
   </footer>
 </template>
 
-<style>
+<style scoped>
 /* Palette #12254c #18226d #24599e #6c94c1 #c6e9ff */
 footer {
   font-family: "Microsoft JhengHei", "LiHei Pro", Arial, sans-serif;

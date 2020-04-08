@@ -1,5 +1,5 @@
 <template>
-  <div id="App">
+  <div id="personal">
     <div id="mainpage">
       <Header />
       <div style="height:10px" />
@@ -26,7 +26,7 @@ export default {
 </script>
 
 <style>
-#App {
+#personal {
   font-family: Helvetica, "Microsoft JhengHei", "LiHei Pro", Verdana, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -37,12 +37,12 @@ export default {
   height: 100%;
 }
 
-#App a {
+#personal a {
   color: #a855ec;
   text-decoration: none;
 }
 
-#App a:hover {
+#personal a:hover {
   color: #cb8bff;
 }
 
