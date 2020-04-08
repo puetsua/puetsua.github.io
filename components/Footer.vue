@@ -1,7 +1,5 @@
 <template>
-  <footer>
-    © Puetsua, 2019-2020.
-  </footer>
+  <footer>© Puetsua, 2019-2020.</footer>
 </template>
 
 <style>

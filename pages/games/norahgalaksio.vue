@@ -24,47 +24,30 @@ export default {
 </script>
 
 <style>
+  /* Palette #12254c #18226d #24599e #6c94c1 #c6e9ff */
 #NorahGalaksio {
+  font-family: Helvetica, "Microsoft JhengHei", "LiHei Pro", Verdana, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #c6e9ff;
+
   text-align: center;
   vertical-align: middle;
   height: 100%;
 }
 
-#mainpage {
-  min-height: 100%;
-}
-
-html,
-body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  font-family: Helvetica, "Microsoft JhengHei", "LiHei Pro", Verdana, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #c6e9ff;
-  /* Palette #12254c #18226d #24599e #6c94c1 #c6e9ff */
-}
-
-body {
-  background-color: #12254c;
-}
-
-body a {
+#NorahGalaksio a {
   color: #6c94c1;
   text-decoration: none;
 }
 
-body a:hover {
+#NorahGalaksio a:hover {
   color: #c6e9ff;
 }
 
-#__nuxt {
-  height: 100%;
-}
-
-#__layout {
-  height: 100%;
+#mainpage {
+  min-height: 100%;
+  background-color: #12254c;
 }
 
 .page-enter-active,
