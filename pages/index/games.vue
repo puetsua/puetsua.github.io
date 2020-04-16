@@ -16,9 +16,9 @@ en:
     imageSrc: norahgalaksio.png
     name: Norah Galaksio
     description: |
-      Norah Galaksio is a brick breaking adventure mobile game. It's also the name of protagonist who is exploring the planets in the galaxy!
+      Norah Galaksio is a brick breaking adventure mobile game. Your spaceship is equipped with balls and a multi-purpose rebounder to clear all obstacles.
 
-      This game was on Google Play before, but I took it down to give it a major update.
+      Join Norah's team on their exploration the planet and help local citizens defeat invading enemy.
   gameTsuilam:
     imageSrc: tsuilam.png
     name: Star Tsui-Lam
@@ -83,8 +83,9 @@ export default {
           asset: this.$t('gameNorahGalaksio')['imageSrc'],
           name: this.$t('gameNorahGalaksio')['name'],
           desc: this.$t('gameNorahGalaksio')['description'],
-          statusCode: 'InDevelopment',
-          pageLink: '/games/norahgalaksio'
+          statusCode: 'Released',
+          pageLink: '/games/norahgalaksio',
+          gpLink: 'https://play.google.com/store/apps/details?id=com.puetsua.norahgalaksio'
         },
         {
           asset: this.$t('gameTsuilam')['imageSrc'],

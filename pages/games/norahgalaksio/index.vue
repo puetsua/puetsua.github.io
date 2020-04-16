@@ -5,7 +5,10 @@ en:
   introduction: >
     Your spaceship is equipped with balls and a multi-purpose rebounder to clear all obstacles.
     Join Norah's team on their exploration the planet and help local citizens defeat invading enemy.
-  status: (In development)
+  gpBadgeAlt: Get it on Google Play
+  gpBadge: "en-us/Google_Play_Badge.svg"
+  appBadgeAlt: Download on the App Store
+  appBadge: "en-us/App_Store_Badge.svg"
   socialmedia: Social Media
   other: Other stuffs
   privacyPolicy: Privacy Policy
@@ -16,7 +19,10 @@ zh:
   introduction: >
     為了清除障礙，你的太空船已經裝備好了數顆打磚球與多功能回彈板。
     加入諾拉的團隊，一起在星球上探索並幫助當地的居民抵禦外敵吧！
-  status: (開發中)
+  gpBadgeAlt: Google Play立即下載
+  gpBadge: "zh-tw/Google_Play_Badge.svg"
+  appBadgeAlt: 下載App Store
+  appBadge: "zh-tw/App_Store_Badge.svg"
   socialmedia: 社群媒體
   other: 其他東西
   privacyPolicy: 隱私權政策
@@ -33,8 +39,16 @@ zh:
               <h1>{{ $t('title') }}</h1>
               <h3>{{ $t('description') }}</h3>
               <p>{{ $t('introduction') }}</p>
-              <img src="@/assets/norahgalaksio/appicon.png" height="100px" id="appicon" />
-              <h3>{{ $t('status') }}</h3>
+              <center>
+                <div style="height:30px"/>
+                <img src="@/assets/norahgalaksio/appicon.png" height="100px" id="appicon" />
+                <div style="height:30px"/>
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.puetsua.norahgalaksio&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
+                >
+                  <img :alt="$t('gpBadgeAlt')" :src="imageSrc($t('gpBadge'))" height="60px" />
+                </a>
+              </center>
             </div>
           </td>
           <td>
@@ -89,6 +103,16 @@ export default {
     }
     head.meta = head.meta.concat(process.env.socialMeta)
     return head
+  },
+  methods: {
+    imageSrc: function (link) {
+      try {
+        return require('@/assets/' + link)
+      } catch (e) {
+        console.log(e)
+        return null
+      }
+    }
   },
   computed: {
     ppLink: function () {

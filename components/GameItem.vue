@@ -4,11 +4,17 @@ en:
   Released: Released
   InDevelopment: In Development
   Suspended: Suspended
+  gpBadge: "en-us/Google_Play_Badge.svg"
+  appBadge: "en-us/App_Store_Badge.svg"
+  itchioBadge: "itchio.svg"
 zh:
   status: "狀態："
   Released: 已發行
   InDevelopment: 開發中
   Suspended: 已暫停
+  gpBadge: "zh-tw/Google_Play_Badge.svg"
+  appBadge: "zh-tw/App_Store_Badge.svg"
+  itchioBadge: "itchio.svg"
 </i18n>
 
 <template>
@@ -16,10 +22,10 @@ zh:
     <table class="table1">
       <tr>
         <th class="image" v-if="pageLink">
-          <a :href="pageLink"><img :alt="name" :src="imageSrc" width="300px"/></a>
+          <a :href="pageLink"><img :alt="name" :src="assetSrc" width="300px"/></a>
         </th>
         <th class="image" v-else>
-          <img :alt="name" :src="imageSrc" width="300px"/>
+          <img :alt="name" :src="assetSrc" width="300px"/>
         </th>
         <th height="100%">
           <table class="table2">
@@ -41,7 +47,8 @@ zh:
             </tr>
             <tr>
               <td>
-                <a :href="itchioLink" v-show="itchioLink"><img src="@/assets/itchio.svg" height="50px"></a>
+                <a :href="itchioLink" v-show="itchioLink"><img :src="imageSrc($t('itchioBadge'))" height="50px"></a>
+                <a :href="gpLink" v-show="gpLink"><img :src="imageSrc($t('gpBadge'))" height="50px"></a>
               </td>
             </tr>
           </table>
@@ -60,16 +67,22 @@ export default {
     desc: String,
     statusCode: String,
     itchioLink: String,
+    gpLink: String,
     pageLink: String
   },
-  computed: {
-    imageSrc: function () {
+  methods: {
+    imageSrc: function (link) {
       try {
-        return require('@/assets/' + this.asset)
+        return require('@/assets/' + link)
       } catch (e) {
         console.log(e)
         return null
       }
+    }
+  },
+  computed: {
+    assetSrc: function () {
+      return this.imageSrc(this.asset)
     },
     descDisplay: function () {
       var str = this.desc.replace(/^\s+|\s+$/g, '')
