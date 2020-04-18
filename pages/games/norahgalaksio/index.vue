@@ -40,9 +40,9 @@ zh:
               <h3>{{ $t('description') }}</h3>
               <p>{{ $t('introduction') }}</p>
               <center>
-                <div style="height:30px"/>
+                <div style="height:30px" />
                 <img src="@/assets/norahgalaksio/appicon.png" height="100px" id="appicon" />
-                <div style="height:30px"/>
+                <div style="height:30px" />
                 <a
                   href="https://play.google.com/store/apps/details?id=com.puetsua.norahgalaksio&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
                 >
@@ -63,6 +63,33 @@ zh:
       </table>
     </div>
     <div id="second">
+      <h1>Screenshots and videos</h1>
+      <table>
+        <tr>
+          <td>
+            <v-gallery :images="images" :index="index" @close="index = null" />
+            <div
+              class="image"
+              v-for="(image, imageIndex) in images"
+              :key="imageIndex"
+              @click="index = imageIndex"
+              :style="{ backgroundImage: 'url(' + image + ')', width: '180px', height: '320px' }"
+            ></div>
+          </td>
+          <td>
+            <iframe
+              width="360"
+              height="640"
+              src="https://www.youtube.com/embed/JA4WFtILTBM"
+              frameborder="0"
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div id="third">
       <div class="infobox">
         <img src="@/assets/norahgalaksio/pioniro_sticker.png" height="80px" class="sticker" />
         <h2>{{ $t('socialmedia') }}</h2>
@@ -87,7 +114,8 @@ export default {
   data () {
     return {
       title: this.$t('title'),
-      description: this.$t('description')
+      description: this.$t('description'),
+      index: null
     }
   },
   head () {
@@ -117,6 +145,16 @@ export default {
   computed: {
     ppLink: function () {
       return this.$t('privacyPolicyLink')
+    },
+    images: function () {
+      return [
+        this.imageSrc('norahgalaksio/screenshot1.png'),
+        this.imageSrc('norahgalaksio/screenshot2.png'),
+        this.imageSrc('norahgalaksio/screenshot3.png'),
+        this.imageSrc('norahgalaksio/screenshot4.png'),
+        this.imageSrc('norahgalaksio/screenshot5.png'),
+        this.imageSrc('norahgalaksio/screenshot6.png')
+      ]
     }
   }
 }
@@ -229,12 +267,29 @@ export default {
   flex-direction: column;
 }
 
-#second h2 {
+#second h1 {
   margin-top: 0px;
   margin-bottom: 10px;
   font-family: Oswald, Arial, Helvetica, sans-serif;
   text-align: center;
   color: white;
+}
+
+#second table {
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 100%;
+  max-width: 1000px;
+}
+
+.image {
+  float: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border: 1px solid #ebebeb;
+  margin: 5px;
 }
 
 .sticker {
@@ -253,5 +308,26 @@ export default {
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
+}
+
+#third {
+  background-image: url("~@/assets/norahgalaksio/background3.png");
+  background-size: cover;
+  background-position: fixed;
+  background-repeat: no-repeat;
+  height: 800px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#third h2 {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-family: Oswald, Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: white;
 }
 </style>
