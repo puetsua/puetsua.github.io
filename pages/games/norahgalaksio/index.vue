@@ -63,10 +63,10 @@ zh:
       </table>
     </div>
     <div id="second">
-      <h1>Screenshots and videos</h1>
       <table>
         <tr>
           <td>
+            <h1>Screenshots</h1>
             <v-gallery :images="images" :index="index" @close="index = null" />
             <div
               class="image"
@@ -77,10 +77,11 @@ zh:
             ></div>
           </td>
           <td>
+            <h1>Spaceships</h1>
             <iframe
               width="360"
               height="640"
-              src="https://www.youtube.com/embed/JA4WFtILTBM"
+              src="https://www.youtube.com/embed/9z9PYLpc8CE"
               frameborder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
               allowfullscreen

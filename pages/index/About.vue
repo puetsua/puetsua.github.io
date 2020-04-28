@@ -3,31 +3,35 @@ en:
   title: About | Pue-Tsuâ
   description: Everything about Pue-Tsuâ and how to contact.
   aboutme: About me
+  supportme: Support me
+  supportdesc: Any supports would be apreciated. That can help me creating more arts and games. (^∀^)/
   contactme: Contact me
-  descMyRealName: Pik-Han Liau
+  descMyRealName: Liau, Pik-Han
   descMyName: |
-    Puetsua, pronounced as "pu-eh zu-ah". Also known as Hankofficer, Hank.
+    Puetsua, pronounced as "pu-eh zu-ah". Also known as Hankofficer, Hank before.
   descDegree: |
     I have a Master of computer science of information engineering at National Taiwan Ocean University.
     I'm also a self-taught artist and taking commissions as a part time job.
     Currently I'm a game developer and dedicated in making video games.
   descKnowLang: |
     I speak Mandarin and English. I'm learning Japanese as my fourth language.
-    I also speak Taiwanese Hokkien, which is my first language in my hometown Taiwan.
+    I also speak Taiwanese Hokkien(Or Minnan), which is my first language in my hometown Taiwan.
 zh:
   title: 關於 | 飛蛇
   description: 所有關於飛蛇的事，包含聯絡方式。
   aboutme: 關於我
+  supportme: 贊助
+  supportdesc: 任何一丁點的贊助我都會很感激，這樣就能投入更多時間創作遊戲跟藝術。(^∀^)/
   contactme: 聯絡方式
   descMyRealName: 廖柏翰, Pik-Han Liau
   descMyName: |
-    飛蛇，英文名 Puetsua 是由閩南語 Pue-Tsuâ 發想出來的。也可以叫我 Hankofficer 或 Hank。
+    飛蛇，英文名 Puetsua 是由閩南語 Pue-Tsuâ 發想出來的。曾經用過Hankofficer或Hank等名稱。
   descDegree: |
-    臺灣國立海洋大學資訊工程學系碩士畢業。同時也是業餘繪師，有時候會接一些委託賺小錢。
+    臺灣國立海洋大學資訊工程學系碩士畢業。曾經在網路工程相關的公司上班三年。
+    是位的業餘繪師，有時候會接一些委託賺小錢。
     目前是遊戲設計師，專注於遊戲開發。
   descKnowLang: |
-    我會國語跟英文，目前正在學日文做為第四語言。
-    我也會講自己家鄉的母語，台語。
+    我會北京話跟英文，包括自己家的母語，閩南語。目前正在學日文做為第四語言。
 </i18n>
 
 <template>
@@ -39,12 +43,16 @@ zh:
     <p>{{ $t('descMyName') }}</p>
     <p>{{ $t('descDegree') }}</p>
     <p>{{ $t('descKnowLang') }}</p>
+    <h2>{{ $t('supportme') }}</h2>
+    <a href="https://ko-fi.com/puetsua"><img src="@/assets/BuyMeACoffee_Red@2x.png" height="50px"></a>
+    <p>{{ $t('supportdesc') }}</p>
     <h2>{{ $t('contactme') }}</h2>
-    <a href="https://twitter.com/puetsua" target="_blank"><img src="@/assets/socialmedia_twitter.png"></a>
-    <a href="https://www.deviantart.com/puetsua" target="_blank"><img src="@/assets/socialmedia_da.png"></a>
-    <a href="https://www.facebook.com/puetsua" target="_blank"><img src="@/assets/socialmedia_fb.png"></a>
-    <a href="https://www.youtube.com/channel/UCtAVtsEW_OHh4X7yWjOVoLQ" target="_blank"><img src="@/assets/socialmedia_yt.png"></a>
-    <a href="mailto:puetsua@gmail.com"><img src="@/assets/socialmedia_email.png"></a>
+    <a href="https://twitter.com/puetsua" target="_blank"><img src="@/assets/socialmedia_twitter.png" height="50px"></a>
+    <a href="https://www.deviantart.com/puetsua" target="_blank"><img src="@/assets/socialmedia_da.png" height="50px"></a>
+    <a href="https://www.facebook.com/puetsua" target="_blank"><img src="@/assets/socialmedia_fb.png" height="50px"></a>
+    <a href="https://www.youtube.com/channel/UCtAVtsEW_OHh4X7yWjOVoLQ" target="_blank"><img src="@/assets/socialmedia_yt.png" height="50px"></a>
+    <a href="https://puetsua.itch.io/"><img src="@/assets/socialmedia_itchio.png" height="50px"></a>
+    <a href="mailto:puetsua@gmail.com"><img src="@/assets/socialmedia_email.png" height="50px"></a>
   </div>
 </template>
 
