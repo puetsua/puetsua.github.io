@@ -1,6 +1,6 @@
 # 隱私權政策
 
-生效日期：民國108年7月7日
+生效日期：民國109年4月28日
 
 飛蛇遊戲是一個獨立遊戲開發者，開發手機、網頁或桌電遊戲。如果你要使用本軟體，本頁面將向你說明我們如何處理、收集、使用你的個人資料。
 
@@ -16,6 +16,7 @@
 
 * [Google Play Services](https://www.google.com/policies/privacy/)
 * [Unity Technologies](https://unity3d.com/legal/privacy-policy)
+* [Firebase](https://firebase.google.com/support/privacy)
 
 ## Log Data
 

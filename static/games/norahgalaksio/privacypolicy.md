@@ -1,6 +1,6 @@
 # Privacy Policy
 
-Effective date: July 7, 2019
+Effective date: April 28, 2020
 
 Pue-Tsuâ Game is an indie game developer that develops and creates games for mobiles, web or desktop. This page is used to inform visitors regarding our policies with the collection, use, and disclosure of Personal Information if anyone decided to use our Service.
 
@@ -16,6 +16,7 @@ Link to privacy policy of third party service providers used by the app
 
 * [Google Play Services](https://www.google.com/policies/privacy/)
 * [Unity Technologies](https://unity3d.com/legal/privacy-policy)
+* [Firebase](https://firebase.google.com/support/privacy)
 
 ## Log Data
 
