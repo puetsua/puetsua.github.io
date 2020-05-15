@@ -85,7 +85,8 @@ export default {
           desc: this.$t('gameNorahGalaksio')['description'],
           statusCode: 'Released',
           pageLink: '/games/norahgalaksio',
-          gpLink: 'https://play.google.com/store/apps/details?id=com.puetsua.norahgalaksio'
+          gpLink: 'https://play.google.com/store/apps/details?id=com.puetsua.norahgalaksio',
+          appsLink: 'https://apps.apple.com/app/id1510273568'
         },
         {
           asset: this.$t('gameTsuilam')['imageSrc'],

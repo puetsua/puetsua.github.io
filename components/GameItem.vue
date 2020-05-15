@@ -49,6 +49,7 @@ zh:
               <td>
                 <a :href="itchioLink" v-show="itchioLink"><img :src="imageSrc($t('itchioBadge'))" height="50px"></a>
                 <a :href="gpLink" v-show="gpLink"><img :src="imageSrc($t('gpBadge'))" height="50px"></a>
+                <a :href="appsLink" v-show="appsLink"><img :src="imageSrc($t('appBadge'))" height="50px"></a>
               </td>
             </tr>
           </table>
@@ -68,6 +69,7 @@ export default {
     statusCode: String,
     itchioLink: String,
     gpLink: String,
+    appsLink: String,
     pageLink: String
   },
   methods: {

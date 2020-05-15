@@ -48,6 +48,11 @@ zh:
                 >
                   <img :alt="$t('gpBadgeAlt')" :src="imageSrc($t('gpBadge'))" height="60px" />
                 </a>
+                <a
+                  href="https://apps.apple.com/app/id1510273568"
+                >
+                  <img :alt="$t('appBadgeAlt')" :src="imageSrc($t('appBadge'))" height="60px" />
+                </a>
               </center>
             </div>
           </td>
