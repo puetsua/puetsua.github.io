@@ -12,7 +12,7 @@ zh:
 </i18n>
 
 <template>
-  <no-ssr>
+  <client-only>
     <div id="header">
       <table id="tophead">
         <tr>
@@ -33,7 +33,7 @@ zh:
         </tr>
       </table>
     </div>
-  </no-ssr>
+  </client-only>
 </template>
 
 <script>

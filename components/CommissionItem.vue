@@ -1,5 +1,5 @@
 <template>
-  <no-ssr>
+  <client-only>
     <div class="comItem" @mouseover="hover = true" @mouseleave="hover = false">
       <table cellpadding="0" cellspacing="0">
         <tr>
@@ -19,7 +19,7 @@
         </tr>
       </table>
     </div>
-  </no-ssr>
+  </client-only>
 </template>
 
 <script>

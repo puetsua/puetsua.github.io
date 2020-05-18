@@ -6,7 +6,7 @@ zh:
 </i18n>
 
 <template>
-  <no-ssr>
+  <client-only>
     <div id="header">
       <table id="tophead">
         <tr>
@@ -29,7 +29,7 @@ zh:
         </nuxt-link>
       </div>
     </div>
-  </no-ssr>
+  </client-only>
 </template>
 
 <script>
