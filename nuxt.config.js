@@ -36,7 +36,8 @@ export default {
   plugins: [
     '~/plugins/jsonp.js',
     '~/plugins/vue-meta.js',
-    '~/plugins/vue-gallery.client.js'
+    '~/plugins/vue-gallery.client.js',
+    '~/plugins/vue-responsive.client.js'
   ],
   /*
   ** Nuxt.js modules

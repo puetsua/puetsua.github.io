@@ -8,25 +8,44 @@ zh:
 <template>
   <client-only>
     <div id="header">
-      <table id="tophead">
-        <tr>
-          <td>
-            <nuxt-link to="/">
-              <img alt="Game logo" src="~/assets/logo_light.png" height="50px" />
-            </nuxt-link>
-          </td>
-          <td id="bannerRight">
-            <div id="nav">
-              <nuxt-link to="/games/norahgalaksio">{{ $t('home') }}</nuxt-link>
-              <Dropdown />
-            </div>
-          </td>
-        </tr>
-      </table>
-      <div id="bannerCenter">
-        <nuxt-link to="/games/norahgalaksio">
-          <img alt="Puetsua logo" src="~/assets/norahgalaksio/logo.png" height="80px" />
-        </nuxt-link>
+      <div v-responsive.md.lg.xl>
+        <table id="tophead">
+          <tr>
+            <td class="bannerLeft">
+              <nuxt-link to="/">
+                <img alt="Puetsua logo" src="~/assets/logo_light.png" height="50px" />
+              </nuxt-link>
+            </td>
+            <td class="bannerRight">
+              <div id="nav">
+                <nuxt-link to="/games/norahgalaksio">{{ $t('home') }}</nuxt-link>
+                <Dropdown />
+              </div>
+            </td>
+          </tr>
+        </table>
+        <div class="bannerCenter">
+          <nuxt-link to="/games/norahgalaksio">
+            <img alt="Game logo" src="~/assets/norahgalaksio/logo.png" height="80px" />
+          </nuxt-link>
+        </div>
+      </div>
+      <div v-responsive.sm.xs>
+        <table id="tophead">
+          <tr>
+            <td class="bannerLeft">
+              <nuxt-link to="/">
+                <img alt="Puetsua logo" src="~/assets/norahgalaksio/logo.png" height="80px" />
+              </nuxt-link>
+            </td>
+            <td class="bannerRight">
+              <div id="nav">
+                <nuxt-link to="/games/norahgalaksio">{{ $t('home') }}</nuxt-link>
+                <Dropdown />
+              </div>
+            </td>
+          </tr>
+        </table>
       </div>
     </div>
   </client-only>
@@ -118,7 +137,11 @@ table#tophead tr {
   text-align: left;
 }
 
-#bannerCenter {
+.bannerLeft {
+  padding-left: 20px;
+}
+
+.bannerCenter {
   position: absolute;
   margin-left: auto;
   margin-right: auto;
@@ -127,12 +150,13 @@ table#tophead tr {
   transform: translate(-50%, -50%);
 }
 
-#bannerCenter img {
+.bannerCenter img {
   margin-left: auto;
   margin-right: auto;
 }
 
-#bannerRight {
+.bannerRight {
   text-align: right;
+  padding-right: 20px;
 }
 </style>

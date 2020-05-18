@@ -31,6 +31,7 @@ zh:
 
 <template>
   <div id="home">
+    <client-only>
     <div id="first">
       <table>
         <tr>
@@ -56,7 +57,7 @@ zh:
               </center>
             </div>
           </td>
-          <td>
+          <td v-responsive.lg.xl>
             <div id="phone">
               <div id="phone_content" />
               <img src="@/assets/norahgalaksio/phone.svg" height="600px" style="visibility:hidden;" />
@@ -67,7 +68,7 @@ zh:
         </tr>
       </table>
     </div>
-    <div id="second">
+    <div id="second" v-responsive.lg.xl>
       <table>
         <tr>
           <td>
@@ -95,22 +96,51 @@ zh:
         </tr>
       </table>
     </div>
-    <div id="third">
-      <div class="infobox">
-        <img src="@/assets/norahgalaksio/pioniro_sticker.png" height="80px" class="sticker" />
-        <h2>{{ $t('socialmedia') }}</h2>
-        <center>
-          <a href="https://twitter.com/norahgalaksio" target="_blank">
-            <img src="@/assets/social_twitter_white.png" height="50px" />
-          </a>
-        </center>
+    <div id="second_mobile" v-responsive.md.sm.xs>
+      <h1>Screenshots</h1>
+      <v-gallery :images="images" :index="index" @close="index = null" />
+      <div class="section">
+        <div
+          class="image"
+          v-for="(image, imageIndex) in images"
+          :key="imageIndex"
+          @click="index = imageIndex"
+          :style="{ backgroundImage: 'url(' + image + ')', width: '180px', height: '320px' }"
+        ></div>
       </div>
-      <div class="infobox">
-        <img src="@/assets/norahgalaksio/pioniro_sticker.png" height="80px" class="sticker" />
-        <h2>{{ $t('other') }}</h2>
-        <a :href="ppLink">{{ $t('privacyPolicy') }}</a>
+      <div class="section">
+        <h1>Spaceships</h1>
+        <iframe
+          width="360"
+          height="640"
+          src="https://www.youtube.com/embed/9z9PYLpc8CE"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
       </div>
     </div>
+    <div id="third">
+      <div class="infobox_outer">
+        <div class="infobox">
+          <img src="@/assets/norahgalaksio/pioniro_sticker.png" height="80px" class="sticker" />
+          <h2>{{ $t('socialmedia') }}</h2>
+          <center>
+            <a href="https://twitter.com/norahgalaksio" target="_blank">
+              <img src="@/assets/social_twitter_white.png" height="50px" />
+            </a>
+          </center>
+        </div>
+      </div>
+      <div class="infobox_outer">
+        <div class="infobox">
+          <img src="@/assets/norahgalaksio/pioniro_sticker.png" height="80px" class="sticker" />
+          <h2>{{ $t('other') }}</h2>
+          <a :href="ppLink">{{ $t('privacyPolicy') }}</a>
+        </div>
+      </div>
+    </div>
+    </client-only>
   </div>
 </template>
 
@@ -138,8 +168,15 @@ export default {
     head.meta = head.meta.concat(process.env.socialMeta)
     return head
   },
+  mounted () {
+    window.addEventListener('resize', () => {
+      if (process.client) {
+        console.log(this.isMobile)
+      }
+    })
+  },
   methods: {
-    imageSrc: function (link) {
+    imageSrc (link) {
       try {
         return require('@/assets/' + link)
       } catch (e) {
@@ -149,10 +186,16 @@ export default {
     }
   },
   computed: {
-    ppLink: function () {
+    isMobile () {
+      if (process.client) {
+        return window.innerWidth <= 768
+      }
+      return false
+    },
+    ppLink () {
       return this.$t('privacyPolicyLink')
     },
-    images: function () {
+    images () {
       return [
         this.imageSrc('norahgalaksio/screenshot1.png'),
         this.imageSrc('norahgalaksio/screenshot2.png'),
@@ -203,6 +246,7 @@ export default {
 
   width: 100%;
   max-width: 1000px;
+  border: 1px white solid;
 }
 
 #first h1 {
@@ -224,6 +268,7 @@ export default {
 }
 
 #introduction {
+  display: inline-block;
   text-align: left;
   padding: 20px 20px 20px 20px;
   border-radius: 30px;
@@ -289,8 +334,32 @@ export default {
   max-width: 1000px;
 }
 
+#second_mobile {
+  background-image: url("~@/assets/norahgalaksio/background2.png");
+  background-size: cover;
+  background-position: fixed;
+  background-repeat: no-repeat;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#second_mobile h1 {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  font-family: Oswald, Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: white;
+}
+
+#second_mobile .section {
+  max-width: 600px;
+}
+
 .image {
-  float: left;
+  display: inline-block;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -303,16 +372,21 @@ export default {
   transform: translate(-75%, -50%);
 }
 
+.infobox_outer {
+  width: 100%;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .infobox {
   text-align: left;
   padding: 10px 20px 10px 20px;
   border-radius: 20px;
   background-color: #12254c;
   border: 5px solid #24599e;
-  width: 100%;
-  max-width: 700px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 40px;
+  margin-right: 40px;
   margin-top: 30px;
 }
 
