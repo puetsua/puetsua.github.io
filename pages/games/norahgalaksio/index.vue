@@ -246,7 +246,6 @@ export default {
 
   width: 100%;
   max-width: 1000px;
-  border: 1px white solid;
 }
 
 #first h1 {
