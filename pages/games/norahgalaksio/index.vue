@@ -126,7 +126,7 @@ zh:
           <img src="@/assets/norahgalaksio/pioniro_sticker.png" height="80px" class="sticker" />
           <h2>{{ $t('socialmedia') }}</h2>
           <center>
-            <a href="https://twitter.com/norahgalaksio" target="_blank">
+            <a href="https://twitter.com/puetsuagamedev" target="_blank">
               <img src="@/assets/social_twitter_white.png" height="50px" />
             </a>
           </center>

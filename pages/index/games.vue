@@ -24,6 +24,7 @@ en:
     name: Star Tsui-Lam
     description: |
       Star Tsui-Lam is a strategy puzzle game. Player can explore planets, collect treasures, find relics from ancient civilization and solving puzzles.
+  follow: Follow my game devlog
 zh:
   title: 自製遊戲 | 飛蛇
   description: 所有飛蛇做的遊戲。
@@ -49,6 +50,7 @@ zh:
     name: 水藍星
     description: |
       水藍星是一款策略解謎遊戲。玩家可以探索星球、收集寶物、尋找上古文明的遺物並解決各種難題。
+  follow: 追蹤我的遊戲開發紀錄
 </i18n>
 
 <template>
@@ -58,6 +60,8 @@ zh:
       <GameItem v-for="item in games" :key="item.name" v-bind="item" />
       <h2>{{ $t('fangames') }}</h2>
       <GameItem v-for="item in fangames" :key="item.name" v-bind="item" />
+      <h2>{{ $t('follow') }}</h2>
+      <a href="https://twitter.com/puetsuagamedev" target="_blank"><img src="@/assets/socialmedia_twitter.png" height="50px"></a>
     </div>
   </div>
 </template>
