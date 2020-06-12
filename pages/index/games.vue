@@ -24,7 +24,8 @@ en:
     name: Star Tsui-Lam
     description: |
       Star Tsui-Lam is a strategy puzzle game. Player can explore planets, collect treasures, find relics from ancient civilization and solving puzzles.
-  follow: Follow my game devlog
+  follow: Follow my game devlog and community
+  community: Community
 zh:
   title: 自製遊戲 | 飛蛇
   description: 所有飛蛇做的遊戲。
@@ -33,7 +34,7 @@ zh:
   underConstruction: 施工中... ᕕ( ᐛ )ᕗ
   gameDarkDream:
     imageSrc: darkdream.png
-    name: 黑暗夢境
+    name: 黑暗夢境 (英文)
     description: |
       Starlight被困在了一個無止境的世界之中，面對著各種邪惡的黑暗物體。
 
@@ -47,10 +48,11 @@ zh:
       這款遊戲之前有在Google Play上，不過我為了改版先行下架了。
   gameTsuilam:
     imageSrc: tsuilam.png
-    name: 水藍星
+    name: 水藍星 (英文)
     description: |
       水藍星是一款策略解謎遊戲。玩家可以探索星球、收集寶物、尋找上古文明的遺物並解決各種難題。
-  follow: 追蹤我的遊戲開發紀錄
+  follow: 追蹤我的遊戲開發紀錄 (英文)
+  community: 社群 (英文)
 </i18n>
 
 <template>
@@ -60,6 +62,8 @@ zh:
       <GameItem v-for="item in games" :key="item.name" v-bind="item" />
       <h2>{{ $t('fangames') }}</h2>
       <GameItem v-for="item in fangames" :key="item.name" v-bind="item" />
+      <h2>{{ $t('community') }}</h2>
+      <a href="https://discord.gg/EhxjnDy" target="_blank"><img src="@/assets/socialmedia_discord.png" height="50px"></a>
       <h2>{{ $t('follow') }}</h2>
       <a href="https://twitter.com/puetsuagamedev" target="_blank"><img src="@/assets/socialmedia_twitter.png" height="50px"></a>
     </div>

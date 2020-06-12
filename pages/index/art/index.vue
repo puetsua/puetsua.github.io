@@ -2,9 +2,11 @@
 en:
   title: Art | Pue-Tsuâ
   description: Pue-Tsuâ's art gallery and status.
+  community: Discord server
 zh:
   title: 繪圖 | 飛蛇
   description: 飛蛇的畫廊跟委託情形
+  community: Discord伺服器
 </i18n>
 
 <template>
@@ -12,6 +14,8 @@ zh:
     <blockquote class="trello-card-compact">
       <a href="https://trello.com/c/7qdlWk9U" target="_blank">Trello Card</a>
     </blockquote>
+    <h2>{{ $t('community') }}</h2>
+    <a href="https://discord.gg/EhxjnDy" target="_blank"><img src="@/assets/socialmedia_discord.png" height="50px"></a>
   </div>
 </template>
 
