@@ -2,75 +2,57 @@
 en:
   title: Commissions | Pue-Tsuâ
   description: "Pue-Tsuâ's commission box and information."
-  fullbodyPrice: "All prices are assumed to be a single character full-body drawing. A half-body drawing and a portrait can be lower. Having more characters in the picture can double or triple the price."
+  refPrice: "All prices are for reference only. The price may increase by having more characters or background etc..."
+  portrait: Portrait
+  halfbody: Half-body
+  fullbody: Full-body
   feral: Feral
-  feralItem:
-    - Pony, changelings
-    - Cat
-    - Eeveelutions (Pokemon)
-  recommended: "Recommended, but not limited to:"
   anthro: Anthro
   anthroItem:
     - Pony Anthro, dragons
     - Furry
     - Equestria Girl
   itemDesc:
-    feral:
+    portrait:
       coloredsketch:
-        name: "Colored Sketch $15-30"
-        desc: "Max characters 4, Size: higher than 1000x1000"
-      celshading:
-        name: "Cel Shading $20-40"
-        desc: "Max characters 2, Size: higher than 1000x1000"
-      detailedshading:
-        name: "Detailed Shading $40-70"
-        desc: "Max characters 2, Size: higher than 1000x1000"
-    anthro:
+        name: "Shaded $25-40"
+        desc: "Max characters 1, Size: higher than 1000x1000"
+    halfbody:
       coloredsketch:
         name: "Colored Sketch $25-50"
         desc: "Max characters 2, Size: higher than 1000x1000"
-      celshading:
-        name: "Cel Shading $35-60"
+    fullbody:
+      coloredsketch:
+        name: "Colored Sketch $25-50"
         desc: "Max characters 2, Size: higher than 1000x1000"
-      detailedshading:
-        name: "Detailed Shading $60-90"
-        desc: "Max characters 1, Size: higher than 1000x1000"
+      chibi:
+        name: "Chibi $30-50"
+        desc: "Max characters 2, Size: higher than 1000x1000"
 zh:
   title: 委託 | 飛蛇
   description: "飛蛇的委託資訊"
-  fullbodyPrice: "所有的價格都是以一個角色的全身做計算。半身或頭像可以有更低的價格。如果有更多角色的話可能會讓價格加倍。"
+  refPrice: "以下價格僅作參考，視情形於需求可能會加價。例如有更多角色的話或是背景等等。"
+  portrait: 頭像
+  halfbody: 半身
+  fullbody: 全身
   feral: 野獸型
-  feralItem:
-    - 小馬、幻影蟲
-    - 貓
-    - 各種伊布 (寶可夢)
-  recommended: "推薦，但不限於："
   anthro: 人形
-  anthroItem:
-    - 人形小馬、龍
-    - 各種獸人
-    - 小馬國女孩
   itemDesc:
-    feral:
+    portrait:
       coloredsketch:
         name: "有色草稿 NTD$450-900"
         desc: "最多4個角色，大小：大於 1000x1000 像素"
-      celshading:
-        name: "卡通風格 NTD$600-1200"
-        desc: "最多2個角色，大小：大於 1000x1000 像素"
-      detailedshading:
-        name: "精細風格 NTD$1200-2100"
-        desc: "最多2個角色，大小：大於 1000x1000 像素"
-    anthro:
+    halfbody:
       coloredsketch:
         name: "有色草稿 NTD$750-1500"
         desc: "最多2個角色，大小：大於 1000x1000 像素"
-      celshading:
-        name: "卡通風格 NTD$1000-1800"
+    fullbody:
+      coloredsketch:
+        name: "有色草稿 NTD$750-1500"
         desc: "最多2個角色，大小：大於 1000x1000 像素"
-      detailedshading:
-        name: "精細風格 NTD$1800-2700"
-        desc: "最多1個角色，大小：大於 1000x1000 像素"
+      chibi:
+        name: "Q版 NTD$750-1500"
+        desc: "最多2個角色，大小：大於 1000x1000 像素"
 </i18n>
 
 <template>
@@ -78,26 +60,19 @@ zh:
     <CommissionInfo />
     <hr />
     <div class="comType">
-      <h2>{{ $t('feral') }}</h2>
-      <p>{{ $t('recommended') }}</p>
-      <ul>
-        <li v-for="item in $t('feralItem')" :key="item">
-          {{ item }}
-        </li>
-      </ul>
-      <p>{{ $t('fullbodyPrice') }}</p>
-      <CommissionItem v-for="item in feralItems" :key="item.name" v-bind="item" />
+      <h2>{{ $t('portrait') }}</h2>
+      <p>{{ $t('refPrice') }}</p>
+      <CommissionItem v-for="item in portraitItems" :key="item.name" v-bind="item" />
     </div>
     <div class="comType">
-      <h2>{{ $t('anthro') }}</h2>
-      <p>{{ $t('recommended') }}</p>
-      <ul>
-        <li v-for="item in $t('anthroItem')" :key="item">
-          {{ item }}
-        </li>
-      </ul>
-      <p>{{ $t('fullbodyPrice') }}</p>
-      <CommissionItem v-for="item in anthroItems" :key="item.name" v-bind="item" />
+      <h2>{{ $t('halfbody') }}</h2>
+      <p>{{ $t('refPrice') }}</p>
+      <CommissionItem v-for="item in halfbodyItems" :key="item.name" v-bind="item" />
+    </div>
+    <div class="comType">
+      <h2>{{ $t('fullbody') }}</h2>
+      <p>{{ $t('refPrice') }}</p>
+      <CommissionItem v-for="item in fullbodyItems" :key="item.name" v-bind="item" />
     </div>
   </div>
 </template>
@@ -119,46 +94,38 @@ export default {
     }
   },
   computed: {
-    feralItems () {
+    portraitItems () {
       return [
         {
-          name: this.$t('itemDesc')['feral']['coloredsketch']['name'],
-          description: this.$t('itemDesc')['feral']['coloredsketch']['desc'],
-          examples: ['807305572', '793342828', '796764913'],
-          isAvailable: true
-        },
-        {
-          name: this.$t('itemDesc')['feral']['celshading']['name'],
-          description: this.$t('itemDesc')['feral']['celshading']['desc'],
-          examples: ['794761840', '711080605', '782408545'],
-          isAvailable: true
-        },
-        {
-          name: this.$t('itemDesc')['feral']['detailedshading']['name'],
-          description: this.$t('itemDesc')['feral']['detailedshading']['desc'],
-          examples: ['789974602', '792378218'],
+          name: this.$t('itemDesc')['portrait']['shaded']['name'],
+          description: this.$t('itemDesc')['portrait']['shaded']['desc'],
+          examples: ['847858965'],
           isAvailable: true
         }
       ]
     },
-    anthroItems () {
+    halfbodyItems () {
       return [
         {
-          name: this.$t('itemDesc')['anthro']['coloredsketch']['name'],
-          description: this.$t('itemDesc')['anthro']['coloredsketch']['desc'],
-          examples: ['807548619'],
+          name: this.$t('itemDesc')['halfbody']['coloredsketch']['name'],
+          description: this.$t('itemDesc')['halfbody']['coloredsketch']['desc'],
+          examples: ['844362317', '807548619'],
+          isAvailable: true
+        }
+      ]
+    },
+    fullbodyItems () {
+      return [
+        {
+          name: this.$t('itemDesc')['fullbody']['coloredsketch']['name'],
+          description: this.$t('itemDesc')['fullbody']['coloredsketch']['desc'],
+          examples: ['807305572', '796764913'],
           isAvailable: true
         },
         {
-          name: this.$t('itemDesc')['anthro']['celshading']['name'],
-          description: this.$t('itemDesc')['anthro']['celshading']['desc'],
-          examples: ['799141636', '799141625'],
-          isAvailable: true
-        },
-        {
-          name: this.$t('itemDesc')['anthro']['detailedshading']['name'],
-          description: this.$t('itemDesc')['anthro']['detailedshading']['desc'],
-          examples: ['798004297', '804577339'],
+          name: this.$t('itemDesc')['fullbody']['chibi']['name'],
+          description: this.$t('itemDesc')['fullbody']['chibi']['desc'],
+          examples: ['848066009', '847222714', '846983151'],
           isAvailable: true
         }
       ]

@@ -23,12 +23,12 @@ zh:
     - "想要的風格：(Colored sketch, cel-shading or detailed shading etc...)"
     - "參考圖：(角色設定圖或是任何含有你的角色的圖。)"
     - "其他細節描述： (關於角色的姿勢、表情等等。)"
-  readTos1: "很感謝你對我的委託有興趣。如果想要委託，"
-  readTos2: "你應該先閱讀我的服務條款。"
+  readTos1: "感謝你對我的委託有興趣。如果想要委託，"
+  readTos2: "請先閱讀我的服務條款。"
   readTos3: "如果你不想全部看完，直接問我也可以。一旦繳錢後，將視同你已經同意了"
   readTos4: 我的服務條款
   readTos5: 。
-  accept1: "一般的圖跟暗示圖可接受，"
+  accept1: "一般的圖跟性暗示的圖可接受，"
   accept2: "不收車圖(18+)跟性癖圖。"
   accept3: .
   reference: 請注意下面的價格僅供參考，價格會隨著你的委託需求有所調整。
@@ -36,6 +36,9 @@ zh:
 
 <template>
   <div class="ComInfo">
+    <blockquote class="trello-card-compact">
+      <a href="https://trello.com/c/7qdlWk9U" target="_blank">Trello Card</a>
+    </blockquote>
     <b><h3>{{ $t('fillform') }}</h3></b>
     <ul>
       <li v-for="item in $t('formlist')" :key="item">

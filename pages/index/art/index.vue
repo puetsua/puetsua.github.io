@@ -11,9 +11,6 @@ zh:
 
 <template>
   <div id="art">
-    <blockquote class="trello-card-compact">
-      <a href="https://trello.com/c/7qdlWk9U" target="_blank">Trello Card</a>
-    </blockquote>
     <h2>{{ $t('community') }}</h2>
     <a href="https://discord.gg/EhxjnDy" target="_blank"><img src="@/assets/socialmedia_discord.png" height="50px"></a>
   </div>
