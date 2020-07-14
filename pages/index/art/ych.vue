@@ -31,6 +31,9 @@ zh:
 
 <template>
   <div id="ych">
+    <blockquote class="trello-card-compact">
+      <a href="https://trello.com/c/O96zIs0A">Fixed YCH Status Trello Card</a>
+    </blockquote>
     <YCHInfo/>
     <hr>
     <div class="ychType">
@@ -93,6 +96,9 @@ export default {
     }
     head.meta = head.meta.concat(process.env.socialMeta)
     return head
+  },
+  mounted () {
+    window.TrelloCards.load(document, { compact: true, allAnchors: false })
   }
 }
 </script>

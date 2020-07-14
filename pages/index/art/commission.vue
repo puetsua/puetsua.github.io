@@ -82,7 +82,7 @@ zh:
 <template>
   <div id="commish">
     <blockquote class="trello-card-compact">
-      <a href="https://trello.com/c/7qdlWk9U" target="_blank">Trello Card</a>
+      <a href="https://trello.com/c/7qdlWk9U" target="_blank">Commission Status Trello Card</a>
     </blockquote>
     <CommissionInfo />
     <hr />
