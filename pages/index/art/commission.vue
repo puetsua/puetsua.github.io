@@ -15,18 +15,30 @@ en:
   itemDesc:
     portrait:
       coloredsketch:
-        name: "Shaded $25-40"
-        desc: "Max characters 1, Size: higher than 1000x1000"
+        name: "Colored Sketch $10-20"
+        desc: "One character only, Size: higher than 1000x1000"
+      shaded:
+        name: "Shaded $25-50"
+        desc: "One character only, Size: higher than 1000x1000"
     halfbody:
       coloredsketch:
-        name: "Colored Sketch $25-50"
+        name: "Colored Sketch $20-40"
+        desc: "Max characters 2, Size: higher than 1000x1000"
+      coloredsketchchibi:
+        name: "Colored Sketch (Chibi) (TBD)"
         desc: "Max characters 2, Size: higher than 1000x1000"
     fullbody:
       coloredsketch:
         name: "Colored Sketch $25-50"
         desc: "Max characters 2, Size: higher than 1000x1000"
+      coloredsketchchibi:
+        name: "Colored Sketch (Chibi) (TBD)"
+        desc: "Max characters 2, Size: higher than 1000x1000"
       chibi:
-        name: "Chibi $30-50"
+        name: "Chibi (TBD)"
+        desc: "Max characters 2, Size: higher than 1000x1000"
+      gradient:
+        name: "Gradient $35-70"
         desc: "Max characters 2, Size: higher than 1000x1000"
 zh:
   title: 委託 | 飛蛇
@@ -40,18 +52,30 @@ zh:
   itemDesc:
     portrait:
       coloredsketch:
-        name: "有色草稿 NTD$450-900"
-        desc: "最多4個角色，大小：大於 1000x1000 像素"
+        name: "草稿上色 NTD$300-600"
+        desc: "只能一個角色，大小：大於 1000x1000 像素"
+      shaded:
+        name: "完整上色 NTD$750-1500"
+        desc: "只能一個角色，大小：大於 1000x1000 像素"
     halfbody:
       coloredsketch:
-        name: "有色草稿 NTD$750-1500"
+        name: "草稿上色 NTD$600-1200"
+        desc: "最多2個角色，大小：大於 1000x1000 像素"
+      coloredsketchchibi:
+        name: "草稿上色 (Q版) (TBD)"
         desc: "最多2個角色，大小：大於 1000x1000 像素"
     fullbody:
       coloredsketch:
         name: "有色草稿 NTD$750-1500"
         desc: "最多2個角色，大小：大於 1000x1000 像素"
+      coloredsketchchibi:
+        name: "有色草稿 (Q版) (TBD)"
+        desc: "最多2個角色，大小：大於 1000x1000 像素"
       chibi:
-        name: "Q版 NTD$750-1500"
+        name: "Q版 (TBD)"
+        desc: "最多2個角色，大小：大於 1000x1000 像素"
+      gradient:
+        name: "漸層上色 NTD$1000-2000"
         desc: "最多2個角色，大小：大於 1000x1000 像素"
 </i18n>
 
@@ -97,6 +121,12 @@ export default {
     portraitItems () {
       return [
         {
+          name: this.$t('itemDesc')['portrait']['coloredsketch']['name'],
+          description: this.$t('itemDesc')['portrait']['coloredsketch']['desc'],
+          examples: ['848689733'],
+          isAvailable: true
+        },
+        {
           name: this.$t('itemDesc')['portrait']['shaded']['name'],
           description: this.$t('itemDesc')['portrait']['shaded']['desc'],
           examples: ['847858965'],
@@ -111,6 +141,12 @@ export default {
           description: this.$t('itemDesc')['halfbody']['coloredsketch']['desc'],
           examples: ['844362317', '807548619'],
           isAvailable: true
+        },
+        {
+          name: this.$t('itemDesc')['halfbody']['coloredsketchchibi']['name'],
+          description: this.$t('itemDesc')['halfbody']['coloredsketchchibi']['desc'],
+          examples: ['848689781'],
+          isAvailable: true
         }
       ]
     },
@@ -123,9 +159,21 @@ export default {
           isAvailable: true
         },
         {
+          name: this.$t('itemDesc')['fullbody']['coloredsketchchibi']['name'],
+          description: this.$t('itemDesc')['fullbody']['coloredsketchchibi']['desc'],
+          examples: [],
+          isAvailable: true
+        },
+        {
           name: this.$t('itemDesc')['fullbody']['chibi']['name'],
           description: this.$t('itemDesc')['fullbody']['chibi']['desc'],
-          examples: ['848066009', '847222714', '846983151'],
+          examples: ['846983151', '847222714', '847308285'],
+          isAvailable: true
+        },
+        {
+          name: this.$t('itemDesc')['fullbody']['gradient']['name'],
+          description: this.$t('itemDesc')['fullbody']['gradient']['desc'],
+          examples: ['847736276', '848066009'],
           isAvailable: true
         }
       ]
