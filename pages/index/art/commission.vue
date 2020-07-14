@@ -81,6 +81,9 @@ zh:
 
 <template>
   <div id="commish">
+    <blockquote class="trello-card-compact">
+      <a href="https://trello.com/c/7qdlWk9U" target="_blank">Trello Card</a>
+    </blockquote>
     <CommissionInfo />
     <hr />
     <div class="comType">
@@ -196,6 +199,9 @@ export default {
     }
     head.meta = head.meta.concat(process.env.socialMeta)
     return head
+  },
+  mounted () {
+    window.TrelloCards.load(document, { compact: true, allAnchors: false })
   }
 }
 </script>

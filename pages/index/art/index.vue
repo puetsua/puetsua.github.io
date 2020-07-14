@@ -38,9 +38,6 @@ export default {
     }
     head.meta = head.meta.concat(process.env.socialMeta)
     return head
-  },
-  mounted () {
-    window.TrelloCards.load(document, { compact: true, allAnchors: false })
   }
 }
 </script>

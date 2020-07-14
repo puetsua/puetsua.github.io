@@ -36,9 +36,6 @@ zh:
 
 <template>
   <div class="ComInfo">
-    <blockquote class="trello-card-compact">
-      <a href="https://trello.com/c/7qdlWk9U" target="_blank">Trello Card</a>
-    </blockquote>
     <b><h3>{{ $t('fillform') }}</h3></b>
     <ul>
       <li v-for="item in $t('formlist')" :key="item">
