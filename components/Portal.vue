@@ -5,7 +5,7 @@
         <img :alt="desc" :src="imageSrc" />
       </div>
       <div class="itemdesc">{{ desc }}</div>
-      <transition name="itemfade">
+      <transition>
         <div v-if="hover" class="itemhovered" />
       </transition>
     </nuxt-link>
@@ -82,13 +82,4 @@ export default {
   background-color: rgba(255, 255, 255, 0.3);
 }
 
-.itemfade-enter-active,
-.itemfade-leave-active {
-  transition: opacity 0.1s ease-in-out, transform 0.1s ease;
-}
-
-.itemfade-enter,
-.itemfade-leave-to {
-  opacity: 0;
-}
 </style>

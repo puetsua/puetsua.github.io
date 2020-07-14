@@ -4,7 +4,7 @@ en:
   description: Everything about Pue-Tsuâ and how to contact.
   aboutme: About me
   supportme: Support me
-  supportdesc: Any supports would be apreciated. That can help me creating more arts and games. (^∀^)/
+  supportdesc: Any supports would be appreciated. That can help me creating more arts and games. (^∀^)/
   contactme: Contact me
   descMyRealName: Liau, Pik-Han
   descMyName: |

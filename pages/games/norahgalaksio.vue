@@ -48,23 +48,4 @@ export default {
   background-color: #12254c;
 }
 
-.page-enter-active,
-.page-leave-active {
-  transition: opacity 0.2s ease-in-out, transform 0.2s ease;
-}
-
-.page-enter,
-.page-leave-to {
-  opacity: 0;
-}
-
-.itemFade-enter-active,
-.itemFade-leave-active {
-  transition: opacity 0.5s ease-in-out, transform 0.5s ease;
-}
-
-.itemFade-enter,
-.itemFade-leave-to {
-  opacity: 0;
-}
 </style>

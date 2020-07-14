@@ -9,7 +9,7 @@
     <a :href="uri" target="_blank">
       <img :src="daData.thumbnail_url_200h" />
     </a>
-    <transition name="itemfade">
+    <transition>
       <div v-if="hover" :style="hoveredStyle">{{ daData.title }}</div>
     </transition>
   </div>
@@ -83,17 +83,4 @@ export default {
   vertical-align: bottom;
 }
 
-.itemfade-enter-active {
-  transition: all 0.3s ease;
-  max-height: 18px;
-}
-.itemfade-leave-active {
-  transition: all 0.8s ease-out;
-  max-height: 18px;
-}
-.itemfade-enter,
-.itemfade-leave-to {
-  max-height: 0px;
-  opacity: 0;
-}
 </style>
