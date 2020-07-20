@@ -2,7 +2,7 @@ echo "==== Clearing /dist..."
 rm -rf dist
 
 echo "==== Building..."
-npm run generate
+nuxt build && nuxt export
 
 echo "==== Creating git repository..."
 cd dist
