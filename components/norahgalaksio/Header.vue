@@ -18,14 +18,13 @@ zh:
             </td>
             <td class="bannerRight">
               <div id="nav">
-                <nuxt-link to="/games/norahgalaksio">{{ $t('home') }}</nuxt-link>
                 <Dropdown />
               </div>
             </td>
           </tr>
         </table>
         <div class="bannerCenter">
-          <nuxt-link to="/games/norahgalaksio">
+          <nuxt-link to="/games/norahgalaksio/">
             <img alt="Game logo" src="~/assets/norahgalaksio/logo.png" height="80px" />
           </nuxt-link>
         </div>
@@ -40,7 +39,6 @@ zh:
             </td>
             <td class="bannerRight">
               <div id="nav">
-                <nuxt-link to="/games/norahgalaksio">{{ $t('home') }}</nuxt-link>
                 <Dropdown />
               </div>
             </td>

@@ -11,6 +11,7 @@ en:
   appBadge: "en-us/App_Store_Badge.svg"
   socialmedia: Social Media
   other: Other stuffs
+  othergame: Games from Puetsua
   privacyPolicy: Privacy Policy
   privacyPolicyLink: "/games/norahgalaksio/privacypolicy.html"
 zh:
@@ -25,6 +26,7 @@ zh:
   appBadge: "zh-tw/App_Store_Badge.svg"
   socialmedia: 社群媒體
   other: 其他東西
+  othergame: 其他飛蛇的遊戲
   privacyPolicy: 隱私權政策
   privacyPolicyLink: "/games/norahgalaksio/privacypolicy_tw.html"
 </i18n>
@@ -136,7 +138,10 @@ zh:
         <div class="infobox">
           <img src="@/assets/norahgalaksio/pioniro_sticker.png" height="80px" class="sticker" />
           <h2>{{ $t('other') }}</h2>
-          <a :href="ppLink">{{ $t('privacyPolicy') }}</a>
+          <ul>
+            <li><a href="/games/">{{ $t('othergame') }}</a></li>
+            <li><a :href="ppLink">{{ $t('privacyPolicy') }}</a></li>
+          </ul>
         </div>
       </div>
     </div>
