@@ -2,7 +2,7 @@
 en:
   notavailable: Not Available
 zh:
-  notavailable: 不提供
+  notavailable: 暫不提供
 </i18n>
 
 <template>

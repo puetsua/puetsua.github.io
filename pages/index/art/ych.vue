@@ -11,7 +11,7 @@ en:
   ychWebDesc3: .
   itemDesc:
     idcardavatar:
-      name: "ID card avatar $6"
+      name: "ID card avatar $7"
       desc: "Template for ponies, Size: 1000x1000. +$1 for a different expression. You can request transparent background for free."
 zh:
   title: YCH | 飛蛇
@@ -25,7 +25,7 @@ zh:
   ychWebDesc3: 找到我所有的拍賣圖。
   itemDesc:
     idcardavatar:
-      name: "身分證頭像 NTD$180"
+      name: "身分證頭像 NTD$200"
       desc: "小馬專用的模板，大小：1000x1000 像素。改表情+NTD$30。你可以免費要求透明背景的版本。"
 </i18n>
 

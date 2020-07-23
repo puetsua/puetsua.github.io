@@ -3,7 +3,7 @@ en:
   title: Commissions | Pue-Tsuâ
   description: "Pue-Tsuâ's commission box and information."
   itemTitle: Half-body
-  refPrice: "All prices are for reference only. The price may increase by having more characters or background etc..."
+  refPrice: "All prices are for reference only. The price may increase by having more characters or background etc... All prices are in USD."
   coloredsketch:
     name: "Colored Sketch $20-40"
     desc: "Max characters 2, Size: higher than 1000x1000"
@@ -17,15 +17,15 @@ zh:
   title: 委託 | 飛蛇
   description: "飛蛇的委託資訊"
   itemTitle: 半身
-  refPrice: "以下價格僅作參考，視情形於需求可能會加價。例如有更多角色的話或是背景等等。"
+  refPrice: "以下價格僅作參考，視情形於需求可能會加價。例如有更多角色的話或是背景等等。以下的價格以台幣計價。"
   coloredsketch:
-    name: "草稿上色 NTD$600-1200"
+    name: "草稿上色 $600-1200"
     desc: "最多2個角色，大小：大於 1000x1000 像素"
   coloredsketchchibi:
-    name: "草稿上色 (Q版) (TBD)"
+    name: "草稿上色 (Q版) $600-1200"
     desc: "最多2個角色，大小：大於 1000x1000 像素"
   gradient:
-    name: "漸層上色 NTD$1000-2000"
+    name: "漸層上色 $1000-2000"
     desc: "最多2個角色，大小：大於 1000x1000 像素"
 </i18n>
 
