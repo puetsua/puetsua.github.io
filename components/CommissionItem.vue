@@ -1,18 +1,28 @@
+<i18n>
+en:
+  notavailable: Not Available
+zh:
+  notavailable: 不提供
+</i18n>
+
 <template>
   <client-only>
     <div class="comItem" @mouseover="hover = true" @mouseleave="hover = false">
       <table cellpadding="0" cellspacing="0">
         <tr>
-          <th class="name">
+          <th class="name" v-if="isAvailable">
             {{ name }}
           </th>
+          <th class="nameNotAvail" v-else>
+            {{ name }} {{ "("+$t('notavailable')+")" }}
+          </th>
         </tr>
-        <tr>
+        <tr v-if="isAvailable">
           <td class="desc">
             {{ description }}
           </td>
         </tr>
-        <tr>
+        <tr v-if="isAvailable">
           <td>
             <Deviation v-for="artId in examples" :id="artId" :key="artId" />
           </td>
@@ -57,6 +67,10 @@ export default {
 }
 .name {
   font-size: 20px;
+}
+.nameNotAvail {
+  font-size: 16px;
+  color: rgb(177, 169, 169);
 }
 .desc {
   font-size: 14px;

@@ -8,6 +8,30 @@ body {
   height: 100%;
 }
 
+h1 {
+  margin: 1.5rem 0rem;
+}
+
+h2 {
+  margin: 1rem 0rem;
+}
+
+h3 {
+  margin: 1rem 0rem;
+}
+
+ul {
+  margin: 1rem 2rem;
+}
+
+li {
+  margin: .5rem 0px;
+}
+
+p {
+  margin: 1rem 0px;
+}
+
 #__nuxt {
   height: 100%;
 }
