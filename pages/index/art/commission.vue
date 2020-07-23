@@ -31,14 +31,26 @@ zh:
     <CommissionInfo />
     <hr />
     <div id="comType" v-responsive.lg.xl.md>
-      <nuxt-link to="/art/commission/portrait"><v-btn depressed color="#4e2470">{{ $t('portrait') }}</v-btn></nuxt-link>
-      <nuxt-link to="/art/commission/halfbody"><v-btn depressed color="#4e2470">{{ $t('halfbody') }}</v-btn></nuxt-link>
-      <nuxt-link to="/art/commission/fullbody"><v-btn depressed color="#4e2470">{{ $t('fullbody') }}</v-btn></nuxt-link>
+      <nuxt-link to="/art/commission/portrait">
+        <TextButton>{{ $t('portrait') }}</TextButton>
+      </nuxt-link>
+      <nuxt-link to="/art/commission/halfbody">
+        <TextButton>{{ $t('halfbody') }}</TextButton>
+      </nuxt-link>
+      <nuxt-link to="/art/commission/fullbody">
+        <TextButton>{{ $t('fullbody') }}</TextButton>
+      </nuxt-link>
     </div>
     <div id="comType" v-responsive.sm.xs>
-      <nuxt-link to="/art/commission/portrait"><v-btn block color="#4e2470">{{ $t('portrait') }}</v-btn></nuxt-link>
-      <nuxt-link to="/art/commission/halfbody"><v-btn block color="#4e2470">{{ $t('halfbody') }}</v-btn></nuxt-link>
-      <nuxt-link to="/art/commission/fullbody"><v-btn block color="#4e2470">{{ $t('fullbody') }}</v-btn></nuxt-link>
+      <nuxt-link to="/art/commission/portrait">
+        <TextButton block>{{ $t('portrait') }}</TextButton>
+      </nuxt-link>
+      <nuxt-link to="/art/commission/halfbody">
+        <TextButton block>{{ $t('halfbody') }}</TextButton>
+      </nuxt-link>
+      <nuxt-link to="/art/commission/fullbody">
+        <TextButton block>{{ $t('fullbody') }}</TextButton>
+      </nuxt-link>
     </div>
     <div id="commishDisplay">
       <nuxt-child />
@@ -48,11 +60,13 @@ zh:
 
 <script>
 import CommissionInfo from '@/components/CommissionInfo.vue'
+import TextButton from '@/components/TextButton.vue'
 
 export default {
   name: 'commish',
   components: {
-    CommissionInfo
+    CommissionInfo,
+    TextButton
   },
   data () {
     return {

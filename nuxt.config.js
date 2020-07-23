@@ -47,13 +47,9 @@ export default {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     '@nuxtjs/eslint-module',
-    '@nuxtjs/vuetify',
     'markdown-it',
     'nuxt-i18n'
   ],
-  vuetify: {
-    /* module options */
-  },
   buildModules: [
     ['@nuxtjs/google-analytics', {
       id: 'UA-155906401-1'
