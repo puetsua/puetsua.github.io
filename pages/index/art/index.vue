@@ -11,8 +11,16 @@ zh:
 
 <template>
   <div id="art">
+    <blockquote class="trello-card-compact">
+      <a href="https://trello.com/c/7qdlWk9U" target="_blank">Commission Status Trello Card</a>
+    </blockquote>
+    <blockquote class="trello-card-compact">
+      <a href="https://trello.com/c/O96zIs0A">Fixed YCH Status Trello Card</a>
+    </blockquote>
     <h2>{{ $t('community') }}</h2>
-    <a href="https://discord.gg/EhxjnDy" target="_blank"><img src="@/assets/socialmedia_discord.png" height="50px"></a>
+    <a href="https://discord.gg/EhxjnDy" target="_blank">
+      <img src="@/assets/socialmedia_discord.png" height="50px" />
+    </a>
   </div>
 </template>
 
@@ -38,6 +46,9 @@ export default {
     }
     head.meta = head.meta.concat(process.env.socialMeta)
     return head
+  },
+  mounted () {
+    window.TrelloCards.load(document, { compact: true, allAnchors: false })
   }
 }
 </script>

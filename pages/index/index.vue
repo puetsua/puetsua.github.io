@@ -5,22 +5,28 @@ en:
   art: Art & Commission
   games: Games
   about: About Pue-Tsuâ
+  socialmedia: Social Media
 zh:
   title: 飛蛇
   description: "飛蛇，一位喜歡遊戲開發、繪圖、寫程式的普通人。來至自由地區的台灣。"
   art: 繪圖與委託
   games: 自製遊戲
   about: 關於飛蛇
+  socialmedia: 社群媒體
 </i18n>
 
 <template>
   <div id="home">
-    <img alt="Puetsua logo" src="@/assets/logo.png">
-    <div id="ptname">飛蛇 Pue-Tsuâ</div>
     <div>
       <Portal asset="art.png" :desc="$t('art')" to="/art" />
       <Portal asset="games.png" :desc="$t('games')" to="/games" />
       <Portal asset="aboutme.png" :desc="$t('about')" to="/about" />
+    </div>
+    <div>
+      <h2>{{ $t('socialmedia') }}</h2>
+      <a href="https://twitter.com/puetsua" target="_blank"><img src="@/assets/socialmedia_twitter.png" height="50px"></a>
+      <a href="https://www.facebook.com/puetsua" target="_blank"><img src="@/assets/socialmedia_fb.png" height="50px"></a>
+      <a href="https://puetsua.itch.io/"><img src="@/assets/socialmedia_itchio.png" height="50px"></a>
     </div>
   </div>
 </template>
@@ -61,9 +67,5 @@ export default {
   text-align: center;
   vertical-align: middle;
   width: 100%;
-}
-#ptname {
-  font-size:30px;
-  padding: 0px 0px 50px 0px;
 }
 </style>

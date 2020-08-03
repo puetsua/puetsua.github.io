@@ -62,8 +62,8 @@ export default {
         {
           name: this.$t('flatcolored')['name'],
           description: this.$t('flatcolored')['desc'],
-          examples: [],
-          isAvailable: false
+          examples: ['850841130'],
+          isAvailable: true
         },
         {
           name: this.$t('shaded')['name'],

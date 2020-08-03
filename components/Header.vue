@@ -16,10 +16,21 @@ zh:
     <div id="header">
       <table id="tophead">
         <tr>
-          <td style="width:50px;">
-            <nuxt-link to="/">
-              <img alt="Puetsua logo" src="~/assets/logo_light.png" height="50px" />
-            </nuxt-link>
+          <td>
+            <table>
+              <tr>
+                <td>
+                  <nuxt-link to="/">
+                    <img alt="Puetsua logo" src="~/assets/logo_light.png" height="50px" />
+                  </nuxt-link>
+                </td>
+                <td>
+                  <nuxt-link to="/">
+                    <div id="ptname">Pue-Tsuâ</div>
+                  </nuxt-link>
+                </td>
+              </tr>
+            </table>
           </td>
           <td style="text-align: right;">
             <div id="nav">
@@ -27,7 +38,7 @@ zh:
               <nuxt-link to="/art">{{ $t('art') }}</nuxt-link>
               <nuxt-link to="/games">{{ $t('games') }}</nuxt-link>
               <nuxt-link to="/about">{{ $t('about') }}</nuxt-link>
-              <Dropdown/>
+              <Dropdown />
             </div>
           </td>
         </tr>
@@ -108,5 +119,12 @@ table#tophead img {
 
 table#tophead tr {
   text-align: left;
+}
+
+#ptname {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
 }
 </style>
