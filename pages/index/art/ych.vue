@@ -7,7 +7,7 @@ en:
   auctions: Auctions
   auctionsDesc: Classic YCH auctions. People who has highest bid wins the picture.
   ychWebDesc1: "You can find all YCH auctions on "
-  ychWebDesc2: my YCH.commishes
+  ychWebDesc2: my YCH.art
   ychWebDesc3: .
   itemDesc:
     idcardavatar:
@@ -21,7 +21,7 @@ zh:
   auctions: 拍賣
   auctionsDesc: 經典的 YCH 拍賣。競標價最高的可以標到該 YCH 圖。
   ychWebDesc1: 你可以在
-  ychWebDesc2: "我的 YCH.commishes "
+  ychWebDesc2: "我的 YCH.art "
   ychWebDesc3: 找到我所有的拍賣圖。
   itemDesc:
     idcardavatar:
@@ -32,7 +32,10 @@ zh:
 <template>
   <div id="ych">
     <blockquote class="trello-card-compact">
-      <a href="https://trello.com/c/O96zIs0A">Fixed YCH Status Trello Card</a>
+      <a href="https://trello.com/c/O96zIs0A" target="_blank">Fixed YCH Status Trello Card</a>
+    </blockquote>
+    <blockquote class="trello-card-compact">
+      <a href="https://trello.com/c/IknDWOtO" target="_blank">Ongoing YCH Auction</a>
     </blockquote>
     <YCHInfo/>
     <hr>
@@ -47,7 +50,7 @@ zh:
       <div v-if="auctions.length > 0">
         <CommissionItem v-for="item in auctions" :key="item.name" v-bind="item" />
       </div>
-      <p>{{ $t('ychWebDesc1') }}<a href="https://ych.commishes.com/user/Puetsua" target="_blank">{{ $t('ychWebDesc2') }}</a>{{ $t('ychWebDesc3') }}</p>
+      <p>{{ $t('ychWebDesc1') }}<a href="https://ych.art/user/puetsua/auctions" target="_blank">{{ $t('ychWebDesc2') }}</a>{{ $t('ychWebDesc3') }}</p>
     </div>
   </div>
 </template>
