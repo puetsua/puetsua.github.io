@@ -56,7 +56,7 @@ export default {
         {
           name: this.$t('coloredsketch')['name'],
           description: this.$t('coloredsketch')['desc'],
-          examples: ['844362317', '807548619'],
+          examples: ['852091210', '807548619', '852486089'],
           isAvailable: true
         },
         {

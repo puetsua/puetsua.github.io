@@ -51,7 +51,7 @@ zh:
     name: 水藍星 (英文)
     description: |
       水藍星是一款策略解謎遊戲。玩家可以探索星球、收集寶物、尋找上古文明的遺物並解決各種難題。
-  follow: 追蹤我的遊戲開發紀錄 (英文)
+  follow: 追蹤我的遊戲開發紀錄
   community: 社群 (英文)
 </i18n>
 
@@ -66,6 +66,7 @@ zh:
       <a href="https://discord.gg/EhxjnDy" target="_blank"><img src="@/assets/socialmedia_discord.png" height="50px"></a>
       <h2>{{ $t('follow') }}</h2>
       <a href="https://twitter.com/puetsuagamedev" target="_blank"><img src="@/assets/socialmedia_twitter.png" height="50px"></a>
+      <a href="https://www.facebook.com/puetsua.gamedev/" target="_blank" v-if="$i18n.locale == 'zh'"><img src="@/assets/socialmedia_fb.png" height="50px"></a>
     </div>
   </div>
 </template>
