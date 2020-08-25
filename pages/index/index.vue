@@ -44,7 +44,7 @@ zh:
           <img src="@/assets/socialmedia_itchio.png" height="50px" />
         </a>
       </div>
-      <h2>{{ $t('subscribe') }}</h2>
+      <h2 v-if="$i18n.locale == 'en'">{{ $t('subscribe') }}</h2>
       <div class="panel" v-if="$i18n.locale == 'en'">
         <p>{{ $t('subDesc') }}</p>
         <form
