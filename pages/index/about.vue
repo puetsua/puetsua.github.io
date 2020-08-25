@@ -50,8 +50,9 @@ zh:
     <a href="https://twitter.com/puetsua" target="_blank"><img src="@/assets/socialmedia_twitter.png" height="50px"></a>
     <a href="https://www.deviantart.com/puetsua" target="_blank"><img src="@/assets/socialmedia_da.png" height="50px"></a>
     <a href="https://www.facebook.com/puetsua" target="_blank"><img src="@/assets/socialmedia_fb.png" height="50px"></a>
+    <a href="https://www.instagram.com/puetsua.art/" target="_blank"><img src="@/assets/socialmedia_instagram.png" height="50px" /></a>
     <a href="https://www.youtube.com/channel/UCtAVtsEW_OHh4X7yWjOVoLQ" target="_blank"><img src="@/assets/socialmedia_yt.png" height="50px"></a>
-    <a href="https://puetsua.itch.io/"><img src="@/assets/socialmedia_itchio.png" height="50px"></a>
+    <a href="https://puetsua.itch.io/" target="_blank"><img src="@/assets/socialmedia_itchio.png" height="50px"></a>
     <a href="mailto:puetsua@gmail.com"><img src="@/assets/socialmedia_email.png" height="50px"></a>
   </div>
 </template>

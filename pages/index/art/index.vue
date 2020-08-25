@@ -20,10 +20,14 @@ zh:
     <blockquote class="trello-card-compact">
       <a href="https://trello.com/c/IknDWOtO" target="_blank">Ongoing YCH Auction</a>
     </blockquote>
-    <h2>{{ $t('community') }}</h2>
-    <a href="https://discord.gg/EhxjnDy" target="_blank">
-      <img src="@/assets/socialmedia_discord.png" height="50px" />
-    </a>
+    <div class="panelHolder">
+      <h2>{{ $t('community') }}</h2>
+      <div class="panel">
+        <a href="https://discord.gg/EhxjnDy" target="_blank">
+          <img src="@/assets/socialmedia_discord.png" height="50px" />
+        </a>
+      </div>
+    </div>
   </div>
 </template>
 

@@ -25,7 +25,6 @@ en:
     description: |
       Star Tsui-Lam is a strategy puzzle game. Player can explore planets, collect treasures, find relics from ancient civilization and solving puzzles.
   follow: Follow my game devlog and community
-  community: Community
 zh:
   title: 自製遊戲 | 飛蛇
   description: 所有飛蛇做的遊戲。
@@ -51,8 +50,7 @@ zh:
     name: 水藍星 (英文)
     description: |
       水藍星是一款策略解謎遊戲。玩家可以探索星球、收集寶物、尋找上古文明的遺物並解決各種難題。
-  follow: 追蹤我的遊戲開發紀錄
-  community: 社群 (英文)
+  follow: 追蹤我的開發紀錄與社群
 </i18n>
 
 <template>
@@ -62,11 +60,15 @@ zh:
       <GameItem v-for="item in games" :key="item.name" v-bind="item" />
       <h2>{{ $t('fangames') }}</h2>
       <GameItem v-for="item in fangames" :key="item.name" v-bind="item" />
-      <h2>{{ $t('community') }}</h2>
-      <a href="https://discord.gg/EhxjnDy" target="_blank"><img src="@/assets/socialmedia_discord.png" height="50px"></a>
       <h2>{{ $t('follow') }}</h2>
-      <a href="https://twitter.com/puetsuagamedev" target="_blank"><img src="@/assets/socialmedia_twitter.png" height="50px"></a>
-      <a href="https://www.facebook.com/puetsua.gamedev/" target="_blank" v-if="$i18n.locale == 'zh'"><img src="@/assets/socialmedia_fb.png" height="50px"></a>
+      <div class="panelHolder">
+        <div class="panel">
+          <a href="https://discord.gg/EhxjnDy" target="_blank"><img src="@/assets/socialmedia_discord.png" height="50px"></a>
+          <a href="https://twitter.com/puetsuagamedev" target="_blank"><img src="@/assets/socialmedia_twitter.png" height="50px"></a>
+          <a href="https://www.instagram.com/puetsua.dev/" target="_blank"><img src="@/assets/socialmedia_instagram.png" height="50px" /></a>
+          <a href="https://www.facebook.com/puetsua.gamdev/" target="_blank" v-if="$i18n.locale == 'zh'"><img src="@/assets/socialmedia_fb.png" height="50px"></a>
+        </div>
+      </div>
     </div>
   </div>
 </template>
