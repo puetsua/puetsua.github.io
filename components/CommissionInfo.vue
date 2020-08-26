@@ -3,9 +3,9 @@ en:
   fillform: "Please let me know the information below and send them to me when you commission:"
   formlist:
     - "Character name: "
-    - "Item: (Colored sketch, cel-shading or detailed shading etc...)"
+    - "Item: (Colored sketch, chibi, gradient shading etc...)"
     - "Reference/Images: (A reference sheet or several images of your character.)"
-    - "Description: (Description of your character such as pose, expression.)"
+    - "Description: (About poses, expressions etc...)"
     - "Email: (To send you an Paypal invoice.)"
   readTos1: "Thank you for your interest. To commission me, "
   readTos2: "you should follow everything in my Terms of Service."
@@ -20,7 +20,7 @@ zh:
   fillform: "在你委託時，麻煩告訴我以下資訊："
   formlist:
     - "角色名稱："
-    - "想要的風格：(Colored sketch, cel-shading or detailed shading etc...)"
+    - "想要的風格：(上色草稿、Q版、漸層上色等等。)"
     - "參考圖：(角色設定圖或是任何含有你的角色的圖。)"
     - "其他細節描述： (關於角色的姿勢、表情等等。)"
   readTos1: "感謝你對我的委託有興趣。如果想要委託，"
