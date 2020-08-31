@@ -25,6 +25,11 @@ en:
     description: |
       Star Tsui-Lam is a strategy puzzle game. Player can explore planets, collect treasures, find relics from ancient civilization and solving puzzles.
   follow: Follow my game devlog and community
+  gameHexdoku:
+    imageSrc: hexdoku.png
+    name: Hexdoku
+    description: |
+      A sudoku-like, minimalist puzzle game with hexagons. Player must fill the grid with different shapes and ensure each directions and area contains only unique shapes.
 zh:
   title: 自製遊戲 | 飛蛇
   description: 所有飛蛇做的遊戲。
@@ -50,6 +55,11 @@ zh:
     name: 水藍星 (英文)
     description: |
       水藍星是一款策略解謎遊戲。玩家可以探索星球、收集寶物、尋找上古文明的遺物並解決各種難題。
+  gameHexdoku:
+    imageSrc: hexdoku.png
+    name: 六旁謎獨 (暫名)
+    description: |
+      類數獨的極簡風解謎遊戲，有別於一般的數獨，使用六角形的網格讓玩家填入形狀，並能在三個方向與區域能夠不重複。
   follow: 追蹤我的開發紀錄與社群
 </i18n>
 
@@ -90,6 +100,13 @@ export default {
   computed: {
     games () {
       return [
+        {
+          asset: this.$t('gameHexdoku')['imageSrc'],
+          name: this.$t('gameHexdoku')['name'],
+          desc: this.$t('gameHexdoku')['description'],
+          statusCode: 'InDevelopment',
+          itchioLink: 'https://puetsua.itch.io/hexdoku'
+        },
         {
           asset: this.$t('gameNorahGalaksio')['imageSrc'],
           name: this.$t('gameNorahGalaksio')['name'],
