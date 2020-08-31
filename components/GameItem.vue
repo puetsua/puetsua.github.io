@@ -108,6 +108,7 @@ export default {
   padding: 5px 5px;
 }
 .table1 {
+  height: 100%;
   width: 100%;
 }
 .image {
@@ -115,6 +116,7 @@ export default {
 }
 .table2 {
   height: 100%;
+  width: 100%;
 }
 .name {
   font-size: 20px;
