@@ -66,7 +66,7 @@ zh:
           <a href="https://discord.gg/EhxjnDy" target="_blank"><img src="@/assets/socialmedia_discord.png" height="50px"></a>
           <a href="https://twitter.com/puetsuagamedev" target="_blank"><img src="@/assets/socialmedia_twitter.png" height="50px"></a>
           <a href="https://www.instagram.com/puetsua.dev/" target="_blank"><img src="@/assets/socialmedia_instagram.png" height="50px" /></a>
-          <a href="https://www.facebook.com/puetsua.gamdev/" target="_blank" v-if="$i18n.locale == 'zh'"><img src="@/assets/socialmedia_fb.png" height="50px"></a>
+          <a href="https://www.facebook.com/puetsua.gamedev/" target="_blank" v-if="$i18n.locale == 'zh'"><img src="@/assets/socialmedia_fb.png" height="50px"></a>
         </div>
       </div>
     </div>
