@@ -105,7 +105,8 @@ export default {
           name: this.$t('gameHexdoku')['name'],
           desc: this.$t('gameHexdoku')['description'],
           statusCode: 'InDevelopment',
-          itchioLink: 'https://puetsua.itch.io/hexdoku'
+          itchioLink: 'https://puetsua.itch.io/hexdoku',
+          newgroundsLink: 'https://www.newgrounds.com/portal/view/764662'
         },
         {
           asset: this.$t('gameNorahGalaksio')['imageSrc'],

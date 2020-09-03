@@ -7,6 +7,7 @@ en:
   gpBadge: "en-us/Google_Play_Badge.svg"
   appBadge: "en-us/App_Store_Badge.svg"
   itchioBadge: "itchio.svg"
+  newgroundsBadge: "ng_logo.png"
 zh:
   status: "狀態："
   Released: 已發行
@@ -15,6 +16,7 @@ zh:
   gpBadge: "zh-tw/Google_Play_Badge.svg"
   appBadge: "zh-tw/App_Store_Badge.svg"
   itchioBadge: "itchio.svg"
+  newgroundsBadge: "ng_logo.png"
 </i18n>
 
 <template>
@@ -48,6 +50,7 @@ zh:
             <tr>
               <td>
                 <a :href="itchioLink" v-show="itchioLink"><img :src="imageSrc($t('itchioBadge'))" height="50px"></a>
+                <a :href="newgroundsLink" v-show="newgroundsLink"><img :src="imageSrc($t('newgroundsBadge'))" height="50px"></a>
                 <a :href="gpLink" v-show="gpLink"><img :src="imageSrc($t('gpBadge'))" height="50px"></a>
                 <a :href="appsLink" v-show="appsLink"><img :src="imageSrc($t('appBadge'))" height="50px"></a>
               </td>
@@ -67,6 +70,7 @@ export default {
     name: String,
     desc: String,
     statusCode: String,
+    newgroundsLink: String,
     itchioLink: String,
     gpLink: String,
     appsLink: String,
