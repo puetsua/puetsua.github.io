@@ -57,7 +57,7 @@ zh:
       水藍星是一款策略解謎遊戲。玩家可以探索星球、收集寶物、尋找上古文明的遺物並解決各種難題。
   gameHexdoku:
     imageSrc: hexdoku.png
-    name: 六旁謎獨 (暫名)
+    name: 形獨
     description: |
       類數獨的極簡風解謎遊戲，有別於一般的數獨，使用六角形的網格讓玩家填入形狀，並能在三個方向與區域能夠不重複。
   follow: 追蹤我的開發紀錄與社群
@@ -105,6 +105,7 @@ export default {
           name: this.$t('gameHexdoku')['name'],
           desc: this.$t('gameHexdoku')['description'],
           statusCode: 'InDevelopment',
+          steamLink: 'https://store.steampowered.com/app/1414270/Hexdoku/',
           itchioLink: 'https://puetsua.itch.io/hexdoku',
           newgroundsLink: 'https://www.newgrounds.com/portal/view/764662'
         },
