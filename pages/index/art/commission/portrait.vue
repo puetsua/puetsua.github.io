@@ -62,7 +62,7 @@ export default {
         {
           name: this.$t('flatcolored')['name'],
           description: this.$t('flatcolored')['desc'],
-          examples: ['850841130', '851063393'],
+          examples: ['857637639', '850841130', '851063393'],
           isAvailable: true
         },
         {

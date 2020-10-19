@@ -80,7 +80,7 @@ export default {
         {
           name: this.$t('gradient')['name'],
           description: this.$t('gradient')['desc'],
-          examples: ['847736276', '848066009', '849119942'],
+          examples: ['847736276', '848066009', '854917385'],
           isAvailable: true
         }
       ]

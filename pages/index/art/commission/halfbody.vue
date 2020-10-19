@@ -56,19 +56,19 @@ export default {
         {
           name: this.$t('coloredsketch')['name'],
           description: this.$t('coloredsketch')['desc'],
-          examples: ['852091210', '807548619', '852486089'],
+          examples: ['852486089', '852091210', '858039386'],
           isAvailable: true
         },
         {
           name: this.$t('coloredsketchchibi')['name'],
           description: this.$t('coloredsketchchibi')['desc'],
-          examples: ['848689781'],
+          examples: ['848689781', '856273987'],
           isAvailable: true
         },
         {
           name: this.$t('gradient')['name'],
           description: this.$t('gradient')['desc'],
-          examples: ['849426143'],
+          examples: ['849426143', '857057026'],
           isAvailable: true
         }
       ]
