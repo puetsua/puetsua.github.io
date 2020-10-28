@@ -1,8 +1,8 @@
 <i18n>
 en:
-  game: Norah Galaksio
+  game: Hexdoku
 zh:
-  game: 探險專家：諾拉
+  game: 形獨
 </i18n>
 
 <template>
@@ -19,7 +19,7 @@ zh:
 </template>
 
 <style scoped>
-/* Palette #12254c #18226d #24599e #6c94c1 #c6e9ff */
+/* Palette #5DADE2 #B8FFE8 #2981C3 */
 footer {
   font-family: "Microsoft JhengHei", "LiHei Pro", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -27,7 +27,7 @@ footer {
   text-align: center;
   font-size: 12px;
   padding: 10px 10px;
-  color: #c6e9ff;
-  background-color: #24599e;
+  color: white;
+  background-color: #2981C3;
 }
 </style>

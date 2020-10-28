@@ -29,7 +29,7 @@ en:
     imageSrc: hexdoku.png
     name: Hexdoku
     description: |
-      A sudoku-like, minimalist puzzle game with hexagons. Player must fill the grid with different shapes and ensure each directions and area contains only unique shapes.
+      A sudoku-like, puzzle game with hexagons. Player must fill the grid with different shapes and ensure each directions and area contains only unique shapes.
 zh:
   title: 自製遊戲 | 飛蛇
   description: 所有飛蛇做的遊戲。
@@ -59,7 +59,7 @@ zh:
     imageSrc: hexdoku.png
     name: 形獨
     description: |
-      類數獨的極簡風解謎遊戲，有別於一般的數獨，使用六角形的網格讓玩家填入形狀，並能在三個方向與區域能夠不重複。
+      類數獨的解謎遊戲，有別於一般的數獨，使用六角形的網格讓玩家填入形狀，並能在三個方向與區域能夠不重複。
   follow: 追蹤我的開發紀錄與社群
 </i18n>
 
