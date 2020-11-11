@@ -17,8 +17,8 @@ en:
   aboutgame: Gameplay
   aboutgame_desc1: >
     Unlike traditional Sudoku with 9x9 grids, Hexdoku features many different levels and uses shapes as marks instead of numbers.
-    The level is completed when all marks are cleared and placed in cells.
-    The game has many different rules that players will need new methods to solve the puzzle.
+    The level is completed when all marks are placed in cells. Player will know how much time they spent in a level.
+    As the game progresses, Hexdoku will introduce many different rules that players will need new methods to solve the puzzle.
   aboutgame_desc2: >
     A level creator is also included for player to design their levels. Player can also challenge themselves with harder premade puzzles in custom levels.
   socialmedia: Social Media
@@ -42,21 +42,21 @@ zh:
   description: "類數獨的解謎遊戲，有別於一般的數獨，使用六角形的網格讓玩家填入形狀，並能在三個方向與區域能夠不重複。"
   information: 遊戲資訊
   facts:
-    - "發布日期：Q4 2020"
+    - "發布日期：2020年第四季"
     - "平台：PC、Mac"
-    - "價錢：NTD$150"
+    - "價錢：台幣150元"
     - "標籤：2d, puzzle, hexagon, sudoku"
     - "遊戲引擎：Unity"
-    - "開發者：Puetsua"
+    - "開發者：飛蛇"
   gamewebsite: "遊戲網站："
   devwebsite: "開發商網站："
   aboutgame: 遊戲玩法
   aboutgame_desc1: >
-    Unlike traditional Sudoku with 9x9 grids, Hexdoku features many different levels and uses shapes as marks instead of numbers.
-    The level is completed when all marks are cleared and placed in cells.
-    The game has many different rules that players will need new methods to solve the puzzle.
+    不像傳統的九乘九方格的數獨，形獨有更多不同的關卡，並且使用圖形取代數字做為標籤。
+    當玩家找到方法將所有的圖標都置入格子後，關卡會結束並統計玩家花費的時間。
+    隨著遊戲進行，玩家也會慢慢遇到更多不一樣的遊戲規則，並想出新的方法並解開謎題。
   aboutgame_desc2: >
-    A level creator is also included. Player can also challenge themselves with harder puzzles in custom levels.
+    遊戲也附有關卡編輯器。玩家也可以在自訂關卡中挑戰更多更難的關卡。
   socialmedia: 社群媒體
   othergame: 其他飛蛇的遊戲
   presskit: 新聞包
@@ -66,10 +66,10 @@ zh:
   videoAnimated: 影片與Gif動畫
   screenshot: 遊戲截圖
   aboutdev: 關於開發者
-  puetsua_irlname: Liau, Pik-Han
+  puetsua_irlname: 廖柏翰
   puetsua_about:
-     - "A Taiwanese game developer, artist, programmer. Master's degree in Computer Science. I worked in a networking company for three years before I started my career in video game development."
-     - "Most of people know me as Puetsua. I worked on Norah Galaksio and some misc games released on itch.io. I'm also a small artist draws cute pictures and fanarts online."
+     - "來自台灣的遊戲開發者、繪師、程式設計師。國立臺灣海洋大學資訊工程所碩士畢業。在踏入遊戲業前，以研發替代役的身分在網路公司工作三年。"
+     - "大部分的人都以飛蛇稱呼我。我曾經製作過「探險磚家：諾拉」與其他發布在itch.io的小遊戲。同時我也是一個在線上畫二創同人的小繪師。"
   credits: 感謝名單
   itchioBadge: "itchio.svg"
   steamBadge: "zh-tw/steam_logo_small.png"
