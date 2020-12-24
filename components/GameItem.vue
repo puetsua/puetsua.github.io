@@ -26,10 +26,10 @@ zh:
     <table class="table1">
       <tr>
         <th class="image" v-if="pageLink">
-          <a :href="pageLink"><img :alt="name" :src="assetSrc" width="300px"/></a>
+          <a :href="pageLink"><img :alt="name" :src="assetSrc"/></a>
         </th>
         <th class="image" v-else>
-          <img :alt="name" :src="assetSrc" width="300px"/>
+          <img :alt="name" :src="assetSrc"/>
         </th>
         <th height="100%">
           <table class="table2">
@@ -121,6 +121,11 @@ export default {
 }
 .image {
   width: 300px;
+  text-align: center;
+}
+.image img {
+  max-width: 300px;
+  max-height: 200px;
 }
 .table2 {
   height: 100%;

@@ -29,35 +29,21 @@ zh:
       <Portal asset="aboutme.png" :desc="$t('about')" to="/about" />
     </div>
     <div class="panelHolder">
-      <h2>{{ $t('socialmedia') }}</h2>
+      <h2>{{ $t("socialmedia") }}</h2>
       <div class="panel">
         <a href="https://twitter.com/puetsua" target="_blank">
           <img src="@/assets/socialmedia_twitter.png" height="50px" />
         </a>
         <a href="https://www.facebook.com/puetsua" target="_blank">
-          <img src="@/assets/socialmedia_fb.png" height="50px" v-if="$i18n.locale == 'zh'" />
-        </a>
-        <a href="https://www.instagram.com/puetsua.art/" target="_blank">
-          <img src="@/assets/socialmedia_instagram.png" height="50px" />
+          <img
+            src="@/assets/socialmedia_fb.png"
+            height="50px"
+            v-if="$i18n.locale == 'zh'"
+          />
         </a>
         <a href="https://puetsua.itch.io/">
           <img src="@/assets/socialmedia_itchio.png" height="50px" />
         </a>
-      </div>
-      <h2 v-if="$i18n.locale == 'en'">{{ $t('subscribe') }}</h2>
-      <div class="panel" v-if="$i18n.locale == 'en'">
-        <p>{{ $t('subDesc') }}</p>
-        <form
-          action="https://tinyletter.com/puetsua"
-          method="post"
-          target="popupwindow"
-          onsubmit="window.open('https://tinyletter.com/puetsua', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true"
-        >
-          <input type="text" style="width:180px" name="email" id="tlemail" placeholder="Your email address..." />
-          <input type="hidden" value="1" name="embed" />
-          <input type="submit" :value="$t('subscribe')" />
-          <br><a href="https://tinyletter.com" target="_blank" id="tinyletter">powered by TinyLetter</a>
-        </form>
       </div>
     </div>
   </div>
@@ -101,8 +87,7 @@ export default {
   width: 100%;
 }
 
-#tinyletter
-{
+#tinyletter {
   font-size: 10px;
 }
 
@@ -124,7 +109,7 @@ export default {
   background-color: #ffffff;
 }
 
-input[type=text] {
+input[type="text"] {
   margin: 3px 0px;
   padding: 4px 4px;
   border: 2px solid #3d1b5a;
@@ -132,11 +117,11 @@ input[type=text] {
   background-color: #f9f1ff;
 }
 
-input[type=text]:focus {
+input[type="text"]:focus {
   background-color: white;
 }
 
-input[type=submit] {
+input[type="submit"] {
   margin: 3px 0px;
   padding: 4px 15px;
   background: #3d1b5a;
@@ -148,7 +133,7 @@ input[type=submit] {
   transition: 0.2s;
 }
 
-input[type=submit]:hover {
+input[type="submit"]:hover {
   background: #f0e8ed;
   color: #3d1b5a;
 }

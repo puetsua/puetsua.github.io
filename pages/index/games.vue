@@ -104,7 +104,7 @@ export default {
           asset: this.$t('gameHexdoku')['imageSrc'],
           name: this.$t('gameHexdoku')['name'],
           desc: this.$t('gameHexdoku')['description'],
-          statusCode: 'InDevelopment',
+          statusCode: 'Released',
           pageLink: '/games/hexdoku',
           steamLink: 'https://store.steampowered.com/app/1414270/Hexdoku/',
           itchioLink: 'https://puetsua.itch.io/hexdoku',
