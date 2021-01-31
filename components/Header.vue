@@ -8,7 +8,7 @@ zh:
   home: 首頁
   art: 繪圖
   games: 遊戲
-  about: 關於
+  about: 自介
 </i18n>
 
 <template>

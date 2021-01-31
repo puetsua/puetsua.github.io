@@ -17,9 +17,9 @@ en:
     I speak Mandarin and English. I'm learning Japanese as my fourth language.
     I also speak Taiwanese Hokkien(Or Minnan), which is my first language in my hometown Taiwan.
 zh:
-  title: 關於 | 飛蛇
+  title: 自介 | 飛蛇
   description: 所有關於飛蛇的事，包含聯絡方式。
-  aboutme: 關於我
+  aboutme: 自我介紹
   supportme: 贊助
   supportdesc: 任何一丁點的贊助我都會很感激，這樣就能投入更多時間創作遊戲跟藝術。(^∀^)/
   contactme: 聯絡方式
@@ -31,7 +31,7 @@ zh:
     是位的業餘繪師，有時候會接一些委託賺小錢。
     目前是遊戲設計師，專注於遊戲開發。
   descKnowLang: |
-    我會北京話跟英文，包括自己家的母語，閩南語。目前正在學日文做為第四語言。
+    我會國語(普通話)，英文跟台灣閩南語。目前正在學日文做為第四語言。
 </i18n>
 
 <template>

@@ -44,12 +44,12 @@
      id="namedview13"
      showgrid="false"
      inkscape:zoom="0.834386"
-     inkscape:cx="21.587163"
+     inkscape:cx="-173.16682"
      inkscape:cy="189.48683"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1"
-     inkscape:current-layer="layer8"
+     inkscape:current-layer="layer7"
      inkscape:snap-global="true" />
   <defs
      id="defs4">
@@ -256,7 +256,7 @@
      inkscape:groupmode="layer"
      id="layer7"
      inkscape:label="discord"
-     style="display:none">
+     style="display:inline">
     <path
        inkscape:connector-curvature="0"
        style="fill:#8c9eff;stroke-width:1.00000012"
@@ -266,7 +266,8 @@
   <g
      inkscape:groupmode="layer"
      id="layer8"
-     inkscape:label="instagram">
+     inkscape:label="instagram"
+     style="display:none">
     <g
        id="social_instagram"
        transform="matrix(1.0225196,0,0,1.0225196,-253.85605,-61.30589)"
