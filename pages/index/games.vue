@@ -66,17 +66,28 @@ zh:
 <template>
   <div id="games">
     <div>
-      <h2>{{ $t('games') }}</h2>
+      <h2>{{ $t("games") }}</h2>
       <GameItem v-for="item in games" :key="item.name" v-bind="item" />
-      <h2>{{ $t('fangames') }}</h2>
+      <h2>{{ $t("fangames") }}</h2>
       <GameItem v-for="item in fangames" :key="item.name" v-bind="item" />
-      <h2>{{ $t('follow') }}</h2>
+      <h2>{{ $t("follow") }}</h2>
       <div class="panelHolder">
         <div class="panel">
-          <a href="https://discord.gg/EhxjnDy" target="_blank"><img src="@/assets/socialmedia_discord.png" height="50px"></a>
-          <a href="https://twitter.com/puetsuagamedev" target="_blank"><img src="@/assets/socialmedia_twitter.png" height="50px"></a>
-          <a href="https://www.instagram.com/puetsua.dev/" target="_blank"><img src="@/assets/socialmedia_instagram.png" height="50px" /></a>
-          <a href="https://www.facebook.com/puetsua.gamedev/" target="_blank" v-if="$i18n.locale == 'zh'"><img src="@/assets/socialmedia_fb.png" height="50px"></a>
+          <a href="https://discord.gg/EhxjnDy" target="_blank"
+            ><img src="@/assets/socialmedia_discord.png" height="50px"
+          /></a>
+          <a href="https://twitter.com/puetsuagamedev" target="_blank"
+            ><img src="@/assets/socialmedia_twitter.png" height="50px"
+          /></a>
+          <a href="https://www.instagram.com/puetsua.dev/" target="_blank"
+            ><img src="@/assets/socialmedia_instagram.png" height="50px"
+          /></a>
+          <a
+            href="https://www.facebook.com/puetsua.gamedev/"
+            target="_blank"
+            v-if="$i18n.locale == 'zh'"
+            ><img src="@/assets/socialmedia_fb.png" height="50px"
+          /></a>
         </div>
       </div>
     </div>
@@ -116,8 +127,7 @@ export default {
           desc: this.$t('gameNorahGalaksio')['description'],
           statusCode: 'Released',
           pageLink: '/games/norahgalaksio',
-          gpLink: 'https://play.google.com/store/apps/details?id=com.puetsua.norahgalaksio',
-          appsLink: 'https://apps.apple.com/app/id1510273568'
+          gpLink: 'https://play.google.com/store/apps/details?id=com.puetsua.norahgalaksio'
         },
         {
           asset: this.$t('gameTsuilam')['imageSrc'],

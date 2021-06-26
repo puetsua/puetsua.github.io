@@ -34,117 +34,152 @@ zh:
 <template>
   <div id="home">
     <client-only>
-    <div id="first">
-      <table>
-        <tr>
-          <td>
-            <div id="introduction">
-              <h1>{{ $t('title') }}</h1>
-              <h3>{{ $t('description') }}</h3>
-              <p>{{ $t('introduction') }}</p>
-              <center>
-                <div style="height:30px" />
-                <img src="@/assets/norahgalaksio/appicon.png" height="100px" id="appicon" />
-                <div style="height:30px" />
-                <a
-                  href="https://play.google.com/store/apps/details?id=com.puetsua.norahgalaksio&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
-                >
-                  <img :alt="$t('gpBadgeAlt')" :src="imageSrc($t('gpBadge'))" height="60px" />
-                </a>
-                <a
-                  href="https://apps.apple.com/app/id1510273568"
-                >
-                  <img :alt="$t('appBadgeAlt')" :src="imageSrc($t('appBadge'))" height="60px" />
-                </a>
-              </center>
-            </div>
-          </td>
-          <td v-responsive.lg.xl>
-            <div id="phone">
-              <div id="phone_content" />
-              <img src="@/assets/norahgalaksio/phone.svg" height="600px" style="visibility:hidden;" />
-              <!-- spacer -->
-              <img src="@/assets/norahgalaksio/phone.svg" height="600px" id="phone_overlay" />
-            </div>
-          </td>
-        </tr>
-      </table>
-    </div>
-    <div id="second" v-responsive.lg.xl>
-      <table>
-        <tr>
-          <td>
-            <h1>Screenshots</h1>
-            <v-gallery :images="images" :index="index" @close="index = null" />
-            <div
-              class="image"
-              v-for="(image, imageIndex) in images"
-              :key="imageIndex"
-              @click="index = imageIndex"
-              :style="{ backgroundImage: 'url(' + image + ')', width: '180px', height: '320px' }"
-            ></div>
-          </td>
-          <td>
-            <h1>Spaceships</h1>
-            <iframe
-              width="360"
-              height="640"
-              src="https://www.youtube.com/embed/9z9PYLpc8CE"
-              frameborder="0"
-              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-          </td>
-        </tr>
-      </table>
-    </div>
-    <div id="second_mobile" v-responsive.md.sm.xs>
-      <h1>Screenshots</h1>
-      <v-gallery :images="images" :index="index" @close="index = null" />
-      <div class="section">
-        <div
-          class="image"
-          v-for="(image, imageIndex) in images"
-          :key="imageIndex"
-          @click="index = imageIndex"
-          :style="{ backgroundImage: 'url(' + image + ')', width: '180px', height: '320px' }"
-        ></div>
+      <div id="first">
+        <table>
+          <tr>
+            <td>
+              <div id="introduction">
+                <h1>{{ $t("title") }}</h1>
+                <h3>{{ $t("description") }}</h3>
+                <p>{{ $t("introduction") }}</p>
+                <center>
+                  <div style="height: 30px" />
+                  <img
+                    src="@/assets/norahgalaksio/appicon.png"
+                    height="100px"
+                    id="appicon"
+                  />
+                  <div style="height: 30px" />
+                  <a
+                    href="https://play.google.com/store/apps/details?id=com.puetsua.norahgalaksio&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1"
+                  >
+                    <img
+                      :alt="$t('gpBadgeAlt')"
+                      :src="imageSrc($t('gpBadge'))"
+                      height="60px"
+                    />
+                  </a>
+                </center>
+              </div>
+            </td>
+            <td v-responsive.lg.xl>
+              <div id="phone">
+                <div id="phone_content" />
+                <img
+                  src="@/assets/norahgalaksio/phone.svg"
+                  height="600px"
+                  style="visibility: hidden"
+                />
+                <!-- spacer -->
+                <img
+                  src="@/assets/norahgalaksio/phone.svg"
+                  height="600px"
+                  id="phone_overlay"
+                />
+              </div>
+            </td>
+          </tr>
+        </table>
       </div>
-      <div class="section">
-        <h1>Spaceships</h1>
-        <iframe
-          width="360"
-          height="640"
-          src="https://www.youtube.com/embed/9z9PYLpc8CE"
-          frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
+      <div id="second" v-responsive.lg.xl>
+        <table>
+          <tr>
+            <td>
+              <h1>Screenshots</h1>
+              <v-gallery
+                :images="images"
+                :index="index"
+                @close="index = null"
+              />
+              <div
+                class="image"
+                v-for="(image, imageIndex) in images"
+                :key="imageIndex"
+                @click="index = imageIndex"
+                :style="{
+                  backgroundImage: 'url(' + image + ')',
+                  width: '180px',
+                  height: '320px',
+                }"
+              ></div>
+            </td>
+            <td>
+              <h1>Spaceships</h1>
+              <iframe
+                width="360"
+                height="640"
+                src="https://www.youtube.com/embed/9z9PYLpc8CE"
+                frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </td>
+          </tr>
+        </table>
       </div>
-    </div>
-    <div id="third">
-      <div class="infobox_outer">
-        <div class="infobox">
-          <img src="@/assets/norahgalaksio/pioniro_sticker.png" height="80px" class="sticker" />
-          <h2>{{ $t('socialmedia') }}</h2>
-          <center>
-            <a href="https://twitter.com/puetsuagamedev" target="_blank">
-              <img src="@/assets/social_twitter_white.png" height="50px" />
-            </a>
-          </center>
+      <div id="second_mobile" v-responsive.md.sm.xs>
+        <h1>Screenshots</h1>
+        <v-gallery :images="images" :index="index" @close="index = null" />
+        <div class="section">
+          <div
+            class="image"
+            v-for="(image, imageIndex) in images"
+            :key="imageIndex"
+            @click="index = imageIndex"
+            :style="{
+              backgroundImage: 'url(' + image + ')',
+              width: '180px',
+              height: '320px',
+            }"
+          ></div>
+        </div>
+        <div class="section">
+          <h1>Spaceships</h1>
+          <iframe
+            width="360"
+            height="640"
+            src="https://www.youtube.com/embed/9z9PYLpc8CE"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
         </div>
       </div>
-      <div class="infobox_outer">
-        <div class="infobox">
-          <img src="@/assets/norahgalaksio/pioniro_sticker.png" height="80px" class="sticker" />
-          <h2>{{ $t('other') }}</h2>
-          <ul>
-            <li><a href="/games/">{{ $t('othergame') }}</a></li>
-            <li><a :href="ppLink">{{ $t('privacyPolicy') }}</a></li>
-          </ul>
+      <div id="third">
+        <div class="infobox_outer">
+          <div class="infobox">
+            <img
+              src="@/assets/norahgalaksio/pioniro_sticker.png"
+              height="80px"
+              class="sticker"
+            />
+            <h2>{{ $t("socialmedia") }}</h2>
+            <center>
+              <a href="https://twitter.com/puetsuagamedev" target="_blank">
+                <img src="@/assets/social_twitter_white.png" height="50px" />
+              </a>
+            </center>
+          </div>
+        </div>
+        <div class="infobox_outer">
+          <div class="infobox">
+            <img
+              src="@/assets/norahgalaksio/pioniro_sticker.png"
+              height="80px"
+              class="sticker"
+            />
+            <h2>{{ $t("other") }}</h2>
+            <ul>
+              <li>
+                <a href="/games/">{{ $t("othergame") }}</a>
+              </li>
+              <li>
+                <a :href="ppLink">{{ $t("privacyPolicy") }}</a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-    </div>
     </client-only>
   </div>
 </template>
