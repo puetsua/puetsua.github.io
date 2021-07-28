@@ -7,12 +7,6 @@ en:
   coloredsketch:
     name: "Colored Sketch $25-50"
     desc: "Max characters 2, Size: higher than 1000x1000"
-  coloredsketchchibi:
-    name: "Colored Sketch (Chibi) $25-50"
-    desc: "Max characters 2, Size: higher than 1000x1000"
-  chibi:
-    name: "Chibi $30-60"
-    desc: "Max characters 2, Size: higher than 1000x1000"
   gradient:
     name: "Gradient $35-70"
     desc: "Max characters 2, Size: higher than 1000x1000"
@@ -24,12 +18,6 @@ zh:
   coloredsketch:
     name: "有色草稿 $750-1500"
     desc: "最多2個角色，大小：大於 1000x1000 像素"
-  coloredsketchchibi:
-    name: "有色草稿 (Q版) $750-1500"
-    desc: "最多2個角色，大小：大於 1000x1000 像素"
-  chibi:
-    name: "Q版 $900-1800"
-    desc: "最多2個角色，大小：大於 1000x1000 像素"
   gradient:
     name: "漸層上色 $1000-2000"
     desc: "最多2個角色，大小：大於 1000x1000 像素"
@@ -37,8 +25,8 @@ zh:
 
 <template>
   <div class="comType">
-    <h2>{{ $t('itemTitle') }}</h2>
-    <p>{{ $t('refPrice') }}</p>
+    <h2>{{ $t("itemTitle") }}</h2>
+    <p>{{ $t("refPrice") }}</p>
     <CommissionItem v-for="item in items" :key="item.name" v-bind="item" />
   </div>
 </template>
@@ -63,18 +51,6 @@ export default {
           name: this.$t('coloredsketch')['name'],
           description: this.$t('coloredsketch')['desc'],
           examples: ['864136471', '864136406', '863484417'],
-          isAvailable: true
-        },
-        {
-          name: this.$t('coloredsketchchibi')['name'],
-          description: this.$t('coloredsketchchibi')['desc'],
-          examples: ['849228833'],
-          isAvailable: true
-        },
-        {
-          name: this.$t('chibi')['name'],
-          description: this.$t('chibi')['desc'],
-          examples: ['846983151', '847222714', '847308285'],
           isAvailable: true
         },
         {

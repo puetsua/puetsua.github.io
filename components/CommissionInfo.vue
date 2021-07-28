@@ -3,7 +3,7 @@ en:
   fillform: "Please let me know the information below and send them to me when you commission:"
   formlist:
     - "Character name: "
-    - "Item: (Colored sketch, chibi, gradient shading etc...)"
+    - "Item: (Colored sketch, gradient shading etc...)"
     - "Reference/Images: (A reference sheet or several images of your character.)"
     - "Description: (About poses, expressions etc...)"
     - "Email: (To send you an Paypal invoice.)"
@@ -20,7 +20,7 @@ zh:
   fillform: "在你委託時，麻煩告訴我以下資訊："
   formlist:
     - "角色名稱："
-    - "想要的風格：(上色草稿、Q版、漸層上色等等。)"
+    - "想要的風格：(上色草稿、漸層上色等等。)"
     - "參考圖：(角色設定圖或是任何含有你的角色的圖。)"
     - "其他細節描述： (關於角色的姿勢、表情等等。)"
   readTos1: "感謝你對我的委託有興趣。如果想要委託，"
@@ -36,7 +36,9 @@ zh:
 
 <template>
   <div class="ComInfo">
-    <b><h3>{{ $t('fillform') }}</h3></b>
+    <b
+      ><h3>{{ $t("fillform") }}</h3></b
+    >
     <ul>
       <li v-for="item in $t('formlist')" :key="item">
         {{ item }}
@@ -44,16 +46,22 @@ zh:
     </ul>
 
     <p>
-      {{ $t('readTos1') }}<nuxt-link to="/art/tos">{{ $t('readTos2') }}</nuxt-link>
-      {{ $t('readTos3') }}<nuxt-link to="/art/tos">{{ $t('readTos4') }}</nuxt-link>{{ $t('readTos5') }}
+      {{ $t("readTos1")
+      }}<nuxt-link to="/art/tos">{{ $t("readTos2") }}</nuxt-link>
+      {{ $t("readTos3")
+      }}<nuxt-link to="/art/tos">{{ $t("readTos4") }}</nuxt-link
+      >{{ $t("readTos5") }}
     </p>
 
     <p>
-      {{ $t('accept1') }}
-      <b>{{ $t('accept2') }}</b>{{ $t('accept3') }}
+      {{ $t("accept1") }}
+      <b>{{ $t("accept2") }}</b
+      >{{ $t("accept3") }}
     </p>
 
-    <p><b>{{ $t('reference') }}</b></p>
+    <p>
+      <b>{{ $t("reference") }}</b>
+    </p>
   </div>
 </template>
 
