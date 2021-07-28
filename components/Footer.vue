@@ -1,8 +1,29 @@
+<i18n>
+en:
+  contact: Contact
+zh:
+  contact: 聯絡信箱
+</i18n>
+
 <template>
-  <footer>© Puetsua, 2019-2020.</footer>
+  <footer>
+    <div id="box">
+      {{ $t("contact") }}:
+      <a href="mailto:contact@puetsua.net">contact@puetsua.net</a><br />
+      © Puetsua, 2019-2021.
+    </div>
+  </footer>
 </template>
 
 <style scoped>
+#box {
+  box-sizing: border-box;
+  text-align: left;
+  position: relative;
+  display: inline-block;
+  padding: 0px 10px;
+}
+
 footer {
   font-family: "Microsoft JhengHei", "LiHei Pro", Arial, sans-serif;
   -webkit-font-smoothing: antialiased;

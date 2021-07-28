@@ -49,11 +49,11 @@ zh:
     /></a>
     <p>{{ $t("supportdesc") }}</p>
     <h2>{{ $t("contactme") }}</h2>
+    <a href="mailto:puetsua@puetsua.net"
+      ><img src="@/assets/socialmedia_email.png" height="50px"
+    /></a>
     <a href="https://twitter.com/puetsua" target="_blank"
       ><img src="@/assets/socialmedia_twitter.png" height="50px"
-    /></a>
-    <a href="https://www.deviantart.com/puetsua" target="_blank"
-      ><img src="@/assets/socialmedia_da.png" height="50px"
     /></a>
     <a href="https://www.facebook.com/puetsua" target="_blank"
       ><img src="@/assets/socialmedia_fb.png" height="50px"
@@ -66,11 +66,11 @@ zh:
       target="_blank"
       ><img src="@/assets/socialmedia_yt.png" height="50px"
     /></a>
+    <a href="https://www.deviantart.com/puetsua" target="_blank"
+      ><img src="@/assets/socialmedia_da.png" height="50px"
+    /></a>
     <a href="https://puetsua.itch.io/" target="_blank"
       ><img src="@/assets/socialmedia_itchio.png" height="50px"
-    /></a>
-    <a href="mailto:puetsua@gmail.com"
-      ><img src="@/assets/socialmedia_email.png" height="50px"
     /></a>
   </div>
 </template>
