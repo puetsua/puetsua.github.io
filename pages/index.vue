@@ -2,11 +2,11 @@
   <div id="personal">
     <div id="mainpage">
       <Header />
-      <div style="height:10px" />
+      <div style="height: 10px" />
       <div id="mainDisplay">
         <nuxt-child />
       </div>
-      <div style="height:50px" />
+      <div style="height: 50px" />
     </div>
     <Footer />
   </div>
@@ -27,7 +27,6 @@ export default {
 
 <style>
 #personal {
-  font-family: Helvetica, "Microsoft JhengHei", "LiHei Pro", Verdana, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: #3d1b5a;
@@ -50,5 +49,4 @@ export default {
   min-height: 100%;
   background-color: #f0e8ed;
 }
-
 </style>

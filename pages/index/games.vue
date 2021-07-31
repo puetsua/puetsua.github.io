@@ -73,9 +73,6 @@ zh:
       <h2>{{ $t("follow") }}</h2>
       <div class="panelHolder">
         <div class="panel">
-          <a href="https://discord.gg/EhxjnDy" target="_blank"
-            ><img src="@/assets/socialmedia_discord.png" height="50px"
-          /></a>
           <a href="https://twitter.com/puetsuagamedev" target="_blank"
             ><img src="@/assets/socialmedia_twitter.png" height="50px"
           /></a>

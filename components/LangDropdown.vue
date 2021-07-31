@@ -13,10 +13,12 @@
     <div class="options" :class="{ 'options-toggled': isExpanded }">
       <div
         v-for="option in configOptions"
-        :key="option"
+        :key="option[0]"
         class="option"
-        @click="selectOption(option);"
-      >{{ option }}</div>
+        @click="selectOption(option[0])"
+      >
+        {{ option[1] }}
+      </div>
     </div>
   </div>
 </template>
@@ -25,10 +27,18 @@
 export default {
   name: 'dropdown',
   data () {
+    var langDict = {
+      en: 'English',
+      zh: '中文'
+    }
     return {
-      width: 50,
-      configOptions: ['en', 'zh'],
-      isExpanded: false
+      width: 90,
+      configOptions: [
+        ['en', langDict['en']],
+        ['zh', langDict['zh']]
+      ],
+      isExpanded: false,
+      displayLangDict: langDict
     }
   },
   computed: {
@@ -46,7 +56,7 @@ export default {
       this.$i18n.setLocale(option)
     },
     currentLang () {
-      return this.$i18n.locale
+      return this.displayLangDict[this.$i18n.locale]
     }
   }
 }
@@ -67,6 +77,8 @@ export default {
 }
 
 .dropdownbutton .text {
+  width: 100%;
+  text-align: center;
   padding: 0px 5px;
 }
 
