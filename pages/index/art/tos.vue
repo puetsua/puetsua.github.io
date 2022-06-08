@@ -3,7 +3,7 @@ en:
   title: Terms of Service | Pue-Tsuâ
   description: Puetsua Art Terms of Service.
   tosTitle: Terms of Service (Puetsua Art)
-  tosUpdate: "Last Updated: July 31st, 2021"
+  tosUpdate: "Last Updated: June 8th, 2022"
   guide: >
     To commission me, you must read and agree my Terms of Service.
     <b>If you don't want to read all stuffs, I have mark text bold for you.</b>
@@ -18,7 +18,8 @@ en:
     Any images of your character are fine. You cannot just say "I want my OC drawn" because I can't read your mind.
     Other details like poses and expression are also recommended to be included.
   payment: >
-    Payment through <b>Paypal</b> is recommended. I will start working on your commission once I've received full payment.
+    Payment through <b>Paypal</b> is recommended. Paypal fee, or any fee from other payment method, will be added.
+    I will start working on your commission once I've received full payment.
   contactMe: >
     Contact me via Discord, Twitter DM or any social media about your commission.
   workingTime: >
@@ -39,7 +40,7 @@ zh:
   title: 服務條款 | 飛蛇
   description: 繪圖委託的服務條款
   tosTitle: 服務條款 (飛蛇的繪圖委託)
-  tosUpdate: "上次更新：民國110年(2021) 7月31日"
+  tosUpdate: "上次更新：民國111年(2022) 6月8日"
   guide: >
     若要委託我，你必須閱讀並遵守我的服務條款。
     <b>如果你覺得服務條款過於攏長，我已經把重點以粗體表示。</b>
@@ -53,8 +54,8 @@ zh:
     你不能只有說「可以畫我的角色嗎？」，我沒這麼厲害還能通靈。
     可以的話建議也給我你想要的姿勢、動作或表情。
   payment: >
-    建議透過<b>綠界Ecpay</b>付款，若不行再使用銀行匯款。收到全部的款項後我才會開始進行繪製你的委託。
-    如果是海外人士，建議使用Paypal付款。
+    可使用<b>銀行匯款</b>、綠界Ecpay或Paypal付款，Paypal會加收手續費。
+    收到全部的款項後我才會開始進行繪製你的委託。
   contactMe: >
     請用臉書、推特、噗浪或其他社交媒體私訊聯絡，並敘述你的委託內容。
   workingTime: >

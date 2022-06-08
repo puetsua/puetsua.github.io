@@ -3,12 +3,9 @@ en:
   title: Commissions | Pue-Tsuâ
   description: "Pue-Tsuâ's commission box and information."
   itemTitle: Full-body
-  refPrice: "All prices are for reference only. The price may increase by having more characters or background etc... All prices are in USD."
+  refPrice: "All prices are for reference only. The price may increase by having more characters or background etc... All prices are in TWD."
   coloredsketch:
-    name: "Colored Sketch $25-50"
-    desc: "Max characters 2, Size: higher than 1000x1000"
-  gradient:
-    name: "Gradient $35-70"
+    name: "Colored Sketch NT$600-1200"
     desc: "Max characters 2, Size: higher than 1000x1000"
 zh:
   title: 委託 | 飛蛇
@@ -16,10 +13,7 @@ zh:
   itemTitle: 全身
   refPrice: "以下價格僅作參考，視情形於需求可能會加價。例如有更多角色的話或是背景等等。以下的價格以台幣計價。"
   coloredsketch:
-    name: "有色草稿 $750-1500"
-    desc: "最多2個角色，大小：大於 1000x1000 像素"
-  gradient:
-    name: "漸層上色 $1000-2000"
+    name: "有色草稿 $600-1200"
     desc: "最多2個角色，大小：大於 1000x1000 像素"
 </i18n>
 
@@ -51,12 +45,6 @@ export default {
           name: this.$t('coloredsketch')['name'],
           description: this.$t('coloredsketch')['desc'],
           examples: ['864136471', '864136406', '863484417'],
-          isAvailable: true
-        },
-        {
-          name: this.$t('gradient')['name'],
-          description: this.$t('gradient')['desc'],
-          examples: ['847736276', '848066009', '854917385'],
           isAvailable: true
         }
       ]

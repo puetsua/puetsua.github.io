@@ -3,15 +3,15 @@ en:
   title: Commissions | Pue-Tsuâ
   description: "Pue-Tsuâ's commission box and information."
   itemTitle: Portrait
-  refPrice: "All prices are for reference only. The price may increase by having more characters or background etc... All prices are in USD."
+  refPrice: "All prices are for reference only. The price may increase by having more characters or background etc... All prices are in TWD."
   coloredsketch:
-    name: "Colored Sketch $10-20"
+    name: "Colored Sketch NT$200-400"
     desc: "One character only, Size: higher than 1000x1000"
   flatcolored:
-    name: "Flat Colored $15-30"
+    name: "Flat Colored NT$300-600"
     desc: "One character only, Size: higher than 1000x1000"
   shaded:
-    name: "Shaded $25-50"
+    name: "Shaded NT$600-1200"
     desc: "One character only, Size: higher than 1000x1000"
 zh:
   title: 委託 | 飛蛇
@@ -19,20 +19,20 @@ zh:
   itemTitle: 頭像
   refPrice: "以下價格僅作參考，視情形於需求可能會加價。例如有更多角色的話或是背景等等。以下的價格以台幣計價。"
   coloredsketch:
-    name: "草稿上色 $300-600"
+    name: "草稿上色 $200-400"
     desc: "只能一個角色，大小：大於 1000x1000 像素"
   flatcolored:
-    name: "一般上色 $450-900"
+    name: "一般上色 $300-400"
     desc: "只能一個角色，大小：大於 1000x1000 像素"
   shaded:
-    name: "完整上色 $750-1500"
+    name: "完整上色 $600-1200"
     desc: "只能一個角色，大小：大於 1000x1000 像素"
 </i18n>
 
 <template>
   <div class="comType">
-    <h2>{{ $t('itemTitle') }}</h2>
-    <p>{{ $t('refPrice') }}</p>
+    <h2>{{ $t("itemTitle") }}</h2>
+    <p>{{ $t("refPrice") }}</p>
     <CommissionItem v-for="item in items" :key="item.name" v-bind="item" />
   </div>
 </template>

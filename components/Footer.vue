@@ -10,7 +10,7 @@ zh:
     <div id="box">
       {{ $t("contact") }}:
       <a href="mailto:contact@puetsua.net">contact@puetsua.net</a><br />
-      © Puetsua, 2019-2021.
+      © Puetsua, 2019-2022.
     </div>
   </footer>
 </template>

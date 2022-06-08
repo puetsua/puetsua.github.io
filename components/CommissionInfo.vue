@@ -16,6 +16,7 @@ en:
   accept2: "No NSFW and fetish arts"
   accept3: .
   reference: Please note that all prices below are for reference only, it varies depending on the details you want.
+  payment: If you're going to pay with Paypal, Paypal fee (4.4% + NT$10) will be added.
 zh:
   fillform: "在你委託時，麻煩告訴我以下資訊："
   formlist:
@@ -32,6 +33,7 @@ zh:
   accept2: "不收車圖(18+)跟性癖圖。"
   accept3: .
   reference: 請注意下面的價格僅供參考，價格會隨著你的委託需求有所調整。
+  payment: 如果你要使用Paypal付款，需加收Paypal的手續費 (4.4% + NT$10)
 </i18n>
 
 <template>
@@ -59,9 +61,9 @@ zh:
       >{{ $t("accept3") }}
     </p>
 
-    <p>
-      <b>{{ $t("reference") }}</b>
-    </p>
+    <p><b v-t="'payment'" /></p>
+
+    <p><b v-t="'reference'" /></p>
   </div>
 </template>
 
