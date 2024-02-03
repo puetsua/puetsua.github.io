@@ -1,0 +1,1 @@
+import{u as o,c as t,o as s,a as e}from"./entry.4a3a4cfd.js";const n={id:"notfound"},a=e("div",null,[e("h2",null,"Page is not found.")],-1),_=[a],i={__name:"404",setup(c){return o({}),(d,r)=>(s(),t("div",n,_))}};export{i as default};

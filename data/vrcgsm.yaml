@@ -1,0 +1,23 @@
+---
+version: 1.0
+worlds:
+  wrld_ebc06158-da47-4454-ba65-8e3248bd3bef:
+    name: Duobeat
+    version: 1
+    regex: |-
+      Successfully generated save state: "(--.*--Duobeat)"
+  wrld_a61cdabe-1218-4287-9ffc-2a4d1414e5bd:
+    name: Terrors of Nowhere
+    version: 1
+    regex: |-
+      \[START\]([0-9_,]*)\[END\]
+  wrld_c16e4dee-d149-4116-adbc-16bc30b664b0:
+    name: Idle Home
+    version: 1
+    regex: |-
+      \[🦀 Idle Home 🦀\] Saved \d{2}-\d{2}-\d{2} \d{2}:\d{2}:\d{2}: (.*----IdleHome)
+  wrld_3352ec65-e23a-4814-b88a-051a01ac4f93:
+    name: 烏龍麵實驗室
+    version: 0
+    regex: |-
+      SaveCode created: ([A-Za-z0-9+/]*={0,2})
