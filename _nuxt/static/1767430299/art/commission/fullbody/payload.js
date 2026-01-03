@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/art/commission/fullbody", {data:[{},{},{},{}],fetch:{},mutations:void 0});

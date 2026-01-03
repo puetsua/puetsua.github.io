@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/art/tos", {data:[{},{},{}],fetch:{},mutations:void 0});

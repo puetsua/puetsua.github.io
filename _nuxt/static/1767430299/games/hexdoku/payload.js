@@ -1,0 +1,1 @@
+__NUXT_JSONP__("/games/hexdoku", {data:[{},{}],fetch:{},mutations:void 0});
