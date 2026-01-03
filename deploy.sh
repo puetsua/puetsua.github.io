@@ -12,7 +12,7 @@ git add -A
 git commit -m "Deploy new version."
 
 echo "==== Uploading... "
-git push -f git@github.com:puetsua/puetsua.github.io.git master
+git push -f https://github.com/puetsua/puetsua.github.io.git master
 cd ..
 
 echo "==== Completed!"
