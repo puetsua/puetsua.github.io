@@ -48,8 +48,6 @@ zh:
     name: 探險磚家：諾拉
     description: |
       「探險磚家：諾拉」是一款破磚探險的手機遊戲。一位名為諾拉●蓋拉西歐的小馬，已經準備好要去探索星球並協助當地人了。
-
-      這款遊戲之前有在Google Play上，不過我為了改版先行下架了。
   gameTsuilam:
     imageSrc: tsuilam.png
     name: 水藍星 (英文)
@@ -122,9 +120,7 @@ export default {
           asset: this.$t('gameNorahGalaksio')['imageSrc'],
           name: this.$t('gameNorahGalaksio')['name'],
           desc: this.$t('gameNorahGalaksio')['description'],
-          statusCode: 'Released',
-          pageLink: '/games/norahgalaksio',
-          gpLink: 'https://play.google.com/store/apps/details?id=com.puetsua.norahgalaksio'
+          statusCode: 'Discontinued'
         },
         {
           asset: this.$t('gameTsuilam')['imageSrc'],

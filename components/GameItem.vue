@@ -3,6 +3,7 @@ en:
   status: "Status: "
   Released: Released
   InDevelopment: In Development
+  Discontinued: Discontinued
   Suspended: Suspended
   gpBadge: "en-us/Google_Play_Badge.svg"
   appBadge: "en-us/App_Store_Badge.svg"
@@ -13,6 +14,7 @@ zh:
   status: "狀態："
   Released: 已發行
   InDevelopment: 開發中
+  Discontinued: 已停運
   Suspended: 已暫停
   gpBadge: "zh-tw/Google_Play_Badge.svg"
   appBadge: "zh-tw/App_Store_Badge.svg"
