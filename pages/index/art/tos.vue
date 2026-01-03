@@ -21,7 +21,7 @@ en:
     Payment through <b>Paypal</b> is recommended. Paypal fee, or any fee from other payment method, will be added.
     I will start working on your commission once I've received full payment.
   contactMe: >
-    Contact me via Discord, Twitter DM or any social media about your commission.
+    Contact me via Discord, X (Twitter) DM or any social media about your commission.
   workingTime: >
     <b>Your commission may take one month to finish</b> since I have other projects to do.
     We can discuss about it if you want your commission to be done in a certain time.

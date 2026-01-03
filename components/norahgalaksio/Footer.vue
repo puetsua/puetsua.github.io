@@ -9,8 +9,8 @@ zh:
   <footer>
     {{ $t('game') }} © Puetsua, 2019-2020.
     <br />
-    <a href="https://twitter.com/PuetsuaGameDev" target="_blank">
-      <img src="@/assets/social_twitter_white.png" height="20px" />
+    <a href="https://x.com/PuetsuaGameDev" target="_blank">
+      <img src="@/assets/social_x_white.png" height="20px" />
     </a>
     <a href="https://www.facebook.com/puetsua.gamedev" target="_blank">
       <img src="@/assets/social_facebook_white.png" height="20px" />

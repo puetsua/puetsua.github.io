@@ -31,8 +31,11 @@ zh:
     <div class="panelHolder">
       <h2>{{ $t("socialmedia") }}</h2>
       <div class="panel">
-        <a href="https://twitter.com/puetsua" target="_blank">
-          <img src="@/assets/socialmedia_twitter.png" height="50px" />
+        <a href="https://x.com/puetsua" target="_blank">
+          <img src="@/assets/socialmedia_x.png" height="50px" />
+        </a>
+        <a href="https://bsky.app/profile/puetsua.bsky.social" target="_blank">
+          <img src="@/assets/socialmedia_bluesky.png" height="50px" />
         </a>
         <a href="https://www.facebook.com/puetsua" target="_blank">
           <img

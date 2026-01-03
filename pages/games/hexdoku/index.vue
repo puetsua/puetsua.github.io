@@ -43,8 +43,8 @@ zh:
           <img src="@/assets/hexdoku/icon.png" height="64px" class="sticker" />
           <div class="infobox">
             <h3>{{ $t("socialmedia") }}</h3>
-            <a href="https://twitter.com/PuetsuaGameDev" target="_blank">
-              <img src="@/assets/socialmedia_twitter.png" height="50px" />
+            <a href="https://x.com/PuetsuaGameDev" target="_blank">
+              <img src="@/assets/socialmedia_x.png" height="50px" />
             </a>
             <a href="https://facebook.com/puetsua.gamedev" target="_blank">
               <img src="@/assets/socialmedia_fb.png" height="50px" />

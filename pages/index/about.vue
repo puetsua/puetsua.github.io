@@ -52,8 +52,11 @@ zh:
     <a href="mailto:puetsua@puetsua.net"
       ><img src="@/assets/socialmedia_email.png" height="50px"
     /></a>
-    <a href="https://twitter.com/puetsua" target="_blank"
-      ><img src="@/assets/socialmedia_twitter.png" height="50px"
+    <a href="https://bsky.app/profile/puetsua.bsky.social" target="_blank"
+      ><img src="@/assets/socialmedia_bluesky.png" height="50px"
+    /></a>
+    <a href="https://x.com/puetsua" target="_blank"
+      ><img src="@/assets/socialmedia_x.png" height="50px"
     /></a>
     <a href="https://www.facebook.com/puetsua" target="_blank"
       ><img src="@/assets/socialmedia_fb.png" height="50px"

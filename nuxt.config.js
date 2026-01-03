@@ -82,15 +82,15 @@ export default {
     }
   },
   env: {
-    baseUrl: 'https://www.puetsua.me',
+    baseUrl: 'https://puetsua.net',
     socialMeta: [
-      { hid: 'og:image', name: 'og:image', content: 'https://www.puetsua.me/logo.png' },
+      { hid: 'og:image', name: 'og:image', content: 'https://puetsua.net/images/logo.png' },
       { hid: 'og:type', name: 'og:type', content: 'website' },
       { hid: 'og:site_name', name: 'og:site_name', content: 'Pue-Tsuâ' },
       { hid: 'twitter:card', name: 'twitter:card', content: 'summary' },
       { hid: 'twitter:site', name: 'twitter:site', content: '@puetsua' },
-      { hid: 'twitter:image', name: 'twitter:image', content: 'https://www.puetsua.me/logo.png' },
-      { hid: 'twitter:image:src', name: 'twitter:image:src', content: 'https://www.puetsua.me/logo.png' },
+      { hid: 'twitter:image', name: 'twitter:image', content: 'https://puetsua.net/images/logo.png' },
+      { hid: 'twitter:image:src', name: 'twitter:image:src', content: 'https://puetsua.net/images/logo.png' },
       { hid: 'theme-color', name: 'theme-color', content: '#a855ec' },
       { hid: 'author', name: 'author', content: 'Pue-Tsuâ' }
     ]
