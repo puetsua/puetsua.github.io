@@ -1,0 +1,1 @@
+import{default as i}from"./LangToggle.7tlYEhSU.js";/* empty css                       */import"./_plugin-vue_export-helper.DlAUqK2U.js";import"./runtime-core.esm-bundler.DlxwDKDr.js";export{i as default};

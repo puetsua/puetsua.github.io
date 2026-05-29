@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://puetsua.net/sitemap-index.xml
